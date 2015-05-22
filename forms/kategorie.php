@@ -10,7 +10,7 @@
     <br>
 
     <?php
-    for ($i = 0; $i < count($_SESSION['kategorie'])-1; $i++) {
+    for ($i = 0; $i < count($_SESSION['kategorie']); $i++) {
         $level = $i;
         include './forms/kategorieRad.php';
     }
