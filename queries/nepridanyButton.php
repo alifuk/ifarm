@@ -5,8 +5,6 @@
 require_once './connect.php';
 
 
-
-
 $stmt = $conn->prepare("SELECT kategorie.Id, kategorie.nazev FROM kategorie
 LEFT JOIN (SELECT * FROM usersconkategorie WHERE userId = ?) as con ON kategorie.Id = con.kategorieId
 WHERE con.userId IS NULL AND nadkategorie = ?");
@@ -19,12 +17,20 @@ $stmt->execute();
 $stmt->bind_result($Idecko, $jmeno);
 
 
-
+$prazdne = true;
 while ($stmt->fetch()) {
-    
-    include './forms/nepridanaKategorieListPolozka.php';
+    $prazdne = false;
+    break;
+}
 
+
+$stmt->close();
+
+if(!$prazdne){
+    
+    include './forms/nepridanyButton.php';
     
 }
-$stmt->close();
+
+
 ?>

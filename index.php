@@ -29,12 +29,14 @@ print_r($_SESSION['kategorie']);
 
                 include './forms/navbar.php';
 
-                include './forms/aresForm.php';
 
 
                 include './forms/kategorie.php';
                 
                 include './forms/obchodniBary.php';
+                
+                
+                include './forms/aresForm.php';
                 
                 
             } else {
