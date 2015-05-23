@@ -10,12 +10,16 @@ $nick = $_POST['email'];
 
 
 $password = crypt($_POST['heslo'], '$2a$07$somesillystringforsalt'); 
-echo "pass " . $password;
+//echo "pass " . $password;
 $stmt->execute();
 
 $stmt->bind_result($Idecko, $jmeno, $prijmeni);
+
+$prihlasen = false;
+
 while ($stmt->fetch()) {
-    echo $Idecko;
+    //echo $Idecko;
+    $prihlasen = true;
     $_SESSION['user'] = $Idecko;
     $_SESSION['name'] = $jmeno . " " . $prijmeni;
     
@@ -25,6 +29,12 @@ while ($stmt->fetch()) {
     exit();
 }
 $stmt->close();
+
+if($prihlasen){
+    echo "přihlášení úspěšné";
+} else {
+    echo "neúspěšné přihlášení";
+}
 
 
 ?>

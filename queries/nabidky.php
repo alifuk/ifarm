@@ -2,7 +2,7 @@
 
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT jmeno, cena, popis FROM polozky WHERE zobrazit = 1 AND smazano = 0 AND nabidka = 1 AND kategorieId = ?   ");
+$stmt = $conn->prepare("SELECT jmeno, cena, popis FROM polozky WHERE zobrazit = 1 AND smazano = 0 AND kategorieId = ?   ");
 $stmt->bind_param('i', $kategorieId);
 $kategorieId = $_SESSION['kategorie'];
 
