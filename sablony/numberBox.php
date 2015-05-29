@@ -1,10 +1,29 @@
-
+<!-- odkazováno z queries/nabidky.php   -->
 <div class="form-group" >
-    <label <?php echo "for=\"".$parametr_i[$i] . 'Field\"' ?>  class="col-md-3 control-label"><?php echo $parametr_i[$i]; ?>:</label>
+    <label for='<?php echo $nazev . ""; ?>' ><?php echo $nazev; ?>:</label>
+    <div class="input-group col-xs-4">
+        <input type="text" class="form-control" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $nazev; ?>' >
 
-    <div class="col-sm-7">
-        <input type="text" class="form-control" placeholder="" <?php echo "Id=\"" . $parametr_i[$i] . 'Field\"'; ?>   data-toggle="tooltip" data-placement="right" name=<?php echo "i".$i; ?> >
 
-    </div> 
+        <?php
+        if (trim($jednotky) != "") {
+            $jednotka = explode(",", $jednotky);
+            echo '<div class="input-group-addon">' . $jednotka[0] . '</div>';
+        }
+        ?>
+    </div>
+
 </div>
 
+
+<!--
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+    <div class="input-group">
+      <div class="input-group-addon">$</div>
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+      <div class="input-group-addon">.00</div>
+    </div>
+  </div>
+
+-->

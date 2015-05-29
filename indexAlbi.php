@@ -12,15 +12,27 @@ print_r($_SESSION['kategorie']);
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>    <!--   -->
+        <title></title>     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        
+        <!--  
         <link rel="stylesheet" href="./bootstrap-3.1.1-dist/css/bootstrap.min.css">
         
         <link rel="stylesheet" href="./bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         
-        
-        <script src="./bootstrap-3.1.1-dist/js/jquery-2.1.4.min.js"></script>  
+        <script src="./bootstrap-3.1.1-dist/js/jquery-2.1.4.min.js"></script>  <script>
+            
+/*$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});*/
+</script>
     </head>
     <body>
             <?php
@@ -30,10 +42,10 @@ print_r($_SESSION['kategorie']);
                 include './forms/navbar.php';
 
 
-
+                include './forms/naseptavac.php';
                 include './forms/kategorie.php';
                 
-                include './forms/obchodniBary.php';
+                include './forms/sablona.php';
                 
                 
                 include './forms/aresForm.php';
