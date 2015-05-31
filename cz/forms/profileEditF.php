@@ -1,9 +1,3 @@
-$jmeno, $prijmeni, $adresa1, $adresa2, $telefon, $zobrazitAdresu
-
-
-
-
-
 <div class="jumbotron">
     <div class="container" style="max-width:600px;">
         <h1>Kontaktní údaje </h1>
