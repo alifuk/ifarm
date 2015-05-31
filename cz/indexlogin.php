@@ -277,7 +277,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white;}
 <li><a href="#jaktofunguje">Jak to funguje?</a></li>
 
 <li><a href="#kolik">Kolik to stojí</a></li>
-<li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="#top">Přihlásit</a><div class="category" style="width: 30%;
+<li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="./queries/logout.php">Odhlásit</a><div class="category" style="width: 30%;
   background: transparent !important;
   height: 480px;
   -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0);
@@ -286,12 +286,12 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white;}
 <div class="body" id="prihlasit" style="padding:0px !important;">			
 		
 			<!-- Red color scheme -->
-			<form name="form1" method="post" action="signup.php" class="sky-form">
+			<!-- <form name="form1" method="post" action="signup.php" class="sky-form">
 				
 				
 				<fieldset>
 					<section>
-						<label class="label">Jméno</label>
+						<label class="label">Jméddno</label>
 						<label class="input">
 							<input type="text">
 						</label>
@@ -305,7 +305,12 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white;}
 						</label>
 </section>
 
-					<button type="submit" class="button">Přihlásit</button></form></div></li> </ul> </div></li>	
+					<button type="submit" class="button">Přihlásit</button></form>
+-->
+
+    <?php include './forms/loginForm.php'; ?>
+
+</div></li> </ul> </div></li>	
 			</ul>			
 			</nav>
 		
