@@ -2,7 +2,7 @@
 <div class="form-group" >
     <label for='<?php echo $nazev . ""; ?>' ><?php echo $nazev; ?>:</label>
     <div class="input-group col-xs-4">
-        <input type="text" class="form-control" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $nazev; ?>' >
+        <input type="text" class="form-control" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $IdDefinice; ?>' >
 
 
         <?php

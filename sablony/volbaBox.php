@@ -3,15 +3,15 @@
     <!--
     <div class="dropdown">
         <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle='dropdown' aria-expanded="true">
-            <?php echo $nazev; ?>
+            <?php //echo $nazev; ?>
             <span class="caret"></span>
         </button>
         <ul class="dropdown-menu" role="menu">
 
             <?php
-            foreach (explode(",", $volby) as $volba) {
+            /*foreach (explode(",", $volby) as $volba) {
                 echo '<li role="presentation"><a role="menuitem" tabindex="-1" href="#">' . $volba . '</a></li>';
-            }
+            }*/
             ?>
 
 
@@ -23,7 +23,7 @@
 
     <div class="form-group">
         <label for=<?php echo $nazev; ?>><?php echo $nazev; ?>:</label>
-        <select class="form-control" id=<?php echo $nazev; ?>>
+        <select class="form-control" id=<?php echo $nazev; ?> name=<?php echo $IdDefinice ?>>
             <?php
             foreach (explode(",", $volby) as $volba) {
                 echo '<option>' . $volba . '</option>';

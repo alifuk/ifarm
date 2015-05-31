@@ -2,6 +2,6 @@
 
 <div class="checkbox">
     <label>
-        <input type="checkbox" name=<?php echo $nazev."[]" ?>> <?php echo $volba; ?>
+        <input type="checkbox" name=<?php echo $IdDefinice."[]" ?>> <?php echo $volba; ?>
     </label>
 </div>

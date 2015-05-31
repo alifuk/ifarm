@@ -51,7 +51,7 @@
                 <label for="ico" class="col-md-3 control-label">IČO:</label>
 
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" placeholder="Vložte email"  Id="ico" autofocus
+                    <input type="text" class="form-control" placeholder="Vložte email"  Id="ico"
                            data-toggle="tooltip" data-placement="right" name="email">
 
                 </div> 
