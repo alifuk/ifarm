@@ -32,13 +32,17 @@ print_r($_SESSION['kategorie']);
 
 
 
-    <body>
+    <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;background-attachment: fixed;">
 
 
 
 
         <?php
         include './menu.php';
+        include './menu2.php';
 
         if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
@@ -60,10 +64,12 @@ print_r($_SESSION['kategorie']);
              * 
              * 
              */
+            include './loggedIn.php';
 
-            include './indexlogin.php';
         } else {
-            include './forms/loginForm.php';
-            include './forms/registerForm.php';
+            /*include './forms/loginForm.php';
+            include './forms/registerForm.php';*/
+            
+            include './landingPage.php';
         }
         ?>
