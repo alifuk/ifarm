@@ -22,7 +22,7 @@ while ($stmt->fetch()) {
     //echo $Idecko;
     $prihlasen = true;
     $_SESSION['user'] = $Idecko;
-    $_SESSION['name'] = $jmeno . " " . $prijmeni;
+    $_SESSION['name'] = $jmeno;
 
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 
