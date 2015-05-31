@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<!-- Mirrored from app.claas.com/2015/tractors/cz/kontakt.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:55:10 GMT -->
+<head>
+        <title>CLAAS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="WT.cg_n" content="Traktorenkampagne" />
+        <meta name="WT.cg_s" content="CZ_INT: Kontakt" />
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="../images/favicon.gif" type="image/gif" />
+<link href="../css/main4a.css" rel="stylesheet" type="text/css" />
+<link href="../css/main-responsive4.css" rel="stylesheet" type="text/css" />
+<link href="../css/responsive-layout4.css" rel="stylesheet" type="text/css" />
+<link href="../css/story4.css" rel="stylesheet" type="text/css" />
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="../scripts/skrollr.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
+
+<!-- Adserver Zählpixel -->
+<script type="text/javascript" src="../../../../cdn.flashtalking.com/container/6209/js/ftspot.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+	var u="http://claas-piwik.profile-webservice.de/";	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() { 
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 1]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	<noscript><p><img src="http://claas-piwik.profile-webservice.de/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+		
+	    $('.image-link').magnificPopup({type:'image'});
+        $('.iframe-link').magnificPopup({
+          disableOn: 1040,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          fixedContentPos: true
+        });
+		$('.gallery-item').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+		$('.gallery-item2').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+        $('.wallpaper-link').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'ratio169',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+
+	  
+//=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
+(function($){
+  $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -66
+      }, 1);
+  });
+
+})(jQuery);
+
+
+// =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
+(function($) {
+ 	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -66
+	        }, 1500);
+	        return false;
+	      }
+	    }
+  	});
+})(jQuery);
+	  
+	  
+
+	
+	$(".world-link").click(function(event){	
+		$('#weltkarte').toggle();
+	});
+	$("#weltkarte").mouseleave(function(event){	
+		$("#weltkarte").hide();
+	});
+	
+
+	
+	$("#sprachauswahl-link").click(function(event){	
+		$('#sprachauswahl-sub').toggle();
+	});
+	$("#sprachauswahl-sub").mouseleave(function(event){	
+		$("#sprachauswahl-sub").hide();
+	});
+	
+	
+	$("#menu").click(function(event){	
+		$('#navi').toggle();
+	});
+	
+	
+	resizeContent();
+	$(window).resize(function() {
+		resizeContent();
+	});
+	function resizeContent() {
+		var breite = $(window).width();
+		var hoehe = $(window).height();
+
+		if(breite<1280){
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","none");
+			});
+			$('#navi').css("display","none");
+		} else {
+			$('#navi').css("display","block");
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","block");
+			});
+			$( "#submenu-link" )
+			.mouseover(function() {
+				$('#submenu').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu').css("display","none");
+			});
+			$( "#submenu-link2" )
+			.mouseover(function() {
+				$('#submenu2').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu2').css("display","none");
+			});
+		}
+	}	
+	
+	$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed:5});
+	
+});
+</script>
+
+
+<!-- Custom Scrollbar -->
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+	$(window).load(function(){
+		$(".tablecontent").mCustomScrollbar({
+			axis:"x",
+			theme:"dark-3",
+			scrollButtons:{enable:true}
+		});
+	});
+})(jQuery);
+</script>		<script type="text/javascript">
+$(document).ready(function() {
+	var insideIframe = (window.location != window.parent.location) ? true : false;
+	if (insideIframe==true){
+		$('#iframecontent').removeClass("isIframe");
+	} else {
+		$('#iframecontent').addClass("isIframe");
+	}
+});
+</script>        <link href="../css/pm_kontakt.html" rel="stylesheet" type="text/css" /><!--[if IE ]><link href="../css/pm_kontakt_ie.css" rel="stylesheet" type="text/css" /><![endif]--> <script type="text/javascript" src="../scripts/jquery.validate.min.js"></script>        <script language="javascript">
+		//<![CDATA[
+		$(document).ready(function() {
+		
+
+			$("#pmKontaktForm").validate({
+				ignore: "input[type=hidden], .ignore",
+				rules: { vorname: { required: true } , nachname: { required: true } , adresse: { required: true } , plz: { required: true } , ort: { required: true } , telefon: { required: true } , anschrift: { required: true } , maschinenbestand: { required: true } , hektar: { required: true } , tierbestand: { required: true } , mitarbeiterzahl: { required: true } , teilnahmebedingungen: {  required: true  } , 'mycaptcha[input]': {  required: true  } },
+				messages: {
+				vorname: {  required: "Prosím, zadejte své křestní jméno." }  ,
+				nachname: {  required: "Prosím, zadejte své příjmení." }  ,
+				adresse: {  required: "Prosím, zadejte svoji adresu." }  ,
+				plz: {  required: "Prosím, zadejte PSČ." }  ,
+				ort: {  required: "Prosím, zadejte město." }  ,
+				telefon: {  required: "Prosím, zadejte své telefonní číslo." }  ,
+				anschrift: {  required: "Prosím, zadejte svoji adresu a/nebo souřadnice Vašeho podniku." }  ,
+				maschinenbestand: {  required: "Prosím, zadejte používané stroje Vašeho podniku." }  ,
+				hektar: {  required: "Prosím, zadejte velikost Vašeho podniku v hektarech." }  ,
+				tierbestand: {  required: "Prosím, zadejte chovaná hospodářská zvířata Vašeho podniku." }  ,
+				mitarbeiterzahl: {  required: "Prosím, zadejte počet zaměstnanců Vašeho podniku." }  ,
+				teilnahmebedingungen: {  required: "Prosím, potvrďte souhlas s podmínkami účasti." }  ,
+				'mycaptcha[input]': {  required: "Zadejte, prosím, znaky z obrázku." }  },
+				errorElement: "div", 
+				invalidHandler: function(event, validator) { checkWindowDimensions(); },
+				
+                errorPlacement: function(error, element) { 
+                    
+                if (element.attr("id") == "captcha-input" )
+                        error.appendTo(element.parent());
+                //Radio Group und Multi-Checkbox bekommen beide die gleiche Klasse    
+                else if (element.hasClass("multiCheckBox")){
+                        var superValue=element.attr("name");
+                        superValue=superValue.substr(0, (superValue.length-2));
+                        error.appendTo($("#"+superValue+"_error"));
+                    }
+                    else 
+                        error.appendTo(element.parent().parent().next().children(".tdInputError"));
+                }
+            });
+
+
+            //Bild rechts einblenden
+            $('#imageRight').show();
+                    //Captcha Reload-Function
+                    $('.formRowCaptcha .description').click(function() {
+            $.ajax({
+            url: '../scripts/ajax/getCaptcha.php',
+                    type: "POST",
+                    success: function(data) {
+                    var json = $.parseJSON(data);
+                            $('#pmKontaktForm img').attr('src', json.src);
+                            $('#mycaptcha-id').attr('value', json.id);
+                    }
+            });
+            });
+        });
+		
+		function checkWindowDimensions() {
+			$(".tdLabelText").each(function (index) {
+				if($(this).html()=="&nbsp;") {
+					$(this).html('');
+				}
+			});
+		}
+		//]]>
+		</script>
+
+
+
+
+        <!-- PLUPLOAD -->
+
+        <link rel="stylesheet" href="../css/jquery.plupload.queue.css" type="text/css" media="screen" />
+
+        <!-- production -->
+        <script type="text/javascript" src="../scripts/plupload.full.min.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.plupload.queue.js"></script>
+        <script type="text/javascript" src="../scripts/jquery.plupload.queue.min.js"></script>
+
+        <script type="text/javascript" src="../scripts/moxie.js"></script>
+        <script type="text/javascript" src="../scripts/plupload.dev.js"></script>
+        <script type="text/javascript" src="../scripts/plupload/i18n/cz.js"></script>
+    </head>
+
+<body class="language-CZ iframebody">
+<!-- start iframecontent -->
+	<div id="iframecontent">
+	<a href="index.html" id="closepopup"></a>
+		<form id="pmKontaktForm" enctype="multipart/form-data" class="completeForm" action="#kontaktformular" method="post">
+
+<p id="pfm-hinweis">Pole označená  * jsou povinná.</p>
+
+<div id="formLeft">
+
+<p id="pfm-angaben_person">Osobní údaje</p>
+
+<div class="formRow" id="formRowVorname"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="vorname" class="required labelInputText">Křestní jméno *</label> </td><td class="tdInputText"><input type="text" name="vorname" id="vorname" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowNachname"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="nachname" class="required labelInputText">Příjmení *</label> </td><td class="tdInputText"><input type="text" name="nachname" id="nachname" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowAdresse"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="adresse" class="required labelInputText">Ulice / číslo popisné *</label> </td><td class="tdInputText"><input type="text" name="adresse" id="adresse" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowPlz"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="plz" class="required labelInputText">PSČ *</label> </td><td class="tdInputText"><input type="text" name="plz" id="plz" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowOrt"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="ort" class="required labelInputText">Město *</label> </td><td class="tdInputText"><input type="text" name="ort" id="ort" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowTelefon"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="telefon" class="required labelInputText">Telefon *</label> </td><td class="tdInputText"><input type="text" name="telefon" id="telefon" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+</div><div id="formRight">
+
+<p id="pfm-angaben_flaeche">Údaje o Vašem podniku</p>
+
+<div class="formRow" id="formRowAnschrift"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="anschrift" class="required labelInputText">Adresa a/nebo geografické údaje podniku *</label> </td><td class="tdInputText"><input type="text" name="anschrift" id="anschrift" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<p id="pfm-angaben_betrieb">Detailnější informace o podniku</p>
+
+<div class="formRow" id="formRowMaschinenbestand"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="maschinenbestand" class="required labelInputText">Používané stroje *</label> </td><td class="tdInputText"><input type="text" name="maschinenbestand" id="maschinenbestand" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowHektar"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="hektar" class="required labelInputText">Počet hektarů *</label> </td><td class="tdInputText"><input type="text" name="hektar" id="hektar" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowTierbestand"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="tierbestand" class="required labelInputText">Hospodářská zvířata *</label> </td><td class="tdInputText"><input type="text" name="tierbestand" id="tierbestand" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowMitarbeiterzahl"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="mitarbeiterzahl" class="required labelInputText">Počet zaměstnanců *</label> </td><td class="tdInputText"><input type="text" name="mitarbeiterzahl" id="mitarbeiterzahl" value="" helper="formText" class="inputrequired fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div class="formRow" id="formRowSonstiges"><table cellpadding="0" cellspacing="0" class="tableTextInput"><tr><td class="tdLabelText"><label for="sonstiges" class="labelInputText">Ostatní</label> </td><td class="tdInputText"><input type="text" name="sonstiges" id="sonstiges" value="" helper="formText" class="fieldInputText" /></td></tr><tr><td class="tdLabelText">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+</div>
+
+<div id="uploader">
+            <p>Your browser doesn't have Flash, Silverlight or HTML5 support.</p>
+        </div>
+
+        <script type="text/javascript">
+            $(function() {
+                // Setup html5 version
+                $("#uploader").pluploadQueue({
+                    // General settings
+                    runtimes: 'html5,flash',
+                    url: '../include/upload.php',
+                    max_file_size: '6mb',
+                    chunk_size: '2mb',
+                    //unique_names: true,
+                    
+                    // Resize images on clientside if we can
+                    //resize: {width: 320, height: 240, quality: 90},
+                    
+                    // Specify what files to browse for
+                    filters:   [
+                    {title : "Bilder", extensions : "jpg,png,gif,jpeg"}
+                    //{title : "Video files", extensions : "mp4,mov,avi"}
+                    ],
+                    
+                    // Flash settings
+                    flash_swf_url: '../scripts/Moxie.swf',
+
+                });
+
+            });
+        </script>
+
+<div class="formRow" id="formRowTeilnahmebedingungen"><table cellpadding="0" cellspacing="0" class="tableCheckbox"><tr><td class="tdCheck"><input type="hidden" name="teilnahmebedingungen" value="" /><input type="checkbox" name="teilnahmebedingungen" id="teilnahmebedingungen" value="Ja" helper="formCheckbox" class="inputrequired fieldCheckbox" /></td><td class="tdLabelCheck"><label for="teilnahmebedingungen" class="required labelCheckbox"><a id="teilnahmebedingungen_link" href="#" onClick="javascript:return false;">Souhlasím s podmínkami účasti</a><script type="text/javascript">
+                    $(document).ready(function() {
+                        var visible = false;
+                        
+                        $("#teilnahmebedingungen_link").click( function() {
+                            if(visible == false) {
+                                $("#teilnahmeDiv").slideDown(1000);
+                                visible = true;
+                            } else {
+                                $("#teilnahmeDiv").slideUp(1000);
+                                visible = false;
+                            }
+                        });
+                    });
+                </script>
+                 *</label></td></tr><tr><td class="tdCheck">&nbsp;</td><td class="tdInputError"></td></tr></table></div>
+
+<div id="teilnahmeDiv" style="display: none"><h1>Podmínky účasti</h1>
+<h2>Kampaň: „Skutečně kvalitní práce. Traktory CLAAS.“</h2>
+<p>Hledáme zemědělce a / nebo dodavatele služeb (muže / ženy) z celého světa, kteří by chtěli poskytnout svůj podnik a své zemědělské plochy pro kampaň CLAAS. Zúčastnit se nemohou účastníci ze Spojených států amerických. Kampaň je řízena společností CLAAS KGaA mbH, Münsterstraße 33, 33428 Harsewinkel, Německo.</p>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h1>Podmínky účasti podrobně:</h1>
+<h2>Kdo se smí zúčastnit?</h2>
+<p>Zúčastnit se mohou všichni zemědělci a dodavatelé služeb ve věku od 18 do 99 let, kteří jsou plně způsobilí k právním úkonům. Právnické osoby se nemohou zúčastnit.<br />
+Každá osoba může podat pouze jednu žádost.<br />
+CLAAS si vyhrazuje právo vyloučit každého, kdo podmínky účasti poruší.</p>
+
+<p>&nbsp;</p>
+
+<h2>Jak se můžete zúčastnit?</h2>
+<p>Podmínkou je, že je žádost spolu s digitálními obrazovými soubory poslána přes online formulář na https://www.traktoren.claas.com<br />
+Dokumenty žádosti musejí plně odpovídat požadovaným údajům uvedeným ve formuláři a účastníci musejí potvrdit, že si tyto podmínky účasti přečetli a přijímají je.</p>
+<p>&nbsp;</p>
+<p>Žádosti podané jiným způsobem, např. fotografie nebo digitální obrazové nosiče podobného formátu zaslané poštou, nejsou povoleny. Všechny žádosti podané tímto způsobem nebudou zasílány zpět a budou zničeny.</p>
+
+<p>&nbsp;</p>
+
+<h2>Co byste měli předložit?</h2>
+<p>Každý zemědělec / dodavatel služeb může požádat o účast v kampani s aktuálními fotografiemi (snímky nesmí být starší 12 měsíců) sebe a své farmy, svých hospodářských zvířat, ploch, svých traktorů a zemědělských strojů značky CLAAS a s krátkým komentářem (max. 1000 znaků). V krátkém komentáři by měl být stručně popsán Váš podnik a skutečně kvalitní práce, kterou děláte každý den.</p>
+<p>&nbsp;</p>
+<p>Obrázky a údaje musejí být předloženy v digitálním formátu přes online formulář prostřednictvím stránek http://www.traktor.claas.com<br />
+Snímky musejí mít rozlišení nejméně 72 dpi, nesmějí překročit rozměry 1600 x 1200 pixelů pro snímky na šířku, resp. 1200 x 1600 pixelů na výšku a měly by být uloženy ve formátu JPEG. Maximální velikost je 2 MB.</p>
+<p>&nbsp;</p>
+<p>Snímky budou během nahrávání opatřeny požadovanými údaji o účastníkovi (adresa, e-mail, stručný popis snímku, název snímku a datum nahrávání) a tímto způsobem budou uloženy ve speciální databázi CLAAS. Údaje se zapisují do odpovídajících polí formuláře.</p>
+
+<p>&nbsp;</p>
+
+<h2>Uzávěrka přihlášek</h2>
+<p>Uzávěrka pro podání přihlášek je 30. 12. 2015, ve 24:00 hod. GMT.  Na snímky zaslané po tomto termínu nebude brán zřetel.</p>
+
+<p>&nbsp;</p>
+
+<h2>Kdo rozhodne?</h2>
+<p>Podání přihlášky není potvrzením a/nebo závazkem k tomu, že bude natáčení probíhat ve Vašem podniku.<br />
+Oddělení Corporate Marketing firmy CLAAS KGaA mbH vybere účastníky svobodně, na základě vlastního uvážení. Právo na odvolání je vyloučeno.</p>
+
+<p>&nbsp;</p>
+
+<h2>Výhra</h2>
+<p>Osoby, vybrané společností CLAAS Corporate Marketing, budou včas informovány. Další dohody a ujednání s ohledem na případné natáčení budou probíhat přímo se zemědělcem / dodavatelem služeb.<br />
+Při natáčení a dosažení odpovídajícího úspěchu budou filmové snímky a fotografie zveřejněny po celém světě v tisku, na internetu a veletrzích, stejně tak i u obchodních partnerů CLAAS.<br />
+Zemědělci/dodavatelé služeb, kteří budou vybráni, vyfotografováni a natočeni, obdrží jako dík dárek na nákup zboží v CLAAS Fan Shopu v hodnotě 80 Euro. Vyplacení v hotovosti není možné.<br />
+Podáním přihlášky souhlasí účastníci s bezplatným využitím všech filmových snímků a fotografií, pořízených během natáčení.</p>
+
+<p>&nbsp;</p>
+
+<h2>Copyright</h2>
+<p>Účastník se zasláním obrazových souborů zaručuje, že on nebo ona disponuje všemi právy vztahujícími se na předložené snímky, má neomezené právo použít všechny části obrazu, stejně tak že nedochází k porušování práv při zobrazení osob(y). Pokud je na snímcích zobrazena jedna nebo více osob, zaručuje účastník, že dotyčné osoby souhlasí s použitím snímků v rámci reklamní kampaně.<br />
+Obrazové soubory, které byly upraveny pomocí počítače, nesmějí obsahovat žádné obrazové části z novin, knih, zakoupených CD apod.<br />
+Pokud by měl být ze třetí strany uplatňován nárok z důvodu porušení jejich práv, uvolňuje účastník (účastnice) společnost CLAAS ze všech pohledávek, a CLAAS si vyhrazuje právo odstranit sporné snímky a vyřadit je z účasti.</p>
+
+<p>&nbsp;</p>
+
+<h2>Stanovení práv</h2>
+<p>Účastník přizná společnosti CLAAS KGaA mbH, jakožto pořadateli, v rámci kampaně omezené právo na využití předložených obrazových souborů z hlediska prostoru, času a obsahu (včetně práva upravovat zaslané obrázky a fotografie předložené pro účely kampaně, informovat o nich, zveřejňovat je, apod.).</p>
+<p>&nbsp;</p>
+<p>Jakmile bude vybrán účastník kampaně, přizná společnosti CLAAS KGaA mbH neomezené výhradní právo na užívání z hlediska prostoru, času a obsahu na vytvořené snímky a filmový materiál související s kampaní, zejména právo na zpracování, zobrazení a kopírování v tiskových a internetových médiích, jako např. prostřednictvím inzerátů, prospektů, banerů, apod.</p>
+
+<p>&nbsp;</p>
+
+<h2>Ukládání dat</h2>
+<p>Podáním přihlášky účastníci prohlašují, že souhlasí s využitím a ukládáním jejich dat a obrazových souborů výhradně pro účely této kampaně.<br />
+Při natáčení mohou být osobní údaje vybraných účastníků při uveřejnění snímků v rámci kampaně, stejně jako všechny zprávy, tisková sdělení apod. související s kampaní, předány třetím osobám podílejícím se na kampani, jako například redaktorům časopisů.<br />
+Všechny předložené obrazové soubory a osobní údaje budou, není-li výslovně dohodnuto jinak, po ukončení kampaně vymazány.</p>
+
+<p>&nbsp;</p>
+
+<h2>Ručení</h2>
+<p>Společnost CLAAS KGaA mbH nepřebírá žádnou odpovědnost za ztrátu, nebo případné poškození na zaslaných obrázcích.</p>
+
+<p>&nbsp;</p>
+
+<h2>Ostatní</h2>
+<p>Jsou, nebo stanou-li se jednotlivé podmínky neplatné, zůstávají ostatní podmínky nedotčeny.<br />
+CLAAS může kampaň v případě vážného důvodu kdykoliv ukončit.<br />
+Právo na odvolání je vyloučeno.<br />
+Smluvní vztah a z něj vyplývající právní vztahy se řídí výhradně právem Spolkové republiky Německo.</p>
+
+<p>&nbsp;</p>
+
+<p>Status: Srpen 2014</p></div>
+<fieldset id="fieldset-capbox" class="spamprotect"><legend>Ochrana proti spamu</legend>
+
+<label for="mycaptcha-input" class="captchaLabel required">Prosím, zadejte znaky z obrázku.</label>
+<div class="formRowCaptcha">
+<img width="200" height="80" alt="" src="../images/captcha/f8ae9d827aa8f116729d7d598e8f24e7.html" />
+<input type="hidden" name="mycaptcha[id]" value="f8ae9d827aa8f116729d7d598e8f24e7" class="captchaInput" id="mycaptcha-id" />
+<input type="text" name="mycaptcha[input]" id="mycaptcha-input" value="" class="captchaInput" />
+<p class="description">Načíst nový obrázek</p></div></fieldset>
+<fieldset id="fieldset-submitta" class="formControl">
+<div class="formRowControl">
+<input type="submit" name="submit" id="submit" value="Odeslat" onclick="_paq.push(['trackEvent', 'CZ-Mitmachenformular', 'Senden']);" class="inputSubmit" /></div></fieldset></form>	</div>
+<script type="text/javascript" src="../../../webtrends/CLAAS-Webtrends-301-news2010.js"></script>
+<noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcsipnyxyw4w0mqr2tl6jfm2y_9j9h/njs06ed.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.3" /></noscript>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2014 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 4.1  -->
+<!-- Created: 12/15/2014 11:47:26 AM -->
+<script src="../../../webtrends/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcshpbj3f6la0n8yzsefg0gh9_6s4o/njsac09.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.app.claas.com"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->    </body>
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/kontakt.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:55:42 GMT -->
+</html>

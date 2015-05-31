@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+#closepopup{display: none;}
+.isIframe #closepopup{display: block;}
+
+@media screen and (orientation:portrait) {
+	.mfp-iframe-scaler {
+		padding-top: 100% !important;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.cycle-prev{
+		left: 0px;
+	}
+	.cycle-next{
+		right: 0px;	
+	}
+	
+	.story-bilder{
+		height: auto;
+	}
+	
+	#menu{
+		font-size: 17px;
+		display:block;
+		float: right;
+		cursor: pointer;
+		background: transparent url(../images/menu-icon.png) 0px 8px no-repeat;
+		padding-left: 26px;
+		height: 30px;
+		line-height: 30px;
+	}
+	#navi{
+		display:none;
+	}
+	#navi{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50px;
+		background: #fff;
+		width: 100%;
+		box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.8);
+		z-index: 1;
+	}
+	#navi ul{
+		display: block;
+		padding: 0 20px;
+	}
+	#navi ul li{
+		display: block;
+		float: none;
+	}
+	#navi ul li a{
+		display: block;
+		padding: 10px 0;
+		border-top: 1px solid #ddd;
+	}
+	#navi li:first-child a{
+		border-top: none;
+	}
+	#navi #submenu,
+	#navi #submenu2{
+		background: none;
+		box-shadow: none;
+		display: block !important;
+		padding: 0;
+		margin: -8px 0 10px 0;
+		position: relative;
+	}
+	#navi #startseite-link{
+		display: block;
+	}
+	#header-left{float: none;}
+	/*#header-right{display: none;}*/
+	.world-link {display: none;}
+	#sprachauswahl-head {
+		margin: 5px 40px 0 0;
+	}
+	
+	.chronik {
+		bottom: 20px;
+	}
+	
+	#bilder-box p{
+		margin-left: 0;
+	}
+	#bilder-box .cycle-slideshow{
+		width: 90%;
+		margin-left: 5%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+
+	
+	.story-einleitung{
+		width: 100%; float: none;
+	}
+	.story-bilder{
+		margin-top: 30px;
+		width: 100%; float: none;
+	}
+	.story-teaser{
+		margin-left: 2%;
+		width: 32%;
+	}
+	.story-teaser:first-child {
+		margin-left: 0;
+	}
+	
+	#formLeft {
+		width: 100%;
+		float: left;
+	}
+	
+	#formRight {
+		width: 100%;
+		float: left;
+		margin-left: 0;
+	}
+	
+	.tdLabelText {
+		width: 23%;
+	}
+	
+	#formLeft,
+	#formRight{
+		margin: 15px 0 0 0;
+	}
+	
+	.pfeil {
+		display: none;
+	}
+	.arrow-up{
+		width: 30px;
+		height: 15px;
+		background-size: 30px auto;
+		background-position: 0px -15px;
+	}
+	.arrow-up.grau{
+		width: 30px;
+		height: 15px;
+		background-size: 30px auto;
+		background-position: 0px 0px;
+	}
+	.chronik {
+		font-size: 40px;
+		bottom: 20px;
+	}
+	#allstories .story {
+		width: 31%;
+		margin: 0 1%;
+	}
+	#genesis h1 {
+		font-size: 30px;
+	}
+	#intro-headline h1 {
+		font-size: 34px;
+		padding-bottom: 2px;
+	}
+	#intro-headline h2 {
+		font-size: 22px;
+	}
+	
+	#bilder-box .bilder-item{
+		width: 46%;
+		margin: 0 2% 20px 2%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	#sprachauswahl-head {
+		margin-right: 20px;
+	}
+	.tdLabelText {
+		width: 100%!important;
+		float: left;
+		margin: 0 0 2px 0;
+	}
+	
+	.tdLabelText:empty {
+		display:none;
+	}
+	
+	.tdInputText {
+		width: 100%;
+		float: left;
+	}
+	
+	.tdInputError{
+		float: left;
+	}
+	
+	#mycaptcha-input,
+	.inputSubmit {
+		width: 100%;
+	}
+
+	#allstories .story .storyframe{
+		background: none;
+		padding-left: 0;
+	}
+	#allstories .story .titel {
+		font-size: 14px;
+	}
+	#allstories .story .text {
+		font-size: 11px;
+	}
+	
+	.chronik{
+		font-size: 30px;
+		bottom: 10px;
+	}
+	#genesis h1 {
+		font-size: 20px;
+	}
+	h1{
+		font-size: 20px;
+	}
+	
+	#location {
+		font-size: 20px;
+	}
+	
+	#story1, #story2, #story3 {
+		padding-top: 60px;
+	}
+	#story1 h2, #story2 h2, #story3 h2{
+		font-size: 18px;
+	}
+	
+
+	
+}
+
+
+@media screen and (max-width: 540px) {
+	#sprachauswahl-link {
+		overflow: hidden;
+		width: 20px;
+		padding-left: 20px;
+		color: #fff;
+	}
+	#logo img{
+		width: 130px;
+		margin-top: 5px;
+	}
+	.story-bilder{
+		display: none;
+	}
+	.chronik {
+		font-size: 20px;
+		bottom: 5px;
+	}
+	#allstories .story {
+		margin: 0 0 20px 0;
+		width: 100%;
+	}
+	#allstories .story .text {
+		font-size: 14px;
+	}
+	#allstories .story .storyframe {
+		margin-top: 4px;
+	}
+	
+	#bilder-box .cycle-slideshow{
+		width: 80%;
+		margin-left: 10%;
+	}
+	#bilder-box .bilder-item{
+		width: 100%;
+		margin: 0 0 20px 0;
+	}
+	
+}

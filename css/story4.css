@@ -1,0 +1,77 @@
+#intro-bg{
+	background-image: url();
+}
+#story-image2-bg{
+	background-image: url(../images/story-frankreich/kampagnenmotiv.jpg);
+}
+#story-image3-bg{
+	background-image: url(../images/story-schweiz/kampagnenmotiv.jpg);
+}
+
+
+@media screen and (max-width: 1400px) {
+	#intro-bg{
+		background-image: url();
+	}
+	#story-image2-bg{
+		background-image: url(../images/story-frankreich/kampagnenmotiv_medium.jpg);
+	}
+	#story-image3-bg{
+		background-image: url(../images/story-schweiz/kampagnenmotiv_medium.jpg);
+	}
+	#allegeschichten div{
+		background-image: url(../images/_medium/allegeschichten.jpg);
+	}
+	#parallax-bild1 div{
+		background-image: url(../images/_medium/bg-year2.jpg);
+	}
+	#parallax-bild2 div{
+		background-image: url(../images/_medium/bg-year3.jpg);
+	}
+	#parallax-bild3 div{
+		background-image: url(../images/_medium/bg-year4.jpg);
+	}
+	#bewerbung-bild div{
+		background-image: url(../images/_medium/bewerbung.jpg);
+	}
+	#genesis-bild div {
+		background-image: url(../images/_medium/bewerbung2.jpg);
+	}
+	#bilder-bild div {
+		background-image: url(../images/_medium/bilder.jpg);
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	#intro-bg{
+		background-image: url(../images/story-norwegen/kampagnenmotiv_low.jpg);
+	}
+	#story-image2-bg{
+		background-image: url(../images/story-frankreich/kampagnenmotiv_low.jpg);
+	}
+	#story-image3-bg{
+		background-image: url(../images/story-schweiz/kampagnenmotiv_low.jpg);
+	}
+	#allegeschichten div{
+		background-image: url(../images/_low/allegeschichten.jpg);
+	}
+	#parallax-bild1 div{
+		background-image: url(../images/_low/bg-year2.jpg);
+	}
+	#parallax-bild2 div{
+		background-image: url(../images/_low/bg-year3.jpg);
+	}
+	#parallax-bild3 div{
+		background-image: url(../images/_low/bg-year4.jpg);
+	}
+	#bewerbung-bild div{
+		background-image: url(../images/_low/bewerbung.jpg);
+	}
+	#genesis-bild div {
+		background-image: url(../images/_low/bewerbung2.jpg);
+	}
+	#bilder-bild div {
+		background-image: url(../images/_low/bilder.jpg);
+	}
+}

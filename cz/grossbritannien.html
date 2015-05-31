@@ -1,0 +1,633 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/grossbritannien.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:47:49 GMT -->
+<head>
+<title>Kvalitní práce. S traktory CLAAS.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="WT.cg_n" content="Traktorenkampagne" />
+<meta name="WT.cg_s" content="CZ_INT: Großbritannien" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="../images/favicon.gif" type="image/gif" />
+<link href="../css/main4a.css" rel="stylesheet" type="text/css" />
+<link href="../css/main-responsive4.css" rel="stylesheet" type="text/css" />
+<link href="../css/responsive-layout4.css" rel="stylesheet" type="text/css" />
+<link href="../css/story4.css" rel="stylesheet" type="text/css" />
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="../scripts/skrollr.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
+
+<!-- Adserver Zählpixel -->
+<script type="text/javascript" src="../../../../cdn.flashtalking.com/container/6209/js/ftspot.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+	var u="http://claas-piwik.profile-webservice.de/";	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() { 
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 1]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	<noscript><p><img src="http://claas-piwik.profile-webservice.de/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+		
+	    $('.image-link').magnificPopup({type:'image'});
+        $('.iframe-link').magnificPopup({
+          disableOn: 1040,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          fixedContentPos: true
+        });
+		$('.gallery-item').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+		$('.gallery-item2').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+        $('.wallpaper-link').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'ratio169',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+
+	  
+//=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
+(function($){
+  $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -66
+      }, 1);
+  });
+
+})(jQuery);
+
+
+// =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
+(function($) {
+ 	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -66
+	        }, 1500);
+	        return false;
+	      }
+	    }
+  	});
+})(jQuery);
+	  
+	  
+
+	
+	$(".world-link").click(function(event){	
+		$('#weltkarte').toggle();
+	});
+	$("#weltkarte").mouseleave(function(event){	
+		$("#weltkarte").hide();
+	});
+	
+
+	
+	$("#sprachauswahl-link").click(function(event){	
+		$('#sprachauswahl-sub').toggle();
+	});
+	$("#sprachauswahl-sub").mouseleave(function(event){	
+		$("#sprachauswahl-sub").hide();
+	});
+	
+	
+	$("#menu").click(function(event){	
+		$('#navi').toggle();
+	});
+	
+	
+	resizeContent();
+	$(window).resize(function() {
+		resizeContent();
+	});
+	function resizeContent() {
+		var breite = $(window).width();
+		var hoehe = $(window).height();
+
+		if(breite<1280){
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","none");
+			});
+			$('#navi').css("display","none");
+		} else {
+			$('#navi').css("display","block");
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","block");
+			});
+			$( "#submenu-link" )
+			.mouseover(function() {
+				$('#submenu').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu').css("display","none");
+			});
+			$( "#submenu-link2" )
+			.mouseover(function() {
+				$('#submenu2').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu2').css("display","none");
+			});
+		}
+	}	
+	
+	$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed:5});
+	
+});
+</script>
+
+
+<!-- Custom Scrollbar -->
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+	$(window).load(function(){
+		$(".tablecontent").mCustomScrollbar({
+			axis:"x",
+			theme:"dark-3",
+			scrollButtons:{enable:true}
+		});
+	});
+})(jQuery);
+</script><link href="../css/story.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="language-CZ" onload="callFT('CZ_02_Stories');">
+<div id="top"></div>
+<div id="bg" style="background-image: url(../images/story-grossbritannien/bg.jpg);"></div>
+<div id="wrapper">
+<!-- start header -->
+	<div id="header">
+		<div id="header-content" class="inner">
+			<div id="header-left">
+				<div id="logo">
+					<a href="index.html" onclick="callFT('CZ_01_Landingpage'); _paq.push(['trackEvent', 'CZ-Navigation', 'Progression']);"><img src="../images/header_claas-progression.png" border="0" /></a>
+				</div>
+				<div id="navi">
+					<ul>
+						<li id="startseite-link"><a href="index.html" onclick="callFT('CZ_01_Landingpage');">Úvodní stránka</a></li>
+						<li id="submenu-link"><a href="javascript:void();" class="scroll">Příběhy</a>
+							<ul id="submenu">
+								<li><a href="norwegen.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Norwegen']);">Norsko</a></li>
+								<li><a href="frankreich.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Frankreich']);">Francie</a></li>
+								<li><a href="schweiz.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Schweiz']);">Švýcarsko</a></li>
+								<li><a href="grossbritannien.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Grossbritannien']);">Velká Británie</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html#bilder" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">Obrázky</a></li>
+						<li><a href="index.html#mitmachen" class="scroll" onclick="callFT('CZ_03_Takepart'); _paq.push(['trackEvent', 'CZ-Navigation', 'Mitmachen']);">Chci se přidat</a></li>
+						<li><a href="index.html#traktoren" class="scroll" onclick="callFT('CZ_04_Tractors'); _paq.push(['trackEvent', 'CZ-Navigation', 'Traktoren']);">Traktory</a></li>
+						<li id="submenu-link2"><a href="javascript:void();">Kontakt</a>
+							<ul id="submenu2">
+								<li><a href="#newsletter" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'NewsletterAnmeldung']);">Registrace k odběru novinek</a></li>
+								<li><a href="http://confirm-excellentwork.claas.com/pages/cs/kontakt.phtml" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'IhreAnfrage']);">Váš požadavek</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="menu">Menu</div>
+			</div>
+			<div id="header-right">
+				<div id="sprachauswahl-head">
+					<a href="javascript:void();" id="sprachauswahl-link" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Sprache']);">Jazyk</a>
+					<div id="sprachauswahl-sub">
+	<ul>
+		<li><a href="index.html">Čeština</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/dk/index.php">Dansk</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/de/index.php">Deutsch</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/en/index.php">English</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/es/index.php">Español</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/fr/index.php">Français</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/it/index.php">Italiano</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/hu/index.php">Magyar</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/nl/index.php">Nederlandse</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/pl/index.php">Polski</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ro/index.php">Română</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ru/index.php">Русский</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/sk/index.php">Slovenčina</a></li>
+	</ul>
+</div>				</div>
+				<a href="javascript:void(0)" class="world-link" onclick="callFT('CZ_05_Map'); _paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte']);">Skutečně kvalitní<br/>práce po celém světě</a>
+			</div>
+		</div>
+		<div id="weltkarte">
+			<div class="inner">
+				<div class="weltkarte-links">
+					<img src="../images/weltkarte.png" />
+				</div>
+				<div class="weltkarte-rechts">
+					<div class="weltkarte-titel">Skutečně kvalitní práce po celém světě</div>
+					<img src="../images/weltkarte-verlauf.png" id="verlauf" />
+					<div class="weltkarte-scrollarea">
+						<a href="norwegen.html" class="neu" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Norwegen']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Norsko</div>
+							<div class="weltkarte-sub">"Sníh si nebere dovolenou."</div>
+						</div></a>
+						<a href="frankreich.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Frankreich']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Francie</div>
+							<div class="weltkarte-sub">"Vztah založený na vzájemné důvěře."</div>
+						</div></a>
+						<a href="schweiz.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Schweiz']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Švýcarsko</div>
+							<div class="weltkarte-sub">"Producent mléka s přesvědčením a láskou k přírodě."</div>
+						</div></a>
+						<a href="grossbritannien.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Grossbritannien']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Velká Británie</div>
+							<div class="weltkarte-sub">"11 měsíců sklizně v roce."</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Německo</div>
+							<div class="weltkarte-sub">19.06.2015</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Dánsko</div>
+							<div class="weltkarte-sub">08/2015</div>
+						</div></a>
+                        <a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Nizozemí</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Španělsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Austrálie</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Polsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<span id="abstand"></span>
+					</div>
+				</div>
+				<br class="breaker" />
+			</div>
+		</div>
+	</div><!-- stop header -->
+
+<!-- start content -->
+<div id="content" class="inner">
+    
+	<div class="abstand"> 
+		<img id="geo" src="../images/geo.png">
+		<div id="location">Velká Británie</div>
+		<div id="backlink"><a href="javascript:history.back();" class="" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Zurueck']);">« zpět k přehledu</a></div>
+        
+		<div class="artikel overflow einleitung">
+			<div class="artikel-links">
+					<div class="videoWrapper"><iframe src="http://www.youtube.com/embed/NPK2AFH1Gmc?showinfo=0&amp;rel=0&amp;controls=2&amp;wmode=transparent&amp;autoplay=0" width="160" height="90" frameborder="0" scrolling="no"></iframe></div>			</div>
+			<div class="artikel-rechts">
+				<div class="grauhg">
+					<table border="0" cellspacing="0" cellpadding="0" class="betriebsdaten">
+					  <tr>
+						<td colspan="2"><h3>Podnik Taylor's Bulbs, Holbeach, UK</h3></td>
+					  </tr>
+					  <tr>
+						<td colspan="2" ><h4 class="betrieb">O podniku</h4></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Založen v roce</p></td>
+						<td><p>1919</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Hospodářská zvířata</p></td>
+						<td><p>-</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Zaměstnanci</p></td>
+						<td><p>65 zaměstnanců pracujících ve výrobě květin a květinových cibulek.</p>
+						  <p>12 zaměstnanců pracujících v zemědělském podniku.</p>
+						  <p>250 - 300 pracovníků na výpomoc v období sklizně květin.</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Zemědělská plocha</p></td>
+						<td><p>800 hektarů, z toho</p>
+						  <p>170 ha květin a cibulovin</p>
+						  <p>220 ha pšenice</p>
+						  <p>90 ha brambor</p>
+						  <p>90 ha cukrové řepy</p>
+						  <p>200 ha zeleniny</p>
+						  <p>30 ha travnatých ploch a strnišť</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Střídání plodin</p></td>
+						<td><p>Květiny, květiny, zelenina, brambory, pšenice, zelenina, pšenice, cukrová řepa, pšenice, zelenina, pšenice</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Složení půdy</p></td>
+						<td><p>Bažinatá půda / naplavená zem</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Množství dešťových srážek za rok</p></td>
+						<td><p>400-450 mm za rok</p>
+						<p>V deštivém roce až 700 mm</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Používané stroje</p></td>
+						<td><p>4 traktory ARES 656 (v březnu 2015 budou nahrazeny čtyřmi traktory ARION 530)</p>
+							<p>3 traktory ARION 520</p>
+							<p>1 traktor ARION 640</p>
+							<p>1 traktor ARION 630</p>
+							<p>1 traktor AXION 950 (předváděcí stroj)</p>
+						</td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="geschichte" class="artikel">
+			<div class="artikel-links border-top">
+				<h2>11 měsíců sklizně v roce -  se zkušeností mnoha generací.</h2>
+				<p>&nbsp;</p>
+				<p>Příliš mladý! To bylo celkové zhodnocení Sama Taylora (37), když před dvanácti lety převzal rodinný podnik. „Když jsem ve svých pětadvaceti začal, byl jsem na zasedání zemědělců s odstupem nejmladší“, vzpomíná si. „Většina v místnosti byla ve věku 60 let a více.“</p>
+				<p>&nbsp;</p>
+				<p>Nyní provozuje vzdělaný zemědělec společně se svým bratrancem Adamem Taylorem (39) úspěšně po čtvrtou generaci podnik s názvem Taylor's Bulbs ve městě Holbeach, v regionu Lincolnshire. Podnik leží dvě hodiny jízdy autem severovýchodně od Londýna, v blízkosti východního pobřeží, na bažinatých půdách (naplavená zem) a patří zatím k největším producentům květinových cibulek ve Velké Británii. Velkou poctou je pro Taylorovi také to, že už více než 35 let dodávají květinové cibulky do britského královského paláce. Se dvanácti zaměstnanci pracujícími na plný úvazek a přibližně 30 pracovníky na výpomoc v období sklizně se Sam stará o celou zemědělskou část podniku. K tomu patří okolo 800 hektarů ploch pro pěstování květin, brambor, pšenice, cukrové třtiny a zeleniny. Jeho bratranec Adam Taylor je zodpovědný za prodej, marketing a balení květin a květinových cibulek. O tuto oblast podniku se stará přibližně 65 zaměstnanců a v období hlavní sezóny je na výpomoc přibíráno dalších cca. 300 pracovníků. Sklizeň řezaných rostlin je totiž ruční práce. Za rok je u Taylor's Bulbs sklizeno 2,5 milionů svazků řezaných květin ve sklenících a přibližně 25 milionů svazků přímo z polí. K tomu vyrobí balící stroje za jeden den cca. 20.000 balení květinových cibulek pro maloobchod. Kromě toho je velká část produkce stále balena ručně. V sezóně opustí podnik dobrých deset milionů balení květinových cibulek.</p></div>
+			<div class="artikel-rechts">
+				<img src="../images/story-grossbritannien/portrait.jpg" class="scaleimage" />
+			</div>          
+		</div>
+		<div class="artikel">
+			<div class="artikel-links">
+				<img src="../images/story-grossbritannien/bild-4.jpg" class="scaleimage" />
+			</div>
+			<div class="artikel-rechts border-top">
+				<h2>„Jsem na čerstvém vzduchu moc rád a mám to štěstí, že jsem svým vlastním šéfem, což moc lidí nemá.“</h2>
+				<p>&nbsp;</p>
+				<p>Nejraději je Sam Taylor venku na polích. „Jsem na čerstvém vzduchu moc rád a mám to štěstí, že jsem svým vlastním šéfem, což moc lidí nemá.“ Také proto je šťastný z rozhodnutí, že podnik, i přes veškeré odrazování ostatních, převzal. A má jasný cíl: „V Anglii se říká: ,První generace obchod začíná, druhá generace obchod buduje a třetí jej zruinuje.’ S naší firmou Taylor's Bulbs je to jinak, my jsme čtvrtá generace“, vysvětluje se smíchem. Jeho přáním je, aby také pátá generace dále pokračovala v podnikání.</p>
+				<p>&nbsp;</p>
+				<p>Aby se to podařilo, dbají bratranci především na dvě priority: spokojenost zaměstnanců a vysokou kvalitu výrobků. „Naši lidé jsou pro nás tím nejdůležitějším, bez nich bychom neměli co prodávat. Je naší úlohou starat se o to, aby zde byli spokojeni“, je přesvědčen Sam Taylor. Z toho důvodu vsadili on a jeho bratranec na politiku podpory a rozvoje, která zahrnuje mimo jiné program „Investors in People“ (IIP), jejichž standardy kvality Taylor's Bulbs dodržují a dle kterých je podnik každé dva roky ověřován.</p>
+</div>
+		</div>
+		<div class="artikel">
+			<div class="artikel-links border-top">
+				<h2>„Výzvou v pěstování květin je to, že jsou vyžadována velmi čistá a uklizená pole.“</h2>
+				<p>&nbsp;</p>
+			  <p>Zemědělský rok je pro Taylorovi jiný než v podnicích zaměřených na chov dobytka a zpracování půdy. Začíná v červnu sklizní narcisových cibulek. Poté následuje sklizeň obilí, brambor a cukrové třtiny. Mezitím jsou opět zasazeny cibuloviny, a na jaře je období sklizně řezaných květin. Tímto práce pokračuje do dubna následujícího roku a doba sklizně tak trvá celkem jedenáct měsíců.</p>
+<p>&nbsp;</p>
+			  <p>„Výzvou v pěstování květin je to, že jsou vyžadována velmi čistá a uklizená pole. Doposud nebyly vyvinuty téměř žádné chemické látky pro pěstování květin, resp. nebyly povoleny“, popisuje Sam Taylor hlavní důvod dlouhého časového období pěstování květin na jeho plochách - minimálně osm let.</p>
+			  <p>&nbsp;</p>
+				<p>Protože jsou květiny a květinové cibulky pěstovány v létě, kdy je počasí nejteplejší, probíhá zpracování půdy bezprostředně před jejich zasetím, aby bylo v půdě zachováno co nejvíce vlhkosti. Mimo jiné používá podnik v období sklizně obilí tak zvaný ‚minimální způsob zpracování půdy‘. V boji proti plevelu, tzv. psárce polní, využívají Taylorovi pro zpracování strniště dvanáctimetrový válec. Jeho přejetím semínko praskne a začne klíčit. Vzrostlý plevel je poté zničen použitím herbicidu a následným zpracováním půdy.</p>
+			  <p>&nbsp;</p>
+				<p>V zelinářství převládá pěstování květáku. Ten je sázen a sklízen dvakrát ročně a dodává zpět do půdy důležité zelené hnojivo v podobě listů. „Díky tomu je možné vyjít s menším množstvím minerálních hnojiv“ vysvětluje Sam Taylor výhodu pěstování zeleniny.</p>
+			</div>
+			<div class="artikel-rechts">
+				<img src="../images/story-grossbritannien/bild-9.jpg" class="scaleimage" />
+			</div>
+		</div>
+        <div class="artikel">
+			<div class="artikel-links">
+				<img src="../images/story-grossbritannien/bild-6.jpg" class="scaleimage" />
+			</div>
+		  <div class="artikel-rechts border-top">
+				<h2>„Ridiči se musejí cítit dobře. Traktor je vaše kancelář. Někteří v něm sedí celý den.“</h2>
+			<p>&nbsp;</p>
+		    <p>Aby byly splněny různorodé a zčásti i speciální požadavky podniku, je potřeba mít také prvotřídní stroje, na které se lze spolehnout. „Řidiči se musejí cítit dobře. Jejich kanceláří je vlastně jejich traktor, ti hoši jsou v něm po celý den. Sklízíme přece 11 měsíců v roce,“ říká Sam Taylor. Krátce po převzetí podniku vyměnil velkou část strojů. Původně se rozhodli pro traktory značky Renault. „S naším předchozím dodavatelem jsme už nebyli spokojeni, proto jsem se našich zaměstnanců zeptal, co by chtěli vyzkoušet, a oni chtěli zkusit Renault. No poté Renault koupila společnost CLAAS a my jsme dodnes zůstali věrni traktorům CLAAS. Zvláště proto, že moji lidé s nimi rádi pracují a proto, že servis je velmi, velmi důležitý. Protože pokud se něco stane, je třeba okamžitá pomoc“, popisuje Sam Taylor svá kritéria.</p>
+			<p>&nbsp;</p>
+				<p>Také kvalita výrobků, které opustí statek, je pro oba bratrance obzvláště důležitá. „Špatná kvalita je jednou koupena a podruhé už nikoli. V našem případě stojí kvalita před kvantitou“, vysvětluje Sam Taylor. To platí také pro budoucnost: „Nejde mi o to, dosáhnout maximálního výnosu a přitom zároveň zničit základ podniku. Místo toho bych chtěl pečovat o to, že zde bude každý dobře žít a zanecháme zemi v takovém stavu, v jakém jsme ji dostali. Potom můžeme podnik předat také páté generaci a ti se budou moci starat zase o svoji obživu.“</p>
+			</div>
+		</div>
+	</div>
+  <br class="breaker" />
+  		<div id="galerie">
+			<h1>Galerie obrázků</h1>
+			<div style="position: relative;">
+				<a href="#" id="prev1" class="cycle-prev"></a>
+				<a href="#" id="next1" class="cycle-next"></a>
+				<div class="cycle-slideshow" 
+				data-cycle-fx="scrollHorz"
+				data-cycle-swipe=true
+				data-cycle-speed="1000"
+				data-cycle-prev="#prev1"
+				data-cycle-next="#next1"
+				data-cycle-paused=true
+				data-cycle-slides="> div.cycle-group"
+				>
+					<div class="cycle-group">
+						<a href="../images/story-grossbritannien/galerie/1.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/1-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/2.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/2-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/3.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/3-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/4.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/4-t.jpg" class="scaleimage"></a>
+					</div>
+					<div class="cycle-group">
+						<a href="../images/story-grossbritannien/galerie/5.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/5-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/6.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/6-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/7.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/7-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/8.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/8-t.jpg" class="scaleimage"></a>
+					</div>
+					<div class="cycle-group">
+						<a href="../images/story-grossbritannien/galerie/9.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/9-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/10.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/10-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/11.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/11-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/12.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/12-t.jpg" class="scaleimage"></a>
+					</div>
+                    <div class="cycle-group">
+						<a href="../images/story-grossbritannien/galerie/13.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/13-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/14.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/14-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/15.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/15-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/16.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/16-t.jpg" class="scaleimage"></a>
+					</div>
+                    <div class="cycle-group">
+						<a href="../images/story-grossbritannien/galerie/17.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/17-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/18.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/18-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-grossbritannien/galerie/19.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Bildergalerie']);"><img src="../images/story-grossbritannien/galerie/19-t.jpg" class="scaleimage"></a>
+					</div>
+					<br class="breaker" />
+				</div>
+			</div>
+		</div>
+	<div class="abstand">
+		<div class="artikel last">
+			<div class="artikel-links">
+				<h1>AXION 950-920 Stage IIIB (Tier 4i)</h1>
+                <p>Když se obrovská tažná síla spojí s nejvyšším možným komfortem obsluhy a nabídne takový výkonový potenciál, jakému není jiný roven - potom se jedná o AXION 900.</p>
+<p>&nbsp;</p>
+<div class="tablecontent">
+<table class="detailtable">
+  <tbody>
+    <tr>
+      <th>&nbsp;</th>
+      <th>&nbsp;</th>
+      <th>AXION 950</th>
+      <th>AXION 940</th>
+      <th>AXION 930</th>
+      <th>AXION 920</th>
+    </tr>
+    <tr>
+      <td>Válce</td>
+      <td></td>
+      <td>6/TI</td>
+      <td>6/TI</td>
+      <td>6/TI</td>
+      <td>6/TI</td>
+    </tr>
+    <tr>
+      <td>Objem válců</td>
+      <td>cm<sup>3</sup></td>
+      <td>8710</td>
+      <td>8710</td>
+      <td>8710</td>
+      <td>8710</td>
+    </tr>
+    <tr>
+      <td>Jmenovité otáčky</td>
+      <td>ot/min</td>
+      <td>2150</td>
+      <td>2150</td>
+      <td>2150</td>
+      <td>2150</td>
+    </tr>
+    <tr>
+      <td>Jmenovitý výkon (ECE R 120)</td>
+      <td>kW/k</td>
+      <td>298/405</td>
+      <td>276/375</td>
+      <td>254/345</td>
+      <td>232/315</td>
+    </tr>
+    <tr>
+      <td>Maximální výkon (ECE R 120)</td>
+      <td>kW/k</td>
+      <td>302/410</td>
+      <td>279/380</td>
+      <td>257/350</td>
+      <td>235/320</td>
+    </tr>
+    <tr>
+      <td>Max. krouticí moment (ECE R 120)</td>
+      <td>Nm</td>
+      <td>1650</td>
+      <td>1550</td>
+      <td>1450</td>
+      <td>1350</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<div class="button"><a href="http://axion900.claas.com/" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Grossbritannien', 'Mehrerfahren']);">Více informací získáte na claas.com</a></div>
+			</div>
+			<div class="artikel-rechts">
+				<img src="../images/traktoren/axion-950-920.jpg" class="scaleimage" />
+			</div>
+			<br class="breaker" />
+		</div> 
+		<br class="breaker" />
+		<a href="#top" class="arrow-up grau scroll fade"></a>
+  </div>
+  
+</div>
+<!-- stop content -->
+
+<!-- start footer -->
+	<div id="footer">
+		<div id="footer-content" class="inner">
+			<div id="footer-left">
+				<ul id="footer-nav">
+					<li><a href="index.html" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Startseite']);">Úvodní stránka</a></li>
+					<li><a href="index.html#intro" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Geschichten']);">Příběhy</a></li>
+					<li><a href="index.html#bilder" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Bilder']);">Obrázky</a></li>
+					<li><a href="index.html#mitmachen" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Mitmachen']);">Chci se přidat</a></li>
+					<li><a href="index.html#traktoren" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Traktoren']);">Traktory</a></li>
+				</ul>
+			</div>
+			<div id="footer-right">
+				<ul id="footer-nav">
+					<li><a href="index.html#newsletter" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'NewsletterAnmeldung']);">Registrace k odběru novinek</a></li>
+					<li><a href="http://confirm-excellentwork.claas.com/pages/cs/kontakt.phtml" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'IhreAnfrage']);">Váš požadavek</a></li>
+					<li><a href="datenschutz.html" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Datenschutz']);">Ochrana údajů</a></li>
+					<li><a href="impressum.html" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Impressum']);">Impressum</a></li>
+				</ul>
+			</div>
+			<br class="breaker" />
+		</div>
+		<div id="footer-trenner" class="inner"></div>
+		<div id="footer-content-bottom" class="inner">
+			<div id="footer-left">
+				<a href="http://www.claas.com/" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Claascom']);">claas.com</a>
+			</div>
+			<div id="footer-right">
+				<a href="http://www.facebook.com/yourclaas" id="sm-facebook" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Facebook']);"></a>
+				<a href="http://plus.google.com/+yourCLAAS/" id="sm-google" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Googleplus']);"></a>
+				<a href="http://www.youtube.com/yourCLAAS" id="sm-youtube" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Youtube']);"></a>
+			</div>
+			<br class="breaker" />
+		</div>
+		<br class="breaker" />
+	</div><!-- stop footer -->
+  
+<script type="text/javascript" src="../../../webtrends/CLAAS-Webtrends-301-news2010.js"></script>
+<noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcsipnyxyw4w0mqr2tl6jfm2y_9j9h/njs06ed.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.3" /></noscript>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2014 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 4.1  -->
+<!-- Created: 12/15/2014 11:47:26 AM -->
+<script src="../../../webtrends/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcshpbj3f6la0n8yzsefg0gh9_6s4o/njsac09.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.app.claas.com"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG --></div>
+</body>
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/grossbritannien.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:55:10 GMT -->
+</html>

@@ -1,0 +1,685 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/norwegen.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:24:01 GMT -->
+<head>
+<title>Skutečně kvalitní práce. Traktory CLAAS.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="WT.cg_n" content="Traktorenkampagne" />
+<meta name="WT.cg_s" content="CZ_INT: Norwegen" />
+<meta property="og:image" content="../images/facebook-story4.jpg" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<link rel="icon" href="../images/favicon.gif" type="image/gif" />
+<link href="../css/main4a.css" rel="stylesheet" type="text/css" />
+<link href="../css/main-responsive4.css" rel="stylesheet" type="text/css" />
+<link href="../css/responsive-layout4.css" rel="stylesheet" type="text/css" />
+<link href="../css/story4.css" rel="stylesheet" type="text/css" />
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="../scripts/skrollr.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
+
+<!-- Adserver Zählpixel -->
+<script type="text/javascript" src="../../../../cdn.flashtalking.com/container/6209/js/ftspot.js"></script>
+
+<!-- Piwik -->
+<script type="text/javascript">
+	var u="http://claas-piwik.profile-webservice.de/";	var _paq = _paq || [];
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() { 
+		_paq.push(['setTrackerUrl', u+'piwik.php']);
+		_paq.push(['setSiteId', 1]);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+	})();
+</script>
+
+	<noscript><p><img src="http://claas-piwik.profile-webservice.de/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+		
+	    $('.image-link').magnificPopup({type:'image'});
+        $('.iframe-link').magnificPopup({
+          disableOn: 1040,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          fixedContentPos: true
+        });
+		$('.gallery-item').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+		$('.gallery-item2').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+        $('.wallpaper-link').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'ratio169',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+
+	  
+//=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
+(function($){
+  $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -66
+      }, 1);
+  });
+
+})(jQuery);
+
+
+// =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
+(function($) {
+ 	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -66
+	        }, 1500);
+	        return false;
+	      }
+	    }
+  	});
+})(jQuery);
+	  
+	  
+
+	
+	$(".world-link").click(function(event){	
+		$('#weltkarte').toggle();
+	});
+	$("#weltkarte").mouseleave(function(event){	
+		$("#weltkarte").hide();
+	});
+	
+
+	
+	$("#sprachauswahl-link").click(function(event){	
+		$('#sprachauswahl-sub').toggle();
+	});
+	$("#sprachauswahl-sub").mouseleave(function(event){	
+		$("#sprachauswahl-sub").hide();
+	});
+	
+	
+	$("#menu").click(function(event){	
+		$('#navi').toggle();
+	});
+	
+	
+	resizeContent();
+	$(window).resize(function() {
+		resizeContent();
+	});
+	function resizeContent() {
+		var breite = $(window).width();
+		var hoehe = $(window).height();
+
+		if(breite<1280){
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","none");
+			});
+			$('#navi').css("display","none");
+		} else {
+			$('#navi').css("display","block");
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","block");
+			});
+			$( "#submenu-link" )
+			.mouseover(function() {
+				$('#submenu').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu').css("display","none");
+			});
+			$( "#submenu-link2" )
+			.mouseover(function() {
+				$('#submenu2').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu2').css("display","none");
+			});
+		}
+	}	
+	
+	$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed:5});
+	
+});
+</script>
+
+
+<!-- Custom Scrollbar -->
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+	$(window).load(function(){
+		$(".tablecontent").mCustomScrollbar({
+			axis:"x",
+			theme:"dark-3",
+			scrollButtons:{enable:true}
+		});
+	});
+})(jQuery);
+</script><link href="../css/story.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="language-CZ" onload="callFT('CZ_02_Stories');">
+<div id="top"></div>
+<div id="bg" style="background-image: url(../images/story-norwegen/bg.jpg);"></div>
+<div id="wrapper">
+<!-- start header -->
+	<div id="header">
+		<div id="header-content" class="inner">
+			<div id="header-left">
+				<div id="logo">
+					<a href="index.html" onclick="callFT('CZ_01_Landingpage'); _paq.push(['trackEvent', 'CZ-Navigation', 'Progression']);"><img src="../images/header_claas-progression.png" border="0" /></a>
+				</div>
+				<div id="navi">
+					<ul>
+						<li id="startseite-link"><a href="index.html" onclick="callFT('CZ_01_Landingpage');">Úvodní stránka</a></li>
+						<li id="submenu-link"><a href="javascript:void();" class="scroll">Příběhy</a>
+							<ul id="submenu">
+								<li><a href="norwegen.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Norwegen']);">Norsko</a></li>
+								<li><a href="frankreich.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Frankreich']);">Francie</a></li>
+								<li><a href="schweiz.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Schweiz']);">Švýcarsko</a></li>
+								<li><a href="grossbritannien.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Grossbritannien']);">Velká Británie</a></li>
+							</ul>
+						</li>
+						<li><a href="index.html#bilder" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">Obrázky</a></li>
+						<li><a href="index.html#mitmachen" class="scroll" onclick="callFT('CZ_03_Takepart'); _paq.push(['trackEvent', 'CZ-Navigation', 'Mitmachen']);">Chci se přidat</a></li>
+						<li><a href="index.html#traktoren" class="scroll" onclick="callFT('CZ_04_Tractors'); _paq.push(['trackEvent', 'CZ-Navigation', 'Traktoren']);">Traktory</a></li>
+						<li id="submenu-link2"><a href="javascript:void();">Kontakt</a>
+							<ul id="submenu2">
+								<li><a href="#newsletter" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'NewsletterAnmeldung']);">Registrace k odběru novinek</a></li>
+								<li><a href="http://confirm-excellentwork.claas.com/pages/cs/kontakt.phtml" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'IhreAnfrage']);">Váš požadavek</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div id="menu">Menu</div>
+			</div>
+			<div id="header-right">
+				<div id="sprachauswahl-head">
+					<a href="javascript:void();" id="sprachauswahl-link" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Sprache']);">Jazyk</a>
+					<div id="sprachauswahl-sub">
+	<ul>
+		<li><a href="index.html">Čeština</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/dk/index.php">Dansk</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/de/index.php">Deutsch</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/en/index.php">English</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/es/index.php">Español</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/fr/index.php">Français</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/it/index.php">Italiano</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/hu/index.php">Magyar</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/nl/index.php">Nederlandse</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/pl/index.php">Polski</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ro/index.php">Română</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ru/index.php">Русский</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/sk/index.php">Slovenčina</a></li>
+	</ul>
+</div>				</div>
+				<a href="javascript:void(0)" class="world-link" onclick="callFT('CZ_05_Map'); _paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte']);">Skutečně kvalitní<br/>práce po celém světě</a>
+			</div>
+		</div>
+		<div id="weltkarte">
+			<div class="inner">
+				<div class="weltkarte-links">
+					<img src="../images/weltkarte.png" />
+				</div>
+				<div class="weltkarte-rechts">
+					<div class="weltkarte-titel">Skutečně kvalitní práce po celém světě</div>
+					<img src="../images/weltkarte-verlauf.png" id="verlauf" />
+					<div class="weltkarte-scrollarea">
+						<a href="norwegen.html" class="neu" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Norwegen']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Norsko</div>
+							<div class="weltkarte-sub">"Sníh si nebere dovolenou."</div>
+						</div></a>
+						<a href="frankreich.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Frankreich']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Francie</div>
+							<div class="weltkarte-sub">"Vztah založený na vzájemné důvěře."</div>
+						</div></a>
+						<a href="schweiz.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Schweiz']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Švýcarsko</div>
+							<div class="weltkarte-sub">"Producent mléka s přesvědčením a láskou k přírodě."</div>
+						</div></a>
+						<a href="grossbritannien.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Grossbritannien']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Velká Británie</div>
+							<div class="weltkarte-sub">"11 měsíců sklizně v roce."</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Německo</div>
+							<div class="weltkarte-sub">19.06.2015</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Dánsko</div>
+							<div class="weltkarte-sub">08/2015</div>
+						</div></a>
+                        <a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Nizozemí</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Španělsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Austrálie</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Polsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<span id="abstand"></span>
+					</div>
+				</div>
+				<br class="breaker" />
+			</div>
+		</div>
+	</div><!-- stop header -->
+
+<!-- start content -->
+<div id="content" class="inner">
+    
+	<div class="abstand"> 
+		<img id="geo" src="../images/geo.png">
+		<div id="location">Norsko</div>
+		<div id="backlink"><a href="javascript:history.back();" class="" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Zurueck']);">« zpět k přehledu</a></div>
+        
+		<div class="artikel overflow einleitung">
+			<div class="artikel-links">
+					<div class="videoWrapper"><iframe src="http://www.youtube.com/embed/djLkrttAmzo?showinfo=0&amp;rel=0&amp;controls=2&amp;wmode=transparent&amp;autoplay=0" width="160" height="90" frameborder="0" scrolling="no"></iframe></div>			</div>
+			<div class="artikel-rechts">
+				<div class="grauhg">
+					<table border="0" cellspacing="0" cellpadding="0" class="betriebsdaten">
+					  <tr>
+						<td colspan="2"><h3>Podnik Eitrheim, Norsko</h3></td>
+					  </tr>
+					  <tr>
+						<td colspan="2"><h4 class="betrieb">O podniku</h4></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Rok založení</p></td>
+						<td><p>2000</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Zaměstnanci</p></td>
+						<td><p>5 zaměstnanců</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Hospodářská zvířata</p></td>
+						<td><p>-</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Zemědělská plocha</p></td>
+						<td><p>Pouze dodavatel služeb</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Střídání plodin</p></td>
+						<td><p>-</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Složení půdy</p></td>
+						<td><p>Horská oblast</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Množství dešťových srážek za rok</p></td>
+						<td><p>670 mm</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Používané stroje</p></td>
+						<td>
+							<p>1 CLAAS XERION 3300 TRAC VC</p>
+							<p>1 CLAAS ARION 540</p>
+							<p>1 CLAAS ARION 640</p>
+						</td>
+					  </tr>
+					  <tr>
+						<td colspan="2"><h4 class="ort">O Norsku</h4></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Obyvatelstvo</p></td>
+						<td><p>Cca. 5,1 milionů obyvatel</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Rozloha</p></td>
+						<td><p>Cca. 385.200 km<sup>2</sup> (cca. 38,5 milionů hektarů)</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Zemědělská plocha</p></td>
+						<td><p>Cca. 983.000 hektarů</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Počet zemědělských podniků</p></td>
+						<td><p>Cca. 43.525</p></td>
+					  </tr>
+					  <tr>
+						<td class="bezeichnung"><p>Průměrná velikost podniku</p></td>
+						<td><p>Cca. 22,6 hektarů</p></td>
+					  </tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="geschichte" class="artikel">
+			<div class="artikel-links border-top">
+				<h2>Sníh si nebere dovolenou.</h2>
+				<p>&nbsp;</p>
+			  <p>Když ještě ostatní tvrdě spí, je Tormod Eitrheim již na nohou. Tento 47-letý poskytovatel služeb žije ve městě Hemsedal, které je druhou největší lyžařskou oblastí v Norsku s počtem pouhých 2.228 obyvatel, ale s územím kolem 752 čtverečních kilometrů (75.200 hektarů). Tormod miluje ten ranní klid: „Rád začínám v tomto klidném čase. Cítím se potom dobře připraven na celý den.“ </p>
+			  <p>Jeho den začíná ve tři hodiny ráno s dobrým šálkem kávy a pročítáním odborných zemědělských novin. Když poté kolem čtvrté hodiny ráno vyrazí řešit práci se „svými chlapy“, jeho žena a tři malé děti ještě tvrdě spí. Tormod Eitrheim je zodpovědný za velkou část silniční sítě u Hemsedal. Práce na silnici jsou vypsány obcí a se třemi až pěti zakázkami jsou zadány jednomu dodavateli. To zahrnuje v zimě veškeré odklízení sněhu, tedy jeho shrnování, nebo jeho odstranění a také sypání kluzkých silnic. V létě se jedná o čištění silnic, prořezávání stromů a keřů. Navíc provádí také odklízení sněhu z komunikací soukromých osob, například vlastníků horských chat v horách.</p>
+          </div>
+			<div class="artikel-rechts">
+				<img src="../images/story-norwegen/portrait.jpg" class="scaleimage" />
+			</div>          
+		</div>
+		<div class="artikel">
+			<div class="artikel-links">
+				<img src="../images/story-norwegen/bild-1.jpg" class="scaleimage" />
+			</div>
+			<div class="artikel-rechts border-top">
+				<h2>„Pokud se člověk o svoji práci skutečně zajímá, pracuje desetkrát lépe, než když to vše dělá jen pro peníze.“</h2>
+				<p>&nbsp;</p>
+				<p>Po dlouhou dobu v roce je v Hemsedal zima. První sníh může napadnout už v říjnu a někdy padají z oblohy poslední vločky ještě v květnu. Nejnižší teplota, na kterou si Tormod Eitrheim vzpomíná, byla v roce 2010, kdy teploměr ve městě Hemsedal ukázal mínus 40 stupňů Celsia. V zimních měsících si ho jeho žena a děti moc neužijí, protože je velmi často pryč a vrací se domů většinou až kolem 23. hodiny. Pokud padá pravidelně nový sníh, je doma většinou jen na pár hodin spánku. „Tato část roku je pro nás všechny velmi náročná,“ vysvětluje Tormod Eitrheim. „Náročná pro mé řidiče, mě samotného i pro moji rodinu. Když potom přijdu domů, jdu do dětského pokoje a koukám se na děti. Jsem tam pro ně, kdyby měly špatné sny. Ujišťuji se tak, že je všechno ok.“ </p>
+				<p>Děti jsou pro Tormoda Eitrheima výjimečným darem: „Při práci jsou stroje a traktory nejlepší věcí na světě, ale děti jsou to nejúžasnější, co můžete zažít. Přináší do života nové rozměry,“ říká s hrdostí. Rozdílům ve výchově jeho dvou synů a dcery by se rád vyvaroval a zajistil jim ty stejné šance. Především je ale nechá realizovat jejich sny – tak, jako měl tuto možnost on a dnes díky tomu žije svůj sen. Cesta k němu nebyla vždy bez mráčků, a mezitím sloužil dokonce čtyři roky jako voják OSN. Tehdy si totiž myslel, že je to přesně to, co chce dělat. Dnes je vděčný, že mohl následovat své srdce. Je mu jasné, že ho baví dělat něco pro lidi a miluje techniku, kterou k tomu používá. Obojí mu nabízí jeho současná práce. V roce 2000 se rozhodl pracovat se svojí ženou jako nezávislý dodavatel služeb. „Život je krátký a je důležité dělat to, co vás baví a naplňuje. Pokud vás vaše práce opravdu zajímá, pracujete desetkrát lépe, než když pracujete pouze kvůli penězům.“ Skutečně kvalitní práce je taková práce, „která dává každý den nějaký smysl.“</p>
+          </div>
+		</div>
+		<div class="artikel">
+			<div class="artikel-links border-top">
+				<h2>„Rád pracuji jen s tím nejlepším, protože považuji za důležité, být dobrý a stále se zlepšovat. A to i v případě, pokud děláte jednu úlohu již několik let po sobě.“</h2>
+				<p>&nbsp;</p>
+			  <p>V zimním období pracuje Tormod Eitrheim sedm dní v týdnu. „Sníh si nebere dovolenou,“ vysvětluje, co je pro něj samozřejmostí. I když nepochází ze zemědělské rodiny, jezdil ale odjakživa u jednoho dodavatele. V šestnácti letech poprvé poznal „sněhový obchod“ a s traktory pracoval už ve svých dvanácti letech. „Neděle byla obvykle dnem odpočinku, ale já jsem ji trávil v hale se stroji, umýval jsem traktory a pokud bylo třeba, leštil jsem je. Kromě toho jsem celý stroj zkontroloval, aby byl v pondělí opět připraven k práci.“ Není divu, že má dodnes ve svém srdci místo pro bezchybně pracující stroje a dobré nářadí. „Rád pracuji jen s tím nejlepším, protože považuji za důležité, být dobrý a stále se zlepšovat. A to i v případě, pokud děláte jednu úlohu již několik let po sobě. Špatné nářadí přináší problémy a zabraňuje provádět kvalitní práci.“ Několikrát zkoušel pracovat s levným nářadím, ale vždy byl zklamaný. Používání levného nářadí v horách může být dokonce nebezpečné. Lyžařské středisko dosahuje až do nadmořské výšky 1.900 metrů. Přístupové cesty k některým parkovištím horských chat nebo vlekům jsou často velmi úzké se serpentinami a typická je také rychlá změna počasí. Nejhorší podmínky panují v době, kdy do hor dorazí sněhové bouře. „Krajinou potom vane sníh s rychlostí až 50 metrů za sekundu a mohou vznikat sněhové stěny s výškou až 5 metrů. V tomto případě se bez čelních sněhových fréz neobejdete. Navíc musíme silnice čistit průběžně, jinak jsou během 30 minut opět zablokovány,“ vysvětluje Tormod Eitrheim s jasným respektem k síle přírody. „Při těchto podmínkách je potřeba mít obezřetné řidiče se zkušenostmi. Musejí umět jednat nezávisle. Se stroji a s prací, kterou děláte, nesete velkou odpovědnost,“ vypráví Tormod Eitrheim s hrdostí o svých zaměstnancích. </p>
+			  <p>V současné době zaměstnává pět trvalých zaměstnanců. Vedle traktoru XERION využívá Tormod Eitrheim tři standardní traktory z oblasti výkonu od 140 do 180 koní. Pracovní nářadí zahrnuje sněhové frézy, sněhové pluhy s pracovními záběry až 6,80 m a sypače písku. Pokud je to možné, využívá v zimě kombinaci sněhové frézy nebo pluhu v čelní montáži a sypač v zadní montáži.</p>
+          </div>
+			<div class="artikel-rechts">
+				<img src="../images/story-norwegen/bild-2.jpg" class="scaleimage" />
+			</div>
+		</div>
+        <div class="artikel">
+			<div class="artikel-links">
+				<img src="../images/story-norwegen/bild-3.jpg" class="scaleimage" />
+			</div>
+<div class="artikel-rechts border-top">
+				<h2>„Na konci byl stroj dokonce ještě lepší, než jsem očekával.“</h2>
+		  <p>&nbsp;</p>
+		  <p>„Vždy jsem měl představu o tom, jak by měl můj ‚vysněný traktor‘ vypadat. Když jsem na jednom veletrhu zemědělské techniky viděl taktor XERION, zjistil jsem, že slučuje mnoho znaků, které jsem si sám nastínil.“ Trvalo to však ještě nějakou dobu, než si mohl svůj vysněný traktor koupit. Jeho prodejce strojů v Norsku tehdy totiž prodával jiné značky traktorů. O tři roky později dostal dopis od svého prodejce. Traktory CLAAS jsou nyní dostupné také v Norsku. „To mě opravdu ohromilo,“ přiznává Tormod Eitrheim. „Není mnoho takových obchodníků, kteří by si něco takového pamatovali po dobu tří let bez jakéhokoliv kontaktu. To je opravdu profesionální. To oceňuji.“ Tak se vydal traktor XERION vyzkoušet. „Potom už jsem byl přesvědčen,“ vzpomíná si. XERION byl sice velmi drahý, ale tato investice se v každém ohledu vyplatila, protože „na konci byl stroj dokonce ještě lepší, než jsem očekával. Byla to skutečně naše nejlepší investice a zcela změnila naše pracovní postupy.“ Stejně tak na něj ale zapůsobily také služby zákazníkům firmy CLAAS. „Kvalita traktorů musí být vysoká,“ říká Tormod Eitrmein, „jinak by nezvládly práci v mém podniku a dlouho by nevydržely. Stroje pracují mnoho hodin v roce a práce je občas velmi náročná. Dobrá podpora je však nezbytná, i když vlastníte nejlepší traktor na světě.“</p>
+		  <p>Je tu však jedna věc, kterou nedokáže vyřešit ani nejlepší traktor na světě: nespokojenost některých lidí, pro které je každý den v práci. „V mé práci musíte mít hroší kůži,“ říká Tormod Eitrheim. „Když lidé uvíznou ráno ve sněhu, potom to není samozřejmě jejich vina, ale chyba člověka, který sníh ještě neodklidil. Lidé umí být někdy velmi hrubí,“ vypráví s úsměvem. I přesto rád pomáhá ostatním a to i v případě, že nemůže být na všech místech najednou. To mu nevadí, protože „jakmile nemají lidé nic jiného na práci, než si stěžovat na sníh na silnici, vím, že bydlím ve velmi dobré zemi.“ Kompenzací za občas nervy drásající práci a časovou tíseň je pro něj nepředstavitelný klid v rozlehlých horách. „Když čistím horský průsmyk, který zima zcela uzavřela, nic jiného se tu neděje. Není tu hluk ze silnice, žádní lidé, žádná zvířata, jen ticho a klid,“ vypráví o vzácných chvílích, kdy si může užívat opravdového klidu.</p>
+		  <p>Vydat ze sebe každý den to nejlepší, pro své zákazníky, pro sebe a pro svoji rodinu – to je to, co pohání Tormoda Eitrheima. Sám sebe označuje jako perfekcionistu, který není „nikdy spokojen“, ale právě to ho motivuje k tomu, aby dělal svoji práci s nadšením. Protože jinak, a o tom je přesvědčen, by člověk nemohl nikdy dosáhnout těch nejdůležitějších věcí v životě, tedy štěstí a spokojenosti.</p>
+</div>
+		</div>
+	</div>
+  <br class="breaker" />
+  		<div id="galerie">
+			<h1>Galerie obrázků</h1>
+			<div style="position: relative;">
+				<a href="#" id="prev1" class="cycle-prev"></a>
+				<a href="#" id="next1" class="cycle-next"></a>
+				<div class="cycle-slideshow" 
+				data-cycle-fx="scrollHorz"
+				data-cycle-swipe=true
+				data-cycle-speed="1000"
+				data-cycle-prev="#prev1"
+				data-cycle-next="#next1"
+				data-cycle-paused=true
+				data-cycle-slides="> div.cycle-group"
+				>
+					<div class="cycle-group">
+						<a href="../images/story-norwegen/galerie/1.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/1-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/2.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/2-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/3.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/3-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/4.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/4-t.jpg" class="scaleimage"></a>
+					</div>
+					<div class="cycle-group">
+						<a href="../images/story-norwegen/galerie/5.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/5-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/6.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/6-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/8.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/8-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/9.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/9-t.jpg" class="scaleimage"></a>
+					</div>
+                    <div class="cycle-group">
+						<a href="../images/story-norwegen/galerie/10.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/10-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/galerie/11.jpg" class="gallery-item fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildergalerie']);"><img src="../images/story-norwegen/galerie/11-t.jpg" class="scaleimage"></a>
+					</div>
+					<br class="breaker" />
+				</div>
+			</div>
+		</div>
+		<div id="makingof">
+			<h1>Making Of - v zákulisí</h1>
+			<div style="position: relative;">
+				<a href="#" id="prev2" class="cycle-prev"></a>
+				<a href="#" id="next2" class="cycle-next"></a> 
+				<div class="cycle-slideshow"
+				data-cycle-fx="scrollHorz"
+				data-cycle-swipe=true
+				data-cycle-speed="1000"
+				data-cycle-prev="#prev2"
+				data-cycle-next="#next2"
+				data-cycle-paused=true
+				data-cycle-slides="> div.cycle-group"
+				>
+					<div class="cycle-group">
+						<a href="../images/story-norwegen/makingof/1.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/1-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/2.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/2-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/3.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/3-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/4.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/4-t.jpg" class="scaleimage"></a>
+					</div>
+					<div class="cycle-group">
+						<a href="../images/story-norwegen/makingof/5.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/5-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/6.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/6-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/7.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/7-t.jpg" class="scaleimage"></a>
+                        <a href="../images/story-norwegen/makingof/8.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/8-t.jpg" class="scaleimage"></a>
+					</div>
+                    <div class="cycle-group">
+                    	<a href="../images/story-norwegen/makingof/9.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/9-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/10.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/10-t.jpg" class="scaleimage"></a>
+						<a href="../images/story-norwegen/makingof/11.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/11-t.jpg" class="scaleimage"></a>
+                        <a href="../images/story-norwegen/makingof/12.jpg" class="gallery-item2 fade" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Bildermakingof']);"><img src="../images/story-norwegen/makingof/12-t.jpg" class="scaleimage"></a>
+					</div>
+					<br class="breaker" />
+				</div>
+			</div>
+		</div>
+	<div class="abstand">
+		<div class="artikel last">
+			<div class="artikel-links">
+			<h1>ARION 650-530 Stage IIIB (Tier 4i)</h1>
+			<p>CLAAS nabízí s novými výrobními řadami ARION 500/600 technická řešení a komfort velkých traktorů CLAAS nyní i ve výkonnostních třídách od 140 do 184 k.</p>
+<p>&nbsp;</p>
+<div class="tablecontent">
+<table class="detailtable">
+				<tbody>
+				<tr>
+					<th>&nbsp;</th>
+					<th>&nbsp;</th>
+					<th>ARION 650</th>
+					<th>ARION 640</th>
+					<th>ARION 630</th>
+					<th>ARION 620</th>
+					<th>ARION 550</th>
+					<th>ARION 540</th>
+					<th>ARION 530</th>
+				</tr>
+				<tr>
+					<td>Válce</td>
+					<td></td>
+					<td>6/TI</td>
+					<td>6/TI</td>
+					<td>6/TI</td>
+					<td>6/TI</td>
+					<td>4/TI</td>
+					<td>4/TI</td>
+					<td>4/TI</td>
+				</tr>
+				<tr>
+					<td>Objem válců</td>
+					<td>cm<sup>3</sup></td>
+					<td>6788</td>
+					<td>6788</td>
+					<td>6788</td>
+					<td>6788</td>
+					<td>4525</td>
+					<td>4525</td>
+					<td>4525</td>
+				</tr>
+				<tr>
+					<td>Jmenovité otáčky</td>
+					<td>ot/min</td>
+					<td>2200</td>
+					<td>2200</td>
+					<td>2200</td>
+					<td>2200</td>
+					<td>2200</td>
+					<td>2200</td>
+					<td>2200</td>
+				</tr>
+				<tr>
+					<td>Jmenovitý výkon (ECE R 120)</td>
+					<td>kW/k</td>
+					<td>129/175</td>
+					<td>124/169</td>
+					<td>117/159</td>
+					<td>110/150</td>
+					<td>116/158</td>
+					<td>110/150</td>
+					<td>103/140</td>
+				</tr>
+				<tr>
+					<td>Maximální výkon (ECE R 120)</td>
+					<td>kW/k</td>
+					<td>135/184</td>
+					<td>130/177</td>
+					<td>121/165</td>
+					<td>116/158</td>
+					<td>120/163</td>
+					<td>114/155</td>
+					<td>107/145</td>
+				</tr>
+				<tr>
+					<td>Max. krouticí moment (ECE R 120)</td>
+					<td>Nm</td>
+					<td>754</td>
+					<td>714</td>
+					<td>689</td>
+					<td>659</td>
+					<td>636</td>
+					<td>618</td>
+					<td>581</td>
+				</tr>
+				</tbody>
+			</table>
+</div>
+<p>&nbsp;</p>
+<div class="button"><a href="http://arion600-500.claas.com/" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Norwegen', 'Mehrerfahren']);">Více informací získáte na claas.com</a></div>
+			</div>
+			<div class="artikel-rechts">
+				<img src="../images/traktoren/arion-650-530.jpg" class="scaleimage" />
+			</div>
+			<br class="breaker" />
+		</div> 
+		<br class="breaker" />
+		<a href="#top" class="arrow-up grau scroll fade"></a>
+  </div>
+  
+</div>
+<!-- stop content -->
+
+<!-- start footer -->
+	<div id="footer">
+		<div id="footer-content" class="inner">
+			<div id="footer-left">
+				<ul id="footer-nav">
+					<li><a href="index.html" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Startseite']);">Úvodní stránka</a></li>
+					<li><a href="index.html#intro" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Geschichten']);">Příběhy</a></li>
+					<li><a href="index.html#bilder" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Bilder']);">Obrázky</a></li>
+					<li><a href="index.html#mitmachen" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Mitmachen']);">Chci se přidat</a></li>
+					<li><a href="index.html#traktoren" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Traktoren']);">Traktory</a></li>
+				</ul>
+			</div>
+			<div id="footer-right">
+				<ul id="footer-nav">
+					<li><a href="index.html#newsletter" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'NewsletterAnmeldung']);">Registrace k odběru novinek</a></li>
+					<li><a href="http://confirm-excellentwork.claas.com/pages/cs/kontakt.phtml" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'IhreAnfrage']);">Váš požadavek</a></li>
+					<li><a href="datenschutz.html" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Datenschutz']);">Ochrana údajů</a></li>
+					<li><a href="impressum.html" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Impressum']);">Impressum</a></li>
+				</ul>
+			</div>
+			<br class="breaker" />
+		</div>
+		<div id="footer-trenner" class="inner"></div>
+		<div id="footer-content-bottom" class="inner">
+			<div id="footer-left">
+				<a href="http://www.claas.com/" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Claascom']);">claas.com</a>
+			</div>
+			<div id="footer-right">
+				<a href="http://www.facebook.com/yourclaas" id="sm-facebook" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Facebook']);"></a>
+				<a href="http://plus.google.com/+yourCLAAS/" id="sm-google" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Googleplus']);"></a>
+				<a href="http://www.youtube.com/yourCLAAS" id="sm-youtube" target="_blank" onclick="_paq.push(['trackEvent', 'CZ-Footer', 'Youtube']);"></a>
+			</div>
+			<br class="breaker" />
+		</div>
+		<br class="breaker" />
+	</div><!-- stop footer -->
+  
+<script type="text/javascript" src="../../../webtrends/CLAAS-Webtrends-301-news2010.js"></script>
+<noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcsipnyxyw4w0mqr2tl6jfm2y_9j9h/njs06ed.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.3" /></noscript>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2014 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 4.1  -->
+<!-- Created: 12/15/2014 11:47:26 AM -->
+<script src="../../../webtrends/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcshpbj3f6la0n8yzsefg0gh9_6s4o/njsac09.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.app.claas.com"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG --></div>
+</body>
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/norwegen.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 16:30:17 GMT -->
+</html>
