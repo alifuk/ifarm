@@ -143,7 +143,7 @@ margint{margin-top:700px;}
 .sedivatext{color:#adadad;}
 .sky-form .button {
   background-color: #00b800 !important;}
-.marginl{margin-left:4%; margin-top:250px;}
+.marginl{margin-left:4%; /*margin-top:250px;*/}
 .centertext {text-align:center;}
 div.bottom { height: 200px; width: 100%;  margin-top: 30px; margin-bottom: none;}
 div.col { float: left; width: 49%;}

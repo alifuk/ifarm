@@ -1,4 +1,417 @@
-﻿<div class="pfeil">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>iFarm.cz - Portál pro zemědělce v Česku</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="WT.cg_n" content="Traktorenkampagne" />
+<meta name="WT.cg_s" content="CZ_INT: Home" />
+<meta property="og:image" content="../images/facebook-story4.jpg" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<!-- start SkyForm -->
+<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/sky-forms.css">
+		<link rel="stylesheet" href="css/sky-forms-blue.css">
+       <!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-forms-ie8.css">
+		<![endif]-->
+		
+		<script src="js/jquery.min.js"></script>
+		<!--[if lt IE 10]>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/sky-forms-ie8.js"></script>
+		<![endif]-->
+<!-- end SkyForm -->
+<link rel="icon" href="../images/favicon.gif" type="image/gif" />
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="../css/main4a.css" rel="stylesheet" type="text/css" />
+<link href="../css/main-responsive4.css" rel="stylesheet" type="text/css" />
+<link href="../css/responsive-layout4.css" rel="stylesheet" type="text/css" />
+<link href="../css/story4.css" rel="stylesheet" type="text/css" />
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="../scripts/skrollr.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
+
+
+
+
+
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+		
+	    $('.image-link').magnificPopup({type:'image'});
+        $('.iframe-link').magnificPopup({
+          disableOn: 1040,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          fixedContentPos: true
+        });
+		$('.gallery-item').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+		$('.gallery-item2').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+        $('.wallpaper-link').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'ratio169',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+
+	  
+//=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
+(function($){
+  $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -66
+      }, 1);
+  });
+
+})(jQuery);
+
+
+// =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
+(function($) {
+ 	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -66
+	        }, 1500);
+	        return false;
+	      }
+	    }
+  	});
+})(jQuery);
+	  
+	  
+
+	
+	$(".world-link").click(function(event){	
+		$('#weltkarte').toggle();
+	});
+	$("#weltkarte").mouseleave(function(event){	
+		$("#weltkarte").hide();
+	});
+	
+
+	
+	$("#sprachauswahl-link").click(function(event){	
+		$('#sprachauswahl-sub').toggle();
+	});
+	$("#sprachauswahl-sub").mouseleave(function(event){	
+		$("#sprachauswahl-sub").hide();
+	});
+	
+	
+	$("#menu").click(function(event){	
+		$('#navi').toggle();
+	});
+	
+	
+	resizeContent();
+	$(window).resize(function() {
+		resizeContent();
+	});
+	function resizeContent() {
+		var breite = $(window).width();
+		var hoehe = $(window).height();
+
+		if(breite<1280){
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","none");
+			});
+			$('#navi').css("display","none");
+		} else {
+			$('#navi').css("display","block");
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","block");
+			});
+			$( "#submenu-link" )
+			.mouseover(function() {
+				$('#submenu').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu').css("display","none");
+			});
+			$( "#submenu-link2" )
+			.mouseover(function() {
+				$('#submenu2').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu2').css("display","none");
+			});
+		}
+	}	
+	
+	$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed:5});
+	
+});
+</script>
+
+
+<!-- Custom Scrollbar -->
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+	$(window).load(function(){
+		$(".tablecontent").mCustomScrollbar({
+			axis:"x",
+			theme:"dark-3",
+			scrollButtons:{enable:true}
+		});
+	});
+})(jQuery);
+</script>
+ <style>
+body > div.radek.hlavicka > nav > ul > li:nth-child(2) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(3) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(4) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(5) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(6) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(7) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(8) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(1) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(1):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(2) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+
+body > div.radek.hlavicka > nav > ul > li:nth-child(3) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(3):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(4) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(4):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(5) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(5):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(6) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(6):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(7) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(7):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(8) {background-color: #b77100;
+  opacity: 1;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(8):hover {background-color:#e8f031 !important;}
+
+body > div.radek.hlavicka > nav > ul > li:nth-child(2):hover {background-color:#e8f031 !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(9) {background-color:#00b800;  opacity: 0.8;
+  -ms-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -webkit-transition: opacity 0.2s;color:white !important;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(9):hover {opacity:1;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white;}
+
+
+</style>
+</head>
+<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;background-attachment: fixed;">
+
+
+<!-- start header -->
+
+    	<div class="radek shadow hlavicka">
+			<h1><a href="#top" style="  float: left;
+  width: 100%;
+  height: 100%;">Energie pod kontrolou</a></h1>
+			<nav>
+			<ul>
+			<li><a href="#videa">Projekt ifarm</a></li><li><a href="#ukazka">Ukázka z praxe</a></li>
+<li><a href="#jaktofunguje">Jak to funguje?</a></li>
+
+<li><a href="#kolik">Kolik to stojí</a></li>
+<li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="./queries/logout.php">Odhlásit</a><div class="category" style="width: 30%;
+  background: transparent !important;
+  height: 480px;
+  -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0);
+  box-shadow: 0 5px 20px rgba(0,0,0,0); top:47px;
+  left: 75.5%;"> <ul style="margin-left:0%;margin-right:auto"> <li style="border:0px;"> 
+<div class="body" id="prihlasit" style="padding:0px !important;">			
+		
+			<!-- Red color scheme -->
+			<!-- <form name="form1" method="post" action="signup.php" class="sky-form">
+				
+				
+				<fieldset>
+					<section>
+						<label class="label">Jméddno</label>
+						<label class="input">
+							<input type="text">
+						</label>
+<label class="label">Email</label>
+						<label class="input">
+							<input type="text">
+						</label>
+<label class="label">Heslo</label>
+						<label class="input">
+							<input type="text">
+						</label>
+</section>
+
+					<button type="submit" class="button">Přihlásit</button></form>
+-->
+
+    <?php include './forms/loginForm.php'; ?>
+
+</div></li> </ul> </div></li>	
+			</ul>			
+			</nav>
+		
+	</div>
+<div class="radek shadow hlavicka" style="float:left !important;position:relative !important; top:47px !important; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:9999;
+height: 50px;
+  background: rgb(22,61,127);
+  background: -moz-linear-gradient(top, rgba(22,61,127,1) 1%, rgba(16,71,169,1) 68%, rgba(16,71,169,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(22,61,127,1)), color-stop(68%,rgba(16,71,169,1)), color-stop(100%,rgba(16,71,169,1)));
+  background: -webkit-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+  background: -o-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+  background: -ms-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+  background: linear-gradient(to bottom, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d7f', endColorstr='#1047a9',GradientType=0 );
+}
+">
+			
+			<nav>
+			<ul>
+			<li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#videa" style="color: white !important;">Nabídka</a>
+
+<div class="category"> <ul style="margin-left:50%;margin-right:auto"> <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> </ul> </div>
+
+</li><li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#ukazka" style="color: white !important;">Poptávka</a><div class="category"> <ul style="margin-left:50%;margin-right:auto"> <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> </ul> </div></li>
+
+
+<li class="bcgrenergie"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#jaktofunguje" style="color: white !important;">Vytvořit web</a><div class="category"> <ul style="margin-left:50%;margin-right:auto"> <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> </ul> </div></li>
+
+<li class="bcgrenergie"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#kolik" style="color: white !important;">Dotace</a><div class="category"> <ul style="margin-left:50%;margin-right:auto"> <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> </ul> </div></li>
+<li class="bcgrenergie zenergietrans"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#top" style="color: white !important;">Hledat</a><div class="category"> <ul style="margin-left:50%;margin-right:auto"> <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> <li><a href="/c133405-raw" class="raw"  style="color:black">Nabídka 4</a></li> </ul> </div></li>	
+			</ul>			
+			</nav>
+		
+	</div>
+
+
+
+
+		<div id="weltkarte">
+			<div class="inner">
+				<div class="weltkarte-links">
+					<img src="../images/weltkarte.png" />
+				</div>
+				<div class="weltkarte-rechts">
+					<div class="weltkarte-titel">Mezinárodní poptávkový a nabídkový portál pro zemědělce v Česku</div>
+					<img src="../images/weltkarte-verlauf.png" id="verlauf" />
+					<div class="weltkarte-scrollarea">
+						<a href="norwegen.html" class="neu" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Norwegen']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Norsko</div>
+							<div class="weltkarte-sub">"Sníh si nebere dovolenou."</div>
+						</div></a>
+						<a href="frankreich.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Frankreich']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Francie</div>
+							<div class="weltkarte-sub">"Vztah založený na vzájemné důvěře."</div>
+						</div></a>
+						<a href="schweiz.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Schweiz']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Švýcarsko</div>
+							<div class="weltkarte-sub">"Producent mléka s přesvědčením a láskou k přírodě."</div>
+						</div></a>
+						<a href="grossbritannien.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Grossbritannien']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Velká Británie</div>
+							<div class="weltkarte-sub">"11 měsíců sklizně v roce."</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Německo</div>
+							<div class="weltkarte-sub">19.06.2015</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Dánsko</div>
+							<div class="weltkarte-sub">08/2015</div>
+						</div></a>
+                        <a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Nizozemí</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Španělsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Austrálie</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Polsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<span id="abstand"></span>
+					</div>
+				</div>
+				<br class="breaker" />
+			</div>
+		</div>
+	</div>    <!-- stop header -->
+    <!-- start content -->
+	
+	
+	
+	
+       
+      <div class="pfeil">
         <div style="position: relative; width: 100%;">
           <div class="arrow-down"></div>
         </div>
@@ -10,14 +423,27 @@
      </div>
     </div>
     <div id="story1" class="inner box backgr">
-     
-
+     <div class="wrapper" style="background:white;width:100%;padding:20px;margin-top:40px">
+<h2>CSV Reader</h2
+<?php
+echo "<html><body><table>\n\n";
+$f = fopen("so-csv.csv", "r");
+while (($line = fgetcsv($f)) !== false) {
+        echo "<tr>";
+        foreach ($line as $cell) {
+                echo "<td>" . htmlspecialchars($cell) . "</td>";
+        }
+        echo "</tr>\n";
+}
+fclose($f);
+echo "\n</table></body></html>";?>
+</div>
 
 <div class="wrapper shadow" style="margin-top:-30px;margin-bottom:80px;">
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px;color:black">
  <span id="top" style="position:relative;top:-60px;"></span>
-<div class="featuresColumn3 textpole" style="margin-top:-20px;">
+<div class="featuresColumn3 textpole" style="margin-top:-20px; width:100%;">
 <h2 style="font-size: 40px;
   font-weight: normal;
   padding-bottom: 10px;
@@ -70,19 +496,17 @@
  <br class="breaker" />
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <span id="kolik" style="position:relative;top:30px;"></span>
-<div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
-
+<div class="wrapper shadow" style="margin-top:300px;margin-bottom:20px;">
+<p><h2 class="velka marginl margint"style="margin-bottom:20px; color:white">Kolik to stojí</h2></p>
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
-
- <p><h2 class="velka marginl margint"style="margin-bottom:20px; color:white">Kolik to stojí</h2></p>
+ 
 <div class="featuresColumn5 sediva textpole" style="border-right:1px solid white; border-left:1px solid white;">
-
 <span class="textpole sedivatext">Chci poptávat</span></br>
 <span class="center green shadowwhite">0Kč ZDARMA</span>
 </div>
  
-<div class="featuresColumn5 sediva textpole last" style="margin-bottom: 50px;">
+<div class="featuresColumn5 sediva textpole last">
   <span class="textpole sedivatext">Chci nabízet</span></br>
 <div style="margin-left:20%;"><span class="green shadowwhite">Měsíc ZDARMA, </span><span style="color:blue;">1200Kč / Rok</span></div>
 </div>
@@ -90,8 +514,8 @@
      
 </div>
    
-<div class="wrapper shadow" style="margin-top:50px;margin-bottom:20px;">
-<p><h2 class="velka marginl" style="color:white;">Recenze</h2></p>
+<div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
+<p><h2 class="velka marginl" style="color:white">Recenze</h2></p>
 </div>
 <div class="wrapper round font24 sediva textpole shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; min-height: 110px;">
 <div class="featuresColumn2">
@@ -262,7 +686,7 @@
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:50px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <div class="backgroun">
 <span id="ukazka" style="position:relative;top:-30px;"></span>
-<div class="wrapper" style="margin-top:100px;margin-bottom:0px;">
+<div class="wrapper" style="margin-top:780px;margin-bottom:0px;">
 <p><h2 class="marginl velka shadow textwhite">Ukázka uvnitř v praxi</h2></p>
 <div style="background:WHITE;width:100%;padding-top:40px;padding-bottom:20px;margin-bottom:20px;">
 <img src="img/videobig.jpg"  style="max-width:40%;max-height:40%;margin-top:0px;margin-left:28%;" /></div>
@@ -272,7 +696,7 @@
 <span id="podminky" style="position:relative;top:250px;"></span>
 <div class="backgroun">
 
-<div class="wrapper" style="margin-top:0px;margin-bottom:80px;word-wrap: break-word;word-break: break-word;">
+<div class="wrapper" style="margin-top:300px;margin-bottom:80px;word-wrap: break-word;word-break: break-word;">
 <p><h2 class="marginl velka shadow textwhite">Obchodní podmínky</h2></p>
 
 <ul class="menu" style="padding-top: 14px;
@@ -394,7 +818,7 @@
 
 <span id="vyzkouset" style="position:relative;top:100px;"></span>
 
-<div class="wrapper velka" style="margin-top:100px;margin-bottom:80px;">
+<div class="wrapper velka" style="margin-top:400px;margin-bottom:80px;">
 <p><h2 class="marginl velka shadow textwhite">1x týdně 10 nejlepších zemědělských nabídek zdarma</h2></p>
      <form name="form1" method="post" action="signup.php" class="sky-form pbile" style="padding-bottom:20px;">
 				
@@ -457,3 +881,8 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+</body>
+
+
+
+</html>
