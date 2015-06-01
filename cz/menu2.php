@@ -1,4 +1,4 @@
-<div class="radek shadow hlavicka" style="float:left !important;position:relative !important; top:47px !important; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:9999;
+﻿<div class="radek shadow hlavicka" style="float:left !important;position:relative !important; top:28px !important; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:9999;
 height: 50px;
   background: rgb(22,61,127);
   background: -moz-linear-gradient(top, rgba(22,61,127,1) 1%, rgba(16,71,169,1) 68%, rgba(16,71,169,1) 100%);

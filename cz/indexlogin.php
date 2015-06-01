@@ -281,7 +281,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white;}
   background: transparent !important;
   height: 480px;
   -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0);
-  box-shadow: 0 5px 20px rgba(0,0,0,0); top:100px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0); top:47px;
   left: 75.5%;"> <ul style="margin-left:0%;margin-right:auto"> <li style="border:0px;"> 
 <div class="body" id="prihlasit" style="padding:0px !important;">			
 		
@@ -430,7 +430,7 @@ height: 50px;
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px;color:black">
  <span id="top" style="position:relative;top:-60px;"></span>
-<div class="featuresColumn3 textpole" style="margin-top:-20px;">
+<div class="featuresColumn3 textpole" style="margin-top:-20px; width:100%;">
 <h2 style="font-size: 40px;
   font-weight: normal;
   padding-bottom: 10px;

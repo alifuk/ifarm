@@ -1,4 +1,4 @@
-<div class="pfeil">
+﻿<div class="pfeil">
         <div style="position: relative; width: 100%;">
           <div class="arrow-down"></div>
         </div>
@@ -71,11 +71,13 @@
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <span id="kolik" style="position:relative;top:30px;"></span>
 <div class="wrapper shadow" style="margin-top:300px;margin-bottom:20px;">
-<p><h2 class="velka marginl margint"style="margin-bottom:20px; color:white">Kolik to stojí</h2></p>
+
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
- 
+
+ <p><h2 class="velka marginl margint"style="margin-bottom:20px; color:white">Kolik to stojí</h2></p>
 <div class="featuresColumn5 sediva textpole" style="border-right:1px solid white; border-left:1px solid white;">
+
 <span class="textpole sedivatext">Chci poptávat</span></br>
 <span class="center green shadowwhite">0Kč ZDARMA</span>
 </div>
