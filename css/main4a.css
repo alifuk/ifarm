@@ -1,3 +1,13 @@
+.xdebug-error {display:none}
+.xe-warning {display:none}
+
+.vysledek {margin-top: 80px;
+  margin: 78px;
+  /* margin-top: 80px; */
+  padding: 40px;
+  word-wrap: break-word;
+  word-break: break-word;
+  background: white;}
 
 body > div:nth-child(2) > nav > ul > li.bcgrenergie.zenergietrans.roundleft {width:140px;}
 body > div:nth-child(2) > nav > ul > li:nth-child(2) {width:140px;}

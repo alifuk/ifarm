@@ -47,25 +47,11 @@ print_r($_SESSION['kategorie']);
         if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
             
-              include './forms/navbar.php';
-
-              include './queries/mojeSablony.php';
-              include './queries/profileEditQ.php';
-
-              include './forms/naseptavac.php';
-              include './forms/kategorie.php';
-
-              include './forms/sablona.php';
-
-
-              include './forms/aresForm.php';
-             
-            include './loggedIn.php';
+            
 
         } else {
-            include './forms/loginForm.php';
-            include './forms/registerForm.php';
             
+            include './nabnab2.php';
             include './landingPage.php';
         }
         ?>

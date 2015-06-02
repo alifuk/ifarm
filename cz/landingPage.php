@@ -12,7 +12,6 @@
     <div id="story1" class="inner box backgr">
      
 
-
 <div class="wrapper shadow" style="margin-top:-30px;margin-bottom:80px;">
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px;color:black">
@@ -283,6 +282,7 @@
     <li class="toggle3 round">Uzavření kupní smlouvy</li>
     <li class="toggle4 round">Cena zboží a Platební podmínky</li>
     <li class="toggle5 round">Odstoupení od kupní smlouvy</li>
+<li class="toggle5 round">Odstoupení od kupní smlouvy</li>
 <li class="toggle6 round">Přeprava a dodání zboží</li><li class="toggle7 round">Práva z Vadného plnění</li><li class="toggle8 round">Další práva a povinnosti smluvních stran</li><li class="toggle9 round">Ochrana osobních údajů</li><li class="toggle10 round">Zasílání obchodních sdělení a ukládání cookies</li><li class="toggle11 round">Doručování</li><li class="toggle12 round">Závěrečná ustanovení</li>
 </ul>
 <div class="container" style="padding-left: 20px;margin-top:20px;
