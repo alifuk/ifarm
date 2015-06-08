@@ -192,7 +192,7 @@ $(document).ready(function() {
 })(jQuery);
 </script>
  <style>
-body > div.radek.hlavicka > nav > ul > li:nth-child(2) a {color:white;}
+body > div.radek.hlavicka > nav > ul > li:nth-child(2) a {color:black;}
 body > div.radek.hlavicka > nav > ul > li:nth-child(2) {
   background-color: #e5ef00;
   opacity: 0.8;
@@ -207,7 +207,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(1) {background-color: #b7710
   -moz-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;color:white !important;}
 body > div.radek.hlavicka > nav > ul > li:nth-child(1):hover {opacity: 1 !important;}
-body > div.radek.hlavicka > nav > ul > li:nth-child(9) {background-color:#00b800;  opacity: 0.8;
+body > div.radek.hlavicka > nav > ul > li:nth-child(9) {background-color:#00b800;  opacity: 1;
   -ms-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;color:white !important;}
@@ -217,7 +217,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
 </style>
 </head>
-<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
+<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farma.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;background-attachment: fixed;">
@@ -236,11 +236,11 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
 <li><a href="#kolik">Kolik to stojí</a></li>
 <li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li>	<li><div id="footleft">
-<a href="#" id="link">Přihlásit</a>
+<a href="" id="link" style="color:white">Přihlásit</a>
 <div id="subscribe-pop">
 
-<div class="featuresColumn4 last" style="padding-top:70px; padding-bottom:80px; position:fixed; top:47px; right:-20px; background: rgba(255, 255, 255, 0.5);">
- <h2 class="textpole" style="margin-left:10%;">Začít šetřit čas a peníze</h2>
+<div class="featuresColumn4 last" style="padding-top:0px; padding-bottom:22px; position:fixed; top:47px; right:-20px; background: rgba(255, 255, 255, 1); opacity: 1 !important;">
+ <h2 class="textpole" style="margin-left:10%; color:black">Začít šetřit čas a peníze</h2>
 <div class="body" id="prihlasit" style="padding:0px !important;">			
 		
 			<!-- Red color scheme -->
@@ -276,78 +276,14 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 			</nav>
 		
 	</div>
-		<div id="weltkarte">
-			<div class="inner">
-				<div class="weltkarte-links">
-					<img src="../images/weltkarte.png" />
-				</div>
-				<div class="weltkarte-rechts">
-					<div class="weltkarte-titel">Mezinárodní poptávkový a nabídkový portál pro zemědělce v Česku</div>
-					<img src="../images/weltkarte-verlauf.png" id="verlauf" />
-					<div class="weltkarte-scrollarea">
-						<a href="norwegen.html" class="neu" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Norwegen']);"><div class="weltkarte-land">
-							<div class="weltkarte-head">Norsko</div>
-							<div class="weltkarte-sub">"Sníh si nebere dovolenou."</div>
-						</div></a>
-						<a href="frankreich.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Frankreich']);"><div class="weltkarte-land">
-							<div class="weltkarte-head">Francie</div>
-							<div class="weltkarte-sub">"Vztah založený na vzájemné důvěře."</div>
-						</div></a>
-						<a href="schweiz.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Schweiz']);"><div class="weltkarte-land">
-							<div class="weltkarte-head">Švýcarsko</div>
-							<div class="weltkarte-sub">"Producent mléka s přesvědčením a láskou k přírodě."</div>
-						</div></a>
-						<a href="grossbritannien.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Grossbritannien']);"><div class="weltkarte-land">
-							<div class="weltkarte-head">Velká Británie</div>
-							<div class="weltkarte-sub">"11 měsíců sklizně v roce."</div>
-						</div></a>
-						<a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Německo</div>
-							<div class="weltkarte-sub">19.06.2015</div>
-						</div></a>
-						<a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Dánsko</div>
-							<div class="weltkarte-sub">08/2015</div>
-						</div></a>
-                        <a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Nizozemí</div>
-							<div class="weltkarte-sub"></div>
-						</div></a>
-						<a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Španělsko</div>
-							<div class="weltkarte-sub"></div>
-						</div></a>
-						<a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Austrálie</div>
-							<div class="weltkarte-sub"></div>
-						</div></a>
-						<a href="#" class="comingsoon"><div class="weltkarte-land">
-							<div class="weltkarte-head">Polsko</div>
-							<div class="weltkarte-sub"></div>
-						</div></a>
-						<span id="abstand"></span>
-					</div>
-				</div>
-				<br class="breaker" />
-			</div>
-		</div>
-	</div>    <!-- stop header -->
-    <!-- start content -->
+		
 	
 	
 	
 	
        
-      <div class="pfeil">
-        <div style="position: relative; width: 100%;">
-          <div class="arrow-down"></div>
-        </div>
-      </div>
-      <div id="intro-headline" data-anchor-target="#intro-text1" data-100-center="opacity: 1;" data-center="opacity: 0;">
-        
-      </div>
-      <div id="intro-bg">
-     </div>
+     
+      
     </div>
     <div id="story1" class="inner box backgr">
      
@@ -357,29 +293,17 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px;color:black">
  <span id="top" style="position:relative;top:-60px;"></span>
-<div class="featuresColumn3 textpole" style="margin-top:-20px;">
+<div class="featuresColumn3 textpole" style="margin-top:-20px; width:100%;">
 <h2 style="font-size: 40px;
   font-weight: normal;
   padding-bottom: 10px;
   line-height: 40px;color:#e5ef00;">Pomáháme zrychlovat potřeby zemědělce</h2>
 <div style="margin-top:40px;"></div>
-<div class="round textpole shadow" style="background:rgba(255, 255, 255, 0.5);height:180px; margin-top:40px;"><div style="margin-left:125px;">
-<h2 style="margin-left:0%">Výhody ifarm.cz</h2><div style="opacity:0.5;">
-<ol><li>Výhoda 1</li><li>Výhoda 2</li><li>Výhoda 3</li></ol><ol style="margin-left:300px;margin-top:-110px;"><li>Výhoda 1</li><li>Výhoda 2</li><li>Výhoda 3</li></ol></div></div></div>
+<div class="round textpole shadow" style="background:rgba(255, 255, 255, 0.9); margin-top:40px;"><div style="margin-left:90px;">
+<h2 style="margin-left:0%;margin-bottom: 20px;">Výhody ifarm.cz</h2><div style="opacity:0.9;">
+<ul style="list-style-type:none;"><li class="round" style="width:200px;padding-left:60px;background:#00b800; color:white;">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul><ul style="list-style-type:none; margin-left:300px;margin-top:-112px;"><li class="round" style="width:200px;padding-left:60px;background:#7e4c00; color:white">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul>
+<ul style="list-style-type:none; margin-left:600px;margin-top:-112px;"><li class="round" style="width:200px;padding-left:60px;background:#b77100; color:white;">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul></div></div></div>
 
-<div class="round font40 textpole shadow" style="background:rgba(255, 255, 255, 0.5);height:140px; margin-top:60px;">
-<div class="featuresColumn7 centertext shadow textpole">
-<div style="text-align:left;margin-left:0%;width:200px;">
-
-<span style="vertical-align:super;font-size:50%;">#</span>2<span class='supsub'><sup class='superscript'>nejrychlejší zemědělská</sup><sub class='subscript'>obchodní společnost ....</sub></span>
-
-</div>
-</div>
-<div class="featuresColumn7 centertext shadow textpole"><div style="text-align:left;margin-left:30%;width:200px;"><img src="../cz/img/inc500.png" class="efekt1" style="max-height:80px; margin-top:-10px;" /></div></div>
-<div class="featuresColumn7 centertext shadow textpole last">
-
-<div style="text-align:left;margin-left:0%;width:200px;"><span style="vertical-align:super;font-size:50%;">#</span>1<span class='supsub'><sup class='superscript'>zde přijde text ...</sup><sub class='subscript'>co vystihne ifarm</sub></span></div>
-</div>
 
 </div>
 </div>
@@ -393,13 +317,11 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
         <br class="breaker" />
       </div>
-      <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
-	</div>
+      
 
 <div class="backgroun">
 <span id="videa" style="position:relative;top:25px;"></span>
-<div class="wrapper marginbot" style="height:300px;background:white;margin-top:100px;margin-bottom:0px;padding-top:0px;">
+<div class="wrapper marginbot" style="height:300px;background:white;margin-top:-140px;margin-bottom:0px;padding-top:0px;">
 
 <div class="featuresColumn">
    <img src="img/video-rostlinna.jpg" />
@@ -423,16 +345,17 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <span id="kolik" style="position:relative;top:30px;"></span>
 <div class="wrapper shadow" style="margin-top:300px;margin-bottom:20px;">
-<p><h2 class="velka marginl margint"style="margin-bottom:20px; color:white">Kolik to stojí</h2></p>
+<h2 class="velka marginl margint"style="margin-bottom:20px; background:white; padding-bottom:40px;padding-top:20px; margin-bottom:-30px;padding-left:60px;margin-left:-30px;">Kolik to stojí</h2>
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
  
-<div class="featuresColumn5 sediva textpole" style="border-right:1px solid white; border-left:1px solid white;">
+<div class="featuresColumn5 textpole" style="background:white; border-right:1px solid white; border-left:1px solid white; padding-top: 14px;
+  padding-bottom: 30px;">
 <span class="textpole sedivatext">Chci poptávat</span></br>
 <span class="center green shadowwhite">0Kč ZDARMA</span>
 </div>
  
-<div class="featuresColumn5 sediva textpole last">
+<div class="featuresColumn5 textpole last" style="background:white;">
   <span class="textpole sedivatext">Chci nabízet</span></br>
 <div style="margin-left:20%;"><span class="green shadowwhite">Měsíc ZDARMA, </span><span style="color:blue;">1200Kč / Rok</span></div>
 </div>
@@ -440,10 +363,13 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
      
 </div>
    
-<div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
-<p><h2 class="velka marginl" style="color:white">Recenze</h2></p>
+<div class="wrapper shadow" style="margin-top:20px;margin-bottom:20px;">
+
 </div>
-<div class="wrapper round font24 sediva textpole shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; min-height: 110px;">
+<div class="wrapper font24 textpole shadow" style="background:white;margin-top: 200px;
+  padding-bottom: 80px;
+  margin-bottom: 80px; font-size: 24px; min-height: 110px;">
+<h2 class="velka marginl">Recenze</h2>
 <div class="featuresColumn2">
   <span class="textpole sedivatext">„Kdo koupí, neprohloupí“<cite> M. Svoboda, Praha</cite></span></div>
 <div class="featuresColumn2 last">
@@ -456,30 +382,31 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <span id="jaktofunguje" style="position:relative;top:50px;"></span>
 <div class="backgroun">
 <div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
-<p><h2 class="velka marginl textwhite">Jak to celé funguje?</h2></p>
 </div>
-<div class="wrapper" style="padding-top: 48px;
+<div class="wrapper" style="padding-top: 20px;
   min-height: 200px;
   background: white;
   margin-top: 0px;
-  /* margin-bottom: 60px; */
+  padding-bottom: 60px;
   font-size: 24px;">
+<h2 class="velka marginl">Jak to celé funguje?</h2>
 <img src="img/kroky.jpg" style="display:block;
     margin-left:auto; margin-right:auto;" />
      </div>
 <br class="breaker" />
       <a href="#top" class="arrow-up grau scroll fade" style="position:relative; z-index:16000000;margin-top:50px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
-<p><h2 class="velka marginl textwhite">Poptávejte a začněte šetřit 10-30% nákladů</h2></p>
+
 </div>
-<div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
+<div class="wrapper font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%; background: white; padding-bottom:120px;margin-bottom:-20px; padding-top:20px;">
+<p><h2 class="velka marginl">Poptávejte a začněte šetřit 10-30% nákladů</h2></p>
  
-<div class="featuresColumn5 sediva textpole" style="min-height:103px;border-right:1px solid white; border-left:1px solid white;">
+<div class="featuresColumn5 textpole" style="min-height:103px;border-right:0px solid white; border-left:0px solid white; padding-top:0px; margin-top: 20px;">
 <span class="textpole sedivatext">Zadat poptávku</span>
 <span class="green shadowwhite"> ZDARMA</span>
 </div>
  
-<div class="featuresColumn5 sediva textpole last">
+<div class="featuresColumn5 textpole last">
   <span class="textpole sedivatext">Zadat nabídku</span>
 <span style="margin-left:0%;"><span class="green shadowwhite"> ZDARMA</span></span></br><span style="font-size:18px; margin-left:25%">Měsíc zdarma, dále<span style="color:blue;"> 1200Kč / Rok</span></span></div>
 </div>
@@ -490,12 +417,14 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
 <div class="backgroun">
 <div class="wrapper shadow" style="margin-top:0px;margin-bottom:0px;">
-<p><h2 class="velka marginl textwhite">Reference</h2></p>
 </div>
 <div class="backgroun">
 <div class="wrapper round backgroun font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
+
  <div class="pbile hpx650">
+
 <div class="featuresColumn6 textpole" style="max-height:180px;">
+<h2 class="velka marginl">Reference</h2>
 <div class="responsive-container9">
     <div class="dummy9"></div>
     <div class="img-container9 efekt1 efekt2"><img src="img/agrofert.png" style="max-width:100%;max-height:100%;"></div>
@@ -596,8 +525,8 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <div class="backgroun">
 <span id="ukazka" style="position:relative;top:-30px;"></span>
 <div class="wrapper" style="margin-top:780px;margin-bottom:0px;">
-<p><h2 class="marginl velka shadow textwhite">Ukázka uvnitř v praxi</h2></p>
 <div style="background:WHITE;width:100%;padding-top:40px;padding-bottom:20px;margin-bottom:20px;">
+<h2 class="marginl velka shadow">Ukázka uvnitř v praxi</h2>
 <img src="img/videobig.jpg"  style="max-width:40%;max-height:40%;margin-top:0px;margin-left:28%;" /></div>
      <br class="breaker" />
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:0px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
@@ -606,11 +535,10 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <div class="backgroun">
 
 <div class="wrapper" style="margin-top:300px;margin-bottom:80px;word-wrap: break-word;word-break: break-word;">
-<p><h2 class="marginl velka shadow textwhite">Obchodní podmínky</h2></p>
-
 <ul class="menu" style="padding-top: 14px;
   padding-bottom: 10px;
   background: white;">
+<h2 class="marginl velka shadow">Obchodní podmínky</h2>
     <li class="toggle1 round">Úvodní ustanovení</li>
     <li class="toggle2 round">Uživatelský účet</li>
     <li class="toggle3 round">Uzavření kupní smlouvy</li>
@@ -728,9 +656,8 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <span id="vyzkouset" style="position:relative;top:100px;"></span>
 
 <div class="wrapper velka" style="margin-top:400px;margin-bottom:80px;">
-<p><h2 class="marginl velka shadow textwhite">1x týdně 10 nejlepších zemědělských nabídek zdarma</h2></p>
-     <form name="form1" method="post" action="signup.php" class="sky-form pbile" style="padding-bottom:20px;">
-				
+     <form name="form1" method="post" action="signup.php" class="sky-form pbile" style="padding-bottom:20px;padding-top: 20px;">
+				<h2 class="marginl velka shadow">1x týdně 10 nejlepších zemědělských nabídek zdarma</h2>
 				
 				<fieldset>
 					<section>
@@ -743,20 +670,36 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 					<button type="submit" class="button">Odeslat</button></form>
 </div></div>
 </div></div>
+
+
+<div class="round font40 textpole shadow" style="background:rgba(255, 255, 255, 1);height:140px; margin-top:60px;">
+<div class="featuresColumn7 centertext shadow textpole">
+<div style="text-align:left;margin-left:30%;width:200px;">
+
+<span style="vertical-align:super;font-size:50%;">#</span>2<span class='supsub'><sup class='superscript'>nejrychlejší zemědělská</sup><sub class='subscript'>obchodní společnost ....</sub></span>
+
+</div>
+</div>
+<div class="featuresColumn7 centertext shadow textpole"><div style="text-align:left;margin-left:40%;width:200px;"><img src="../cz/img/logo-klasa.png" class="efekt1" style="max-height:80px; margin-top:-10px;" /></div></div>
+<div class="featuresColumn7 centertext shadow textpole last">
+
+<div style="text-align:left;margin-left:0%;width:200px;"><span style="vertical-align:super;font-size:50%;">#</span>1<span class='supsub'><sup class='superscript'>zde přijde text ...</sup><sub class='subscript'>co vystihne ifarm</sub></span></div>
+</div>
+</div>
+
 <br class="breaker" />
       <a href="#top" class="arrow-up grau scroll fade" style="margin-top:0px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
 <div class="wrapper textpole" style="margin-top:0px;margin-bottom:0px;">
 <p><h2 class="marginl velka shadow"></h2></p></div>
-<div class="wrapper sediva textpole" style="margin-top:0px;margin-bottom:0px;min-height:420px;">
+<div class="wrapper textpole" style="background:white; margin-top:0px;margin-bottom:0px;min-height:420px;">
 <div class="featuresColumn7 centertext shadow textpole">
 <div style="text-align:left;margin-left:30%;width:200px;"><h2 class="velka">ifarm účet</h2>
 Můj účet<br>Nastavení<br>Technická podpora </div>
 </div>
-<div class="featuresColumn7 centertext shadow textpole"><div style="text-align:left;margin-left:30%;width:200px;"><h2 class="velka">informace</h2>FAQ<br>Projekt ifarm<br>Obchodní podmínky  <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:150px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a></div></div>
+<div class="featuresColumn7 centertext shadow textpole"><div style="text-align:left;margin-left:30%;width:200px;"><h2 class="velka">informace</h2>FAQ<br>Projekt ifarm<br>Obchodní podmínky  </div></div>
 <div class="featuresColumn7 centertext shadow textpole last">
 
-<div style="text-align:left;margin-left:30%;width:200px;"><h2 class="velka">kontakt</h2>602 658 319<br><span  id="kontakt"></span>Roel Adriaan Ramp<br>Hrnčířská 765, Česká Lípa<br></div><img class="efekt1" src="img/cr.png" style="margin-left:5%;margin-top:10%;" />
+<div style="text-align:left;margin-left:30%;width:200px;"><h2 class="velka">kontakt</h2>602 658 319<br><span  id="kontakt"></span>Roel Adriaan Ramp<br>Hrnčířská 765, Česká Lípa<br></div><img class="efekt1" src="img/cr.png" style="margin-left:-220%;margin-top:10%;" />
 
 </div>
 </div>
