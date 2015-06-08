@@ -239,25 +239,25 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <a href="" id="link" style="color:white">Přihlásit</a>
 <div id="subscribe-pop">
 
-<div class="featuresColumn4 last" style="padding-top:0px; padding-bottom:22px; position:fixed; top:47px; right:-20px; background: rgba(255, 255, 255, 1); opacity: 1 !important;">
- <h2 class="textpole" style="margin-left:10%; color:black">Začít šetřit čas a peníze</h2>
+<div class="featuresColumn4 last shadow" style="border-radius: 0px 0px 8px 8px; width:14%;padding-top:20px; padding-bottom:22px; position:fixed; top:47px; right:-2px; background: rgba(232, 240, 49, 0.5); opacity: 1 !important; border-top:0px solid white">
+ 
 <div class="body" id="prihlasit" style="padding:0px !important;">			
 		
 			<!-- Red color scheme -->
 			<form name="form1" method="post" action="signup.php" class="sky-form">
 				
 				
-				<fieldset>
+				<fieldset style="padding: 0 0 0;">
 					<section>
-						<label class="label">Jméno</label>
+						<label class="label" class="textshadow" style="color: white;">Jméno</label>
 						<label class="input">
 							<input type="text">
 						</label>
-<label class="label">Email</label>
+<label class="label" style="color: white;">Email</label>
 						<label class="input">
 							<input type="text">
 						</label>
-<label class="label">Heslo</label>
+<label class="label" style="color: white;">Heslo</label>
 						<label class="input">
 							<input type="text">
 						</label>
@@ -315,7 +315,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
    
 
-        <br class="breaker" />
+      
       </div>
       
 
@@ -341,10 +341,9 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
     
 </div>
- <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+ 
 <span id="kolik" style="position:relative;top:30px;"></span>
-<div class="wrapper shadow" style="margin-top:300px;margin-bottom:20px;">
+<div class="wrapper shadow" style="margin-top:100px;margin-bottom:20px;">
 <h2 class="velka marginl margint"style="margin-bottom:20px; background:white; padding-bottom:40px;padding-top:20px; margin-bottom:-30px;padding-left:60px;margin-left:-30px;">Kolik to stojí</h2>
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
@@ -366,9 +365,9 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <div class="wrapper shadow" style="margin-top:20px;margin-bottom:20px;">
 
 </div>
-<div class="wrapper font24 textpole shadow" style="background:white;margin-top: 200px;
+<div class="wrapper font24 textpole shadow" style="background:white;margin-top: 220px;
   padding-bottom: 80px;
-  margin-bottom: 80px; font-size: 24px; min-height: 110px;">
+  margin-bottom: 100px; font-size: 24px; min-height: 110px;">
 <h2 class="velka marginl">Recenze</h2>
 <div class="featuresColumn2">
   <span class="textpole sedivatext">„Kdo koupí, neprohloupí“<cite> M. Svoboda, Praha</cite></span></div>
@@ -393,12 +392,11 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <img src="img/kroky.jpg" style="display:block;
     margin-left:auto; margin-right:auto;" />
      </div>
-<br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="position:relative; z-index:16000000;margin-top:50px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+
 <div class="wrapper shadow" style="margin-top:0px;margin-bottom:20px;">
 
 </div>
-<div class="wrapper font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%; background: white; padding-bottom:120px;margin-bottom:-20px; padding-top:20px;">
+<div class="wrapper font24 shadow" style="margin-top:100px;margin-bottom:80px; font-size: 24px; margin-left:0%; background: white; padding-bottom:120px;margin-bottom:-20px; padding-top:20px;">
 <p><h2 class="velka marginl">Poptávejte a začněte šetřit 10-30% nákladů</h2></p>
  
 <div class="featuresColumn5 textpole" style="min-height:103px;border-right:0px solid white; border-left:0px solid white; padding-top:0px; margin-top: 20px;">
@@ -410,8 +408,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
   <span class="textpole sedivatext">Zadat nabídku</span>
 <span style="margin-left:0%;"><span class="green shadowwhite"> ZDARMA</span></span></br><span style="font-size:18px; margin-left:25%">Měsíc zdarma, dále<span style="color:blue;"> 1200Kč / Rok</span></span></div>
 </div>
-     <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="position:relative; z-index:16000000;margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+    
      
 </div>
 
@@ -421,7 +418,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <div class="backgroun">
 <div class="wrapper round backgroun font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px; margin-left:0%;">
 
- <div class="pbile hpx650">
+ <div class="pbile hpx650" style="margin-top: 100px;">
 
 <div class="featuresColumn6 textpole" style="max-height:180px;">
 <h2 class="velka marginl">Reference</h2>
@@ -520,21 +517,19 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 </div>
 </div>
 </div>
-<br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:50px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+
 <div class="backgroun">
 <span id="ukazka" style="position:relative;top:-30px;"></span>
-<div class="wrapper" style="margin-top:780px;margin-bottom:0px;">
+<div class="wrapper" style="margin-top:100px;margin-bottom:0px;">
 <div style="background:WHITE;width:100%;padding-top:40px;padding-bottom:20px;margin-bottom:20px;">
 <h2 class="marginl velka shadow">Ukázka uvnitř v praxi</h2>
 <img src="img/videobig.jpg"  style="max-width:40%;max-height:40%;margin-top:0px;margin-left:28%;" /></div>
-     <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:0px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+   
 </div>
-<span id="podminky" style="position:relative;top:250px;"></span>
+<span id="podminky" style="position:relative;top:50px;"></span>
 <div class="backgroun">
 
-<div class="wrapper" style="margin-top:300px;margin-bottom:80px;word-wrap: break-word;word-break: break-word;">
+<div class="wrapper" style="margin-top:100px;margin-bottom:80px;word-wrap: break-word;word-break: break-word;">
 <ul class="menu" style="padding-top: 14px;
   padding-bottom: 10px;
   background: white;">
@@ -546,7 +541,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
     <li class="toggle5 round">Odstoupení od kupní smlouvy</li>
 <li class="toggle6 round">Přeprava a dodání zboží</li><li class="toggle7 round">Práva z Vadného plnění</li><li class="toggle8 round">Další práva a povinnosti smluvních stran</li><li class="toggle9 round">Ochrana osobních údajů</li><li class="toggle10 round">Zasílání obchodních sdělení a ukládání cookies</li><li class="toggle11 round">Doručování</li><li class="toggle12 round">Závěrečná ustanovení</li>
 </ul>
-<div class="container" style="padding-left: 20px;margin-top:20px;
+<div class="container" style="padding-left: 20px;margin-top:-10px;border-top:1px solid #f5f5f5;
   padding-right: 20px;
   margin-right: 10px;
   background: white;">
@@ -649,13 +644,12 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 </div>
 <div>
 </div>
-     <br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:100px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+    
 </div>
 
 <span id="vyzkouset" style="position:relative;top:100px;"></span>
 
-<div class="wrapper velka" style="margin-top:400px;margin-bottom:80px;">
+<div class="wrapper velka" style="margin-top:100px;margin-bottom:80px;">
      <form name="form1" method="post" action="signup.php" class="sky-form pbile" style="padding-bottom:20px;padding-top: 20px;">
 				<h2 class="marginl velka shadow">1x týdně 10 nejlepších zemědělských nabídek zdarma</h2>
 				
@@ -687,8 +681,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 </div>
 </div>
 
-<br class="breaker" />
-      <a href="#top" class="arrow-up grau scroll fade" style="margin-top:0px;" onclick="_paq.push(['trackEvent', 'CZ-Teaser', 'Norwegen-Top']);"></a>
+
 <div class="wrapper textpole" style="margin-top:0px;margin-bottom:0px;">
 <p><h2 class="marginl velka shadow"></h2></p></div>
 <div class="wrapper textpole" style="background:white; margin-top:0px;margin-bottom:0px;min-height:420px;">
