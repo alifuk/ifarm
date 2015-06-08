@@ -1,3 +1,8 @@
+.radek:hover + .featuresColumn4 {
+    background: #ccc
+}
+
+
 .xdebug-error {display:none}
 .xe-warning {display:none}
 

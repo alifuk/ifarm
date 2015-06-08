@@ -235,7 +235,43 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <li><a href="#jaktofunguje">Jak to funguje?</a></li>
 
 <li><a href="#kolik">Kolik to stojí</a></li>
-<li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li>	<li><a href="#top">Přihlásit</a></li>	
+<li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li>	<li><div id="footleft">
+<a href="#" id="link">Přihlásit</a>
+<div id="subscribe-pop">
+
+<div class="featuresColumn4 last" style="padding-top:70px; padding-bottom:80px; position:fixed; top:47px; right:-20px; background: rgba(255, 255, 255, 0.5);">
+ <h2 class="textpole" style="margin-left:10%;">Začít šetřit čas a peníze</h2>
+<div class="body" id="prihlasit" style="padding:0px !important;">			
+		
+			<!-- Red color scheme -->
+			<form name="form1" method="post" action="signup.php" class="sky-form">
+				
+				
+				<fieldset>
+					<section>
+						<label class="label">Jméno</label>
+						<label class="input">
+							<input type="text">
+						</label>
+<label class="label">Email</label>
+						<label class="input">
+							<input type="text">
+						</label>
+<label class="label">Heslo</label>
+						<label class="input">
+							<input type="text">
+						</label>
+</section>
+
+					<button type="submit" class="button">Přihlásit</button></fieldset></form></div>
+</div>
+
+
+
+</div>
+</div> 
+
+ </li>	
 			</ul>			
 			</nav>
 		
@@ -348,33 +384,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 </div>
 </div>
  
-<div class="featuresColumn4 last" style="margin-top:10px;">
- <h2 class="textpole" style="margin-left:10%;">Začít šetřit čas a peníze</h2>
-<div class="body" id="prihlasit" style="padding:0px !important;">			
-		
-			<!-- Red color scheme -->
-			<form name="form1" method="post" action="signup.php" class="sky-form">
-				
-				
-				<fieldset>
-					<section>
-						<label class="label">Jméno</label>
-						<label class="input">
-							<input type="text">
-						</label>
-<label class="label">Email</label>
-						<label class="input">
-							<input type="text">
-						</label>
-<label class="label">Heslo</label>
-						<label class="input">
-							<input type="text">
-						</label>
-</section>
 
-					<button type="submit" class="button">Přihlásit</button></form></div>
-</div>
-     </div>
 
 
 
@@ -754,6 +764,35 @@ Můj účet<br>Nastavení<br>Technická podpora </div>
 </div>
 
 </div>
+
+
+<!-- <script>
+$('#hidemenu').click(function(e) {
+        e.stopPropagation();
+    });
+
+$(document).click(function() {
+    $('#hidemenu').fadeOut(500);
+});
+</script> -->
+
+<script>
+$('html').click(function() {
+    $('#subscribe-pop').hide();
+ })
+
+ $('#footleft').click(function(e){
+     e.stopPropagation();
+ });
+
+$('#link').click(function(e) {
+ $('#subscribe-pop').toggle();
+ });
+
+
+
+</script>
+
 <script>
 var menu_elements = document.querySelectorAll('.menu>li'),
     menu_length = menu_elements.length;
