@@ -234,7 +234,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 			<li><a href="#videa">Projekt ifarm</a></li><li><a href="#ukazka">Ukázka z praxe</a></li>
 <li><a href="#jaktofunguje">Jak to funguje?</a></li>
 
-<li><a href="#kolik">Kolik to stojí</a></li>
+<li><a href="#kolik">Kolik to stojí?</a></li>
 <li><a href="#vyzkouset">Vyzkoušet</a></li><li><a href="#reference">Reference</a></li><li><a href="#podminky">Obchodní podmínky</a></li><li><a href="#kontakt">Kontakt</a></li>	<li><div id="footleft">
 <a href="" id="link" style="color:white">Přihlásit</a>
 <div id="subscribe-pop">
