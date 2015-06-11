@@ -217,7 +217,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
 </style>
 </head>
-<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper6.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
+<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farma.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;background-attachment: fixed;">
