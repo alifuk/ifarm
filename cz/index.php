@@ -194,14 +194,14 @@ $(document).ready(function() {
  <style>
 body > div.radek.hlavicka > nav > ul > li:nth-child(2) a {color:black;}
 body > div.radek.hlavicka > nav > ul > li:nth-child(2) {
-  background-color: #e5ef00;
+  background-color: white; /*#e5ef00;*/
   opacity: 0.8;
   -ms-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   -webkit-transition: opacity 0.2s;
   color: white !important;
 }
-body > div.radek.hlavicka > nav > ul > li:nth-child(1) {background-color: #b77100;
+body > div.radek.hlavicka > nav > ul > li:nth-child(1) {background-color: white /*#b77100*/;
   opacity: 0.8;
   -ms-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
@@ -217,7 +217,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 
 </style>
 </head>
-<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farma.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
+<body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper5.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
    background-size: cover;background-attachment: fixed;">
@@ -239,7 +239,8 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 <a href="" id="link" style="color:white">Přihlásit</a>
 <div id="subscribe-pop">
 
-<div class="featuresColumn4 last shadow" style="border-radius: 0px 0px 8px 8px; width:14%;padding-top:20px; padding-bottom:22px; position:fixed; top:47px; right:-2px; background: rgba(232, 240, 49, 0.5); opacity: 1 !important; border-top:0px solid white">
+<div class="featuresColumn4 last shadow" style="border-radius: 0px 0px 8px 8px; width:14%;padding-top:20px; padding-bottom:22px; position:fixed; top: 181px;
+  right: 50px; background: rgba(232, 240, 49, 0.5); opacity: 1 !important; border-top:0px solid white">
  
 <div class="body" id="prihlasit" style="padding:0px !important;">			
 		
@@ -280,7 +281,8 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
 	
 	
 	
-	
+	 <?php
+        include './menu2.php'; ?>
        
      
       
@@ -289,7 +291,7 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
      
 
 
-<div class="wrapper shadow" style="margin-top:-30px;margin-bottom:80px;">
+<div class="wrapper shadow" style="margin-top:-30px;margin-bottom:0px;">
 </div>
 <div class="wrapper round font24 shadow" style="margin-top:0px;margin-bottom:80px; font-size: 24px;color:black">
  <span id="top" style="position:relative;top:-60px;"></span>
@@ -298,8 +300,8 @@ body > div.radek.hlavicka > nav > ul > li:nth-child(9) > a {color:white !importa
   font-weight: normal;
   padding-bottom: 10px;
   line-height: 40px;color:#e5ef00;">Pomáháme zrychlovat potřeby zemědělce</h2>
-<div style="margin-top:40px;"></div>
-<div class="round textpole shadow" style="background:rgba(255, 255, 255, 0.9); margin-top:40px;"><div style="margin-left:90px;">
+<div style="margin-top:0px;"></div>
+<div class="round textpole shadow" style="background:rgba(255, 255, 255, 0.9); margin-top:0px;margin-left:-108px;  width: 92%;"><div style="margin-left:90px;">
 <h2 style="margin-left:0%;margin-bottom: 20px;">Výhody ifarm.cz</h2><div style="opacity:0.9;">
 <ul style="list-style-type:none;"><li class="round" style="width:200px;padding-left:60px;background:#00b800; color:white;">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul><ul style="list-style-type:none; margin-left:300px;margin-top:-112px;"><li class="round" style="width:200px;padding-left:60px;background:#7e4c00; color:white">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul>
 <ul style="list-style-type:none; margin-left:600px;margin-top:-112px;"><li class="round" style="width:200px;padding-left:60px;background:#b77100; color:white;">Výhoda 1</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 2</li><li class="round" style="width:200px;padding-left:60px;">Výhoda 3</li></ul></div></div></div>

@@ -38,8 +38,8 @@ nav ul li div.category {
   transition: visibility 0s linear .1s,opacity .1s linear;
   position: absolute;
  top: 50px;
-  left: 0%;
-  width: 100%;
+ left: -524px;
+  width: 192.7%;
   font-weight: 400;
   background-color: #fff!important;
   background-color: rgba(255,255,255,0.96)!important;
@@ -167,9 +167,9 @@ margint{margin-top:700px;}
 .centertext {text-align:center;}
 div.bottom { height: 200px; width: 100%;  margin-top: 30px; margin-bottom: none;}
 div.col { float: left; width: 49%;}
-.radek.hlavicka {position: fixed; z-index: 99999; top: 0; height: 47px; width: 100%; background: url(http://www.energiepodkontrolou.com/wp-content/themes/webify/_/img/nav_bg.png) repeat-x;
+.radek.hlavicka {position: fixed; z-index: 99999; top: 0; height: 47px; width: 100%; background: white /*url(http://www.energiepodkontrolou.com/wp-content/themes/webify/_/img/nav_bg.png) repeat-x;
   float: left;
-  min-width: 1240px;}
+  min-width: 1240px;*/}
 .radek.hlavicka h1 {overflow: hidden;
   text-indent: -99999px;
   background: url(../cz/headerlogo.png) no-repeat;
@@ -198,8 +198,8 @@ div.col { float: left; width: 49%;}
   border-left: 1px #d7d6da solid;}
 .radek.hlavicka nav ul li a {color: black;
   text-decoration: none;}
-body > div.radek.hlavicka > nav > ul > li:nth-child(1) > a {color: white;
-  text-decoration: none;}
+/*body > div.radek.hlavicka > nav > ul > li:nth-child(1) > a {color: white;
+  text-decoration: none;}*/
 
 
 .radek.hlavicka nav ul li:nth-child(2) {/*
