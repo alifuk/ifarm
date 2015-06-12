@@ -25,19 +25,19 @@ while ($stmt->fetch()) {
 
     
     if ($zobrazeni == "počet") {
-        include './sablony/numberBox.php';
+        include './parts/numberBox.php';
     } elseif ($zobrazeni == "multivolba") {
         echo "<h3>".$nazev."</h3><br>";
         foreach (explode(",", $volby) as $volba) {
-            include './sablony/multiBox.php';
+            include './parts/multiBox.php';
         }
         echo "<br>";
     } elseif ($zobrazeni == "volba") {
-        include './sablony/volbaBox.php';
+        include './parts/volbaBox.php';
     } elseif ($zobrazeni == "text") {
-        include './sablony/textBox.php';
+        include './parts/textBox.php';
     } elseif ($zobrazeni == "ano/ne") {
-        include './sablony/boolBox.php';
+        include './parts/boolBox.php';
     }
 }
 $stmt->close();
