@@ -1,0 +1,887 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from app.claas.com/2015/tractors/cz/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 11 May 2015 15:59:04 GMT -->
+<head>
+<title>iFarm.cz - Portál pro zemědělce v Česku</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="WT.cg_n" content="Traktorenkampagne" />
+<meta name="WT.cg_s" content="CZ_INT: Home" />
+<meta property="og:image" content="../images/facebook-story4.jpg" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width">
+<!-- start SkyForm -->
+<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/sky-forms.css">
+		<link rel="stylesheet" href="css/sky-forms-blue.css">
+       <!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/sky-forms-ie8.css">
+		<![endif]-->
+		
+		<script src="js/jquery.min.js"></script>
+		<!--[if lt IE 10]>
+			<script src="js/jquery.placeholder.min.js"></script>
+		<![endif]-->		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/sky-forms-ie8.js"></script>
+		<![endif]-->
+<!-- end SkyForm -->
+<link rel="icon" href="../images/favicon.gif" type="image/gif" />
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="../css/main4a.css" rel="stylesheet" type="text/css" />
+<link href="../css/main-responsive4.css" rel="stylesheet" type="text/css" />
+<link href="../css/responsive-layout4.css" rel="stylesheet" type="text/css" />
+<link href="../css/story4.css" rel="stylesheet" type="text/css" />
+<link href="../css/colorbox.css" rel="stylesheet" type="text/css" />
+<link href="../css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
+<link href="../css/magnific-popup.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="../scripts/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.js"></script>
+<script type="text/javascript" src="../scripts/jquery.cycle2.swipe.min.js"></script>
+<script type="text/javascript" src="../scripts/skrollr.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.min.js"></script>
+<script type="text/javascript" src="../scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.magnific-popup.min.js"></script>
+
+<!-- Adserver Zählpixel -->
+<script type="text/javascript" src="../../../../cdn.flashtalking.com/container/6209/js/ftspot.js"></script>
+
+
+
+ 
+<script type="text/javascript">
+$(document).ready(function() {
+		
+	    $('.image-link').magnificPopup({type:'image'});
+        $('.iframe-link').magnificPopup({
+          disableOn: 1040,
+          type: 'iframe',
+          mainClass: 'mfp-fade',
+          fixedContentPos: true
+        });
+		$('.gallery-item').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+		$('.gallery-item2').magnificPopup({
+		  type: 'image',
+		  gallery:{
+			enabled:true
+		  }
+		});
+        $('.wallpaper-link').magnificPopup({
+          disableOn: 700,
+          type: 'iframe',
+          mainClass: 'ratio169',
+          removalDelay: 160,
+          preloader: false,
+
+          fixedContentPos: false
+        });
+
+	  
+//=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
+(function($){
+  $(document).on("ready", function () {
+      var urlHash = window.location.href.split("#")[1];
+      $('html,body').animate({
+          scrollTop: $('.' + urlHash + ', #' + urlHash +',[name='+urlHash+']').first().offset().top -66
+      }, 1);
+  });
+
+})(jQuery);
+
+
+// =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
+(function($) {
+ 	$('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top -66
+	        }, 1500);
+	        return false;
+	      }
+	    }
+  	});
+})(jQuery);
+	  
+	  
+
+	
+	$(".world-link").click(function(event){	
+		$('#weltkarte').toggle();
+	});
+	$("#weltkarte").mouseleave(function(event){	
+		$("#weltkarte").hide();
+	});
+	
+
+	
+	$("#sprachauswahl-link").click(function(event){	
+		$('#sprachauswahl-sub').toggle();
+	});
+	$("#sprachauswahl-sub").mouseleave(function(event){	
+		$("#sprachauswahl-sub").hide();
+	});
+	
+	
+	$("#menu").click(function(event){	
+		$('#navi').toggle();
+	});
+	
+	
+	resizeContent();
+	$(window).resize(function() {
+		resizeContent();
+	});
+	function resizeContent() {
+		var breite = $(window).width();
+		var hoehe = $(window).height();
+
+		if(breite<1280){
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","none");
+			});
+			$('#navi').css("display","none");
+		} else {
+			$('#navi').css("display","block");
+			$("#navi a").click(function(event){	
+				$('#navi').css("display","block");
+			});
+			$( "#submenu-link" )
+			.mouseover(function() {
+				$('#submenu').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu').css("display","none");
+			});
+			$( "#submenu-link2" )
+			.mouseover(function() {
+				$('#submenu2').css("display","block");
+			})
+			.mouseout(function() {
+				$('#submenu2').css("display","none");
+			});
+		}
+	}	
+	
+	$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed:5});
+	
+});
+</script>
+
+
+<!-- Custom Scrollbar -->
+<link href="../css/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../scripts/jquery.mCustomScrollbar.js"></script>
+<script>
+(function($){
+	$(window).load(function(){
+		$(".tablecontent").mCustomScrollbar({
+			axis:"x",
+			theme:"dark-3",
+			scrollButtons:{enable:true}
+		});
+	});
+})(jQuery);
+</script>
+</head>
+<body class="language-CZ" onload="callFT('CZ_01_Landingpage');">
+
+
+<!-- start header -->
+    	<div id="header">
+		<div id="header-content" class="inner">
+			<div id="header-left">
+				<div id="logo">
+					<a href="index.html" onclick="callFT('CZ_01_Landingpage'); _paq.push(['trackEvent', 'CZ-Navigation', 'Progression']);"><img src="../images/header_claas-progression.png" border="0" /></a>
+				</div>
+				<div id="navi">
+					<ul>
+						<li id="startseite-link"><a href="index.html" onclick="callFT('CZ_01_Landingpage');">Úvodní stránka</a></li>
+						<li id="submenu-link">
+						  
+						  <ul id="submenu">
+							  <li><a href="norwegen.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Norwegen']);">Norsko</a></li>
+							  <li><a href="frankreich.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Frankreich']);">Francie</a></li>
+							  <li><a href="schweiz.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Schweiz']);">Švýcarsko</a></li>
+							  <li><a href="grossbritannien.html" onclick="callFT('CZ_02_Stories'); _paq.push(['trackEvent', 'CZ-Navigation', 'Grossbritannien']);">Velká Británie</a></li>
+						  </ul>
+						</li>
+						<li><a href="#slider1_container" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">O projektu iFarm</a></li>
+                        <li><a href="#slider2_container" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">Ukázka z praxe</a></li>
+                        <li><a href="#slider3_container" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">Kolik to stojí?</a></li>
+						<li><a href="#slider4_container" class="scroll" onclick="callFT('CZ_03_Takepart'); _paq.push(['trackEvent', 'CZ-Navigation', 'Mitmachen']);">Vyzkoušet</a></li>
+                        
+                        
+                        <li><a href="#story-bilder4" class="scroll" onclick="callFT('CZ_06_Pictures'); _paq.push(['trackEvent', 'CZ-Navigation', 'Bilder']);">Šablony poptávek</a></li>
+						
+						<li id="submenu-link2"><a href="#slider4_container"><b>Přihlásit</b></a>
+							<ul id="submenu2">
+								<li><a href="#newsletter" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'NewsletterAnmeldung']);">Registrace k odběru novinek</a></li>
+								<li><a href="http://confirm-excellentwork.claas.com/pages/cs/kontakt.phtml" class="iframe-link" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'IhreAnfrage']);">Váš požadavek</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+          
+                
+				<div id="menu">Menu</div>
+			</div>
+			<div id="header-right">
+				<div id="sprachauswahl-head">
+					
+				  <div id="sprachauswahl-sub">
+	<ul>
+		<li><a href="index.html">Čeština</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/dk/index.php">Dansk</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/de/index.php">Deutsch</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/en/index.php">English</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/es/index.php">Español</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/fr/index.php">Français</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/it/index.php">Italiano</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/hu/index.php">Magyar</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/nl/index.php">Nederlandse</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/pl/index.php">Polski</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ro/index.php">Română</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/ru/index.php">Русский</a></li>
+		<li><a href="http://app.claas.com/2015/tractors/sk/index.php">Slovenčina</a></li>
+	</ul>
+</div>				</div>
+			</div>
+		</div>
+		<div id="weltkarte">
+			<div class="inner">
+				<div class="weltkarte-links">
+					<img src="../images/weltkarte.png" />
+				</div>
+				<div class="weltkarte-rechts">
+					<div class="weltkarte-titel">Mezinárodní poptávkový a nabídkový portál pro zemědělce v Česku</div>
+					<img src="../images/weltkarte-verlauf.png" id="verlauf" />
+					<div class="weltkarte-scrollarea">
+						<a href="norwegen.html" class="neu" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Norwegen']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Norsko</div>
+							<div class="weltkarte-sub">"Sníh si nebere dovolenou."</div>
+						</div></a>
+						<a href="frankreich.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Frankreich']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Francie</div>
+							<div class="weltkarte-sub">"Vztah založený na vzájemné důvěře."</div>
+						</div></a>
+						<a href="schweiz.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Schweiz']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Švýcarsko</div>
+							<div class="weltkarte-sub">"Producent mléka s přesvědčením a láskou k přírodě."</div>
+						</div></a>
+						<a href="grossbritannien.html" class="alt" onclick="_paq.push(['trackEvent', 'CZ-Navigation', 'Weltkarte-Grossbritannien']);"><div class="weltkarte-land">
+							<div class="weltkarte-head">Velká Británie</div>
+							<div class="weltkarte-sub">"11 měsíců sklizně v roce."</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Německo</div>
+							<div class="weltkarte-sub">19.06.2015</div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Dánsko</div>
+							<div class="weltkarte-sub">08/2015</div>
+						</div></a>
+                        <a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Nizozemí</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Španělsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Austrálie</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<a href="#" class="comingsoon"><div class="weltkarte-land">
+							<div class="weltkarte-head">Polsko</div>
+							<div class="weltkarte-sub"></div>
+						</div></a>
+						<span id="abstand"></span>
+					</div>
+				</div>
+				<br class="breaker" />
+			</div>
+		</div>
+	</div>    <!-- stop header -->
+    <!-- start content -->
+	
+	
+	
+	
+    <div id="intro">
+     <!-- #Box -->
+     <!-- Use a container to wrap the slider, the purpose is to enable slider to always fit width of the wrapper while window resize -->
+    <div class="container">
+        <!-- Jssor Slider Begin -->
+        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- ================================================== -->
+        <div id="slider1_container" style="display: none; position: relative; width: 1140px; height: 442px; overflow: hidden;"> <!-- 1140px width -->
+
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+                <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+
+                background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
+                </div>
+                <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+
+                top: 0px; left: 0px;width: 100%;height:100%;">
+                </div>
+            </div>
+
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
+            overflow: hidden;">
+                <div>
+                    <img u="image" src2="img/home/01.jpg" />
+                </div>
+                <div>
+                    <img u="image" src2="img/home/02.jpg" />
+                </div>
+                <div>
+                    <img u="image" src2="img/home/03.jpg" />
+                </div>
+                <div>
+                    <img u="image" src2="img/home/04.jpg" />
+                </div>
+            </div>
+            
+            <!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+            <style>
+                /* jssor slider bullet navigator skin 05 css */
+                /*
+                .jssorb05 div           (normal)
+                .jssorb05 div:hover     (normal mouseover)
+                .jssorb05 .av           (active)
+                .jssorb05 .av:hover     (active mouseover)
+                .jssorb05 .dn           (mousedown)
+                */
+                .jssorb05 {
+                    position: absolute;
+                }
+                .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                    position: absolute;
+                    /* size of bullet elment */
+                    width: 16px;
+                    height: 16px;
+                    background: url(img/b05.png) no-repeat;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .jssorb05 div { background-position: -7px -7px; }
+                .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+                .jssorb05 .av { background-position: -67px -7px; }
+                .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+            </style>
+            <!-- bullet navigator container -->
+            <div u="navigator" class="jssorb05" style="bottom: 16px;
+  right: 18px;
+  width: 100px;
+  height: 16px;
+  left: 83.5%;">
+                <!-- bullet navigator item prototype -->
+                <div u="prototype"></div>
+            </div>
+            <!--#endregion Bullet Navigator Skin End -->
+            
+            <!--#region Arrow Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+            <style>
+                /* jssor slider arrow navigator skin 11 css */
+                /*
+                .jssora11l                  (normal)
+                .jssora11r                  (normal)
+                .jssora11l:hover            (normal mouseover)
+                .jssora11r:hover            (normal mouseover)
+                .jssora11l.jssora11ldn      (mousedown)
+                .jssora11r.jssora11rdn      (mousedown)
+                */
+                .jssora11l, .jssora11r {
+                    display: block;
+                    position: absolute;
+                    /* size of arrow element */
+                    width: 37px;
+                    height: 37px;
+                    cursor: pointer;
+                    background: url(img/a11.png) no-repeat;
+                    overflow: hidden;
+                }
+                .jssora11l { background-position: -11px -41px; }
+                .jssora11r { background-position: -71px -41px; }
+                .jssora11l:hover { background-position: -131px -41px; }
+                .jssora11r:hover { background-position: -191px -41px; }
+                .jssora11l.jssora11ldn { background-position: -251px -41px; }
+                .jssora11r.jssora11rdn { background-position: -311px -41px; }
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+            </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+            </span>
+            <!--#endregion Arrow Navigator Skin End -->
+            <a style="display: none" href="http://www.jssor.com/">Bootstrap Slider</a>
+        </div>
+        <!-- Jssor Slider End -->
+    </div>
+    
+      <div class="pfeil">
+        <div style="position: relative; width: 100%;">
+          <div class="arrow-down"></div>
+        </div>
+      </div>
+      <div id="intro-headline" data-anchor-target="#intro-text1" data-100-center="opacity: 1;" data-center="opacity: 0;">
+        <div id="intro-text1">Jak to funguje?
+        </div>
+      </div>
+  
+     </div>
+    </div>
+      
+
+     
+    <!-- #Box -->
+    
+    <!-- #Box -->
+    
+<!--start Skyform-->
+<div class="body">			
+		
+			<!-- Red color scheme -->
+			<form name="form1" method="post" action="signup.php" class="sky-form">
+				<header>Šablona Poptávky</header>
+				
+				<fieldset>
+					<section>
+						<label class="label">Text input</label>
+						<label class="input">
+							<input type="text">
+						</label>
+					</section>
+					
+					<section>
+						<label class="label">File input</label>
+						<label for="file" class="input input-file">
+							<div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" readonly>
+						</label>
+					</section>					
+						
+					<section>
+						<label class="label">Input with autocomlete</label>
+						<label class="input">
+							<input type="text" name="jmeno" list="list">
+							<datalist id="list">
+								<option value="Alexandra"></option>
+								<option value="Alice"></option>
+								<option value="Anastasia"></option>
+								<option value="Avelina"></option>
+								<option value="Basilia"></option>
+								<option value="Beatrice"></option>
+								<option value="Cassandra"></option>
+								<option value="Cecil"></option>
+								<option value="Clemencia"></option>
+								<option value="Desiderata"></option>
+								<option value="Dionisia"></option>
+								<option value="Edith"></option>
+								<option value="Eleanora"></option>
+								<option value="Elizabeth"></option>
+								<option value="Emma"></option>
+								<option value="Felicia"></option>
+								<option value="Florence"></option>
+								<option value="Galiana"></option>
+								<option value="Grecia"></option>
+								<option value="Helen"></option>
+								<option value="Helewisa"></option>
+								<option value="Idonea"></option>
+								<option value="Isabel"></option>
+								<option value="Joan"></option>
+								<option value="Juliana"></option>
+								<option value="Karla"></option>
+								<option value="Karyn"></option>
+								<option value="Kate"></option>
+								<option value="Lakisha"></option>
+								<option value="Lana"></option>
+								<option value="Laura"></option>
+								<option value="Leona"></option>
+								<option value="Mandy"></option>
+								<option value="Margaret"></option>
+								<option value="Maria"></option>
+								<option value="Nanacy"></option>
+								<option value="Nicole"></option>
+								<option value="Olga"></option>
+								<option value="Pamela"></option>
+								<option value="Patricia"></option>
+								<option value="Qiana"></option>
+								<option value="Rachel"></option>
+								<option value="Ramona"></option>
+								<option value="Samantha"></option>
+								<option value="Sandra"></option>
+								<option value="Tanya"></option>
+								<option value="Teresa"></option>
+								<option value="Ursula"></option>
+								<option value="Valerie"></option>
+								<option value="Veronica"></option>
+								<option value="Wilma"></option>
+								<option value="Yasmin"></option>
+								<option value="Zelma"></option>
+							</datalist>
+						</label>
+						<div class="note"><strong>Note:</strong> works in Chrome, Firefox, Opera and IE10.</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<section>
+						<label class="label">Select</label>
+						<label class="select">
+							<select>
+								<option value="0">Choose name</option>
+								<option value="1">Alexandra</option>
+								<option value="2">Alice</option>
+								<option value="3">Anastasia</option>
+								<option value="4">Avelina</option>
+							</select>
+							<i></i>
+						</label>
+					</section>
+					
+					<section>
+						<label class="label">Multiple select</label>
+						<label class="select select-multiple">
+							<select multiple name="jmeno2">
+								<option value="1">Alexandra</option>
+								<option value="2">Alice</option>
+								<option value="3">Anastasia</option>
+								<option value="4">Avelina</option>
+								<option value="5">Basilia</option>
+								<option value="6">Beatrice</option>
+								<option value="7">Cassandra</option>
+								<option value="8">Clemencia</option>
+								<option value="9">Desiderata</option>
+							</select>
+						</label>
+						<div class="note"><strong>Note:</strong> hold down the ctrl/cmd button to select multiple options.</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>					
+					<section>
+						<label class="label">Textarea</label>
+						<label class="textarea">
+							<textarea rows="3"></textarea>
+						</label>
+						<div class="note"><strong>Note:</strong> height of the textarea depends on the rows attribute.</div>
+					</section>
+					
+					<section>
+						<label class="label">Textarea resizable</label>
+						<label class="textarea textarea-resizable">
+							<textarea rows="3"></textarea>
+						</label>
+					</section>
+					
+					<section>
+						<label class="label">Textarea expandable</label>
+						<label class="textarea textarea-expandable">
+							<textarea rows="3"></textarea>
+						</label>
+						<div class="note"><strong>Note:</strong> expands on focus.</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<section>
+						<label class="label">Columned radios</label>
+						<div class="row">
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio" checked><i></i>Alexandra</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Alice</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Anastasia</label>
+							</div>
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio"><i></i>Avelina</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Basilia</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Beatrice</label>
+							</div>
+							<div class="col col-4">
+								<label class="radio"><input type="radio" name="radio"><i></i>Cassandra</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Clemencia</label>
+								<label class="radio"><input type="radio" name="radio"><i></i>Desiderata</label>
+							</div>
+						</div>						
+					</section>
+					
+					<section>
+						<label class="label">Inline radios</label>
+						<div class="inline-group">
+							<label class="radio"><input type="radio" name="radio-inline" checked><i></i>Alexandra</label>
+							<label class="radio"><input type="radio" name="radio-inline"><i></i>Alice</label>
+							<label class="radio"><input type="radio" name="radio-inline"><i></i>Anastasia</label>
+							<label class="radio"><input type="radio" name="radio-inline"><i></i>Avelina</label>
+							<label class="radio"><input type="radio" name="radio-inline"><i></i>Beatrice</label>
+						</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<section>
+						<label class="label">Columned checkboxes</label>
+						<div class="row">
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox" checked><i></i>Alexandra</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Alice</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Anastasia</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Avelina</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Basilia</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Beatrice</label>
+							</div>
+							<div class="col col-4">
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Cassandra</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Clemencia</label>
+								<label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Desiderata</label>
+							</div>
+						</div>
+					</section>
+					
+					<section>
+						<label class="label">Inline checkboxes</label>
+						<div class="inline-group">
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline" checked><i></i>Alexandra</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Alice</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Anastasia</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Avelina</label>
+							<label class="checkbox"><input type="checkbox" name="checkbox-inline"><i></i>Beatrice</label>
+						</div>
+					</section>
+				</fieldset>
+				
+				<fieldset>
+					<div class="row">
+						<section class="col col-5">
+							<label class="label">Toggles based on radios</label>
+							<label class="toggle"><input type="radio" name="radio-toggle" checked><i></i>Alexandra</label>
+							<label class="toggle"><input type="radio" name="radio-toggle"><i></i>Anastasia</label>
+							<label class="toggle"><input type="radio" name="radio-toggle"><i></i>Avelina</label>
+						</section>
+						
+						<div class="col col-2"></div>
+						
+						<section class="col col-5">				
+							<label class="label">Toggles based on checkboxes</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle" checked><i></i>Cassandra</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle"><i></i>Clemencia</label>
+							<label class="toggle"><input type="checkbox" name="checkbox-toggle"><i></i>Desiderata</label>	
+						</section>
+					</div>
+				</fieldset>
+				
+				<fieldset>					
+					<section>
+						<label class="label">Ratings with different icons</label>
+						<div class="rating">
+							<input type="radio" name="stars-rating" id="stars-rating-5">
+							<label for="stars-rating-5"><i class="fa fa-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-4">
+							<label for="stars-rating-4"><i class="fa fa-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-3">
+							<label for="stars-rating-3"><i class="fa fa-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-2">
+							<label for="stars-rating-2"><i class="fa fa-star"></i></label>
+							<input type="radio" name="stars-rating" id="stars-rating-1">
+							<label for="stars-rating-1"><i class="fa fa-star"></i></label>
+							Stars
+						</div>
+						
+						<div class="rating">
+							<input type="radio" name="trophies-rating" id="trophies-rating-7">
+							<label for="trophies-rating-7"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-6">
+							<label for="trophies-rating-6"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-5">
+							<label for="trophies-rating-5"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-4">
+							<label for="trophies-rating-4"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-3">
+							<label for="trophies-rating-3"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-2">
+							<label for="trophies-rating-2"><i class="fa fa-trophy"></i></label>
+							<input type="radio" name="trophies-rating" id="trophies-rating-1">
+							<label for="trophies-rating-1"><i class="fa fa-trophy"></i></label>
+							Trophies
+						</div>	
+						
+						<div class="rating">
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-10">
+							<label for="asterisks-rating-10"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-9">
+							<label for="asterisks-rating-9"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-8">
+							<label for="asterisks-rating-8"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-7">
+							<label for="asterisks-rating-7"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-6">
+							<label for="asterisks-rating-6"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-5">
+							<label for="asterisks-rating-5"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-4">
+							<label for="asterisks-rating-4"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-3">
+							<label for="asterisks-rating-3"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-2">
+							<label for="asterisks-rating-2"><i class="fa fa-asterisk"></i></label>
+							<input type="radio" name="asterisks-rating" id="asterisks-rating-1">
+							<label for="asterisks-rating-1"><i class="fa fa-asterisk"></i></label>
+							Asterisks
+						</div>
+						<div class="note"><strong>Note:</strong> you can use more than 300 vector icons for rating.</div>
+					</section>
+				</fieldset>
+				
+				<footer>
+					<button type="submit" class="button">Submit</button>
+					<button type="button" class="button button-secondary" onclick="window.history.back();">Back</button>
+				</footer>
+			</form>
+			<!--/ Red color scheme -->			
+		</div>
+<!--end Skyform-->
+<div class="endlinie-grau"></div>
+   <!-- end test -->
+  <!-- #Box -->
+  <!-- stop content -->
+  <!-- start footer -->
+  	
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="jquery-1.9.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="docs.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="ie10-viewport-bug-workaround.js"></script>
+
+    <!-- jssor slider scripts-->
+    <!-- use jssor.js + jssor.slider.js instead for development -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+<script type="text/javascript" src="jssor.slider.mini.js"></script>
+<script>
+
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 12,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 4,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                }
+            };
+
+            //Make the element 'slider1_container' visible before initialize jssor slider.
+            $("#slider1_container").css("display", "block");
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth) {
+                    jssor_slider1.$ScaleWidth(parentWidth - 30);
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+<script type="text/javascript" src="../../../webtrends/CLAAS-Webtrends-301-news2010.js"></script>
+<noscript><img alt="" border="0" name="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcsipnyxyw4w0mqr2tl6jfm2y_9j9h/njs06ed.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.0.3" /></noscript>
+
+
+<!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2014 Webtrends Inc.  All rights reserved. -->
+<!-- Version: 9.4.0 -->
+<!-- Tag Builder Version: 4.1  -->
+<!-- Created: 12/15/2014 11:47:26 AM -->
+<script src="../../../webtrends/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+_tag.dcsCustom=function(){
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+}
+_tag.dcsCollect();
+//]]>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="../../../../analytics.nionex.net/dcshpbj3f6la0n8yzsefg0gh9_6s4o/njsac09.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=9.4.0&amp;dcssip=www.app.claas.com"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+<script type="text/javascript">
+	if(window.innerWidth>1040){
+		var s = skrollr.init({forceHeight: false});
+		window.addEventListener('load', function(){s.refresh()}, false);
+	}	
+</script>		
+</body>
+
+
+<!-- Created Mon, 11 May 2015 16:17:27 GMT -->
+</html>
