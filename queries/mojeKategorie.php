@@ -13,7 +13,7 @@ $stmt->execute();
 
 $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
 while ($stmt->fetch()) {    
-    include './forms/mojeKategorieE.php';
+    include './parts/mojeKategorieE.php';
 }
 $stmt->close();
 

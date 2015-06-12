@@ -28,7 +28,7 @@ $stmt->close();
 
 if(!$prazdne){
     
-    include './forms/nepridanyButton.php';
+    include './parts/nepridanyButton.php';
     
 }
 

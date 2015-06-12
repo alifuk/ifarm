@@ -10,7 +10,7 @@ $stmt->bind_result($jmeno, $prijmeni, $adresa1, $adresa2, $telefon, $zobrazitAdr
 
 while ($stmt->fetch()) {
     
-    include './forms/profileEditF.php';
+    include './parts/profileEditF.php';
     
 }
 

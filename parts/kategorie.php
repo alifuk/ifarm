@@ -12,7 +12,7 @@
     <?php
     for ($i = 0; $i < count($_SESSION['kategorie']); $i++) {
         $level = $i;
-        include './forms/kategorieRad.php';
+        include './parts/kategorieRad.php';
     }
     ?>
 
