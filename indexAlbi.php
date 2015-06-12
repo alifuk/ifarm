@@ -1,6 +1,7 @@
 <?php
 session_start();
 include './queries/setDefaultCategory.php';
+
 print_r($_SESSION['kategorie']);
 ?>
 
@@ -8,7 +9,6 @@ print_r($_SESSION['kategorie']);
 
 <html>
     <head>
-        <!--
         <meta charset="UTF-8">
         <title></title>     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -16,56 +16,46 @@ print_r($_SESSION['kategorie']);
         <link rel="stylesheet" href="./bootstrap-3.1.1-dist/css/bootstrap.min.css">
         
         <link rel="stylesheet" href="./bootstrap-3.1.1-dist/css/bootstrap-theme.min.css">
+        <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        
+
         <script src="./bootstrap-3.1.1-dist/js/jquery-2.1.4.min.js"></script>  <script>
-        
+
             /*$(document).ready(function(){
              $('[data-toggle="tooltip"]').tooltip();   
              });*/
-        </script> -->
-
-        <?php include './head.php'; ?>
+        </script>
     </head>
+    <body>
+<?php
+if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
 
+    include './forms/navbar.php';
 
-    <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('../cz/img/farming-wallpaper.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;background-attachment: fixed;">
+    include './queries/mojeSablony.php';
+    include './queries/profileEditQ.php';
 
+    include './forms/naseptavac.php';
+    include './forms/kategorieAll.php';
+    include './forms/kategorie.php';
 
-
-
-        <?php
-        include './menu.php';
-        include './menu2.php';
-
-        if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-
-            
-              include './forms/navbar.php';
-
-              include './queries/mojeSablony.php';
-              include './queries/profileEditQ.php';
-
-              include './forms/naseptavac.php';
-              include './forms/kategorie.php';
-
-              include './forms/sablona.php';
+    include './forms/sablona.php';
 
 
-              include './forms/aresForm.php';
-             
-            include './loggedIn.php';
+    include './forms/aresForm.php';
+} else {
+    include './forms/loginForm.php';
+    include './forms/registerForm.php';
+}
 
-        } else {
-            include './forms/loginForm.php';
-            include './forms/registerForm.php';
-            
-            include './landingPage.php';
-        }
-        ?>
+// put your code here
+?>
+    </body>
+</html>
