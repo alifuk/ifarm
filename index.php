@@ -18,34 +18,41 @@
 
 
 
-<?php include './menu.php'; ?>
+        <?php include './menu.php'; ?>
 
 
-<?php include './menu2.php'; ?>
+        <?php include './menu2.php'; ?>
 
 
-<div style="padding-left:20px;padding-right:20px;padding-bottom:20px;">
-        <?php
-        if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+        <div style="padding-left:20px;padding-right:20px;padding-bottom:20px;">
+            <div class="row">
+                <div class='col-md-3'></div>
+                <?php
+                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
-            
-            include './menuSablon.php';
-            include './queries/mojeSablony.php';
-            include './queries/profileEditQ.php';
+                    echo "<div class='col-md-2'>";                    
+                    include './menuSablon.php';
+                    echo "</div>";
+                    echo "<div class='col-md-4'>"; 
+                    include './queries/mojeSablony.php';
+                    include './queries/profileEditQ.php';
 
-            include './parts/naseptavac.php';
-            include './parts/kategorie.php';
+                    include './parts/naseptavac.php';
+                    include './parts/kategorie.php';
 
-            include './parts/sablona.php';
+                    include './parts/sablona.php';
 
 
-            include './parts/aresForm.php';
-        } else {
-            include './landingPage.php';
-        }
-        ?>   
+                    include './parts/aresForm.php';
+                    
+                    echo "</div>";
+                } else {
+                    include './landingPage.php';
+                }
+                ?>   
 
-</div>
+            </div>
+        </div>
 
 
 

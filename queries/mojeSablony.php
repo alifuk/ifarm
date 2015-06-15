@@ -5,7 +5,7 @@
 
 
 
-require_once './connect.php';
+require './connect.php';
 $stmt = $conn->prepare('SELECT kategorie.nazev, polozky.Id, polozky.datum FROM polozky INNER JOIN kategorie ON kategorie.Id = polozky.kategorieId WHERE polozky.userId = ?');
 $stmt->bind_param('s', $user );
 $user = $_SESSION['user'];

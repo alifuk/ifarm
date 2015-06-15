@@ -3,12 +3,14 @@
 class MenuSablon {
 
     public function vykresliMenu() {
-        echo "<div id='cssmenu'><ul>";
+        /*echo "<div id='cssmenu'><ul>";
 
         echo $this->getSubmenu(0);
 
 
-        echo "</ul></div>";
+        echo "</ul></div>";*/
+        
+        include './parts/vygenerovaneMenu.php';
     }
 
     private function hasSubmenu($nadKategorie) {
@@ -50,9 +52,9 @@ class MenuSablon {
         if ($this->hasSubmenu($kategorieId)) {
             echo "<li class='has-sub'><a href='#'><span>";
             echo $nazevKategorie;
-            echo "</span></a>";
+            echo "</span></a><ul>";
             echo $this->getSubmenu($kategorieId);
-            echo "</li>";
+            echo "</ul></li>";
             
         } else {
 
