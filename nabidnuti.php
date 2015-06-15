@@ -26,7 +26,7 @@
         ?>   
 
 
-        <form action="./queries/nabidkuPoptavku.php" method="POST" class="form-inline" id="login">
+        <form action="./queries/pridatNabidku.php" method="POST" class="form-inline" id="login">
         <?php
         if (isset($_GET['polozkaId'])) {
             //echo $_SESSION['kategorie'];
@@ -36,7 +36,7 @@
             echo 'Nezadaný parametr!';
         }
         ?>
-
+            <input type="hidden" value="<?php echo $_GET['polozkaId'] ?> " name="polozkaId" >
             <submit class="btn btn-primary btn-lg btn-block center-block" onclick="document.getElementById('login').submit();"> Přidat nabídku</submit>
         </form>
 

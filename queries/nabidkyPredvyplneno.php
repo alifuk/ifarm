@@ -23,7 +23,7 @@ while ($stmt->fetch()) {
         $predchozisekce = $sekce;
     }
 
-    echo $hodnota;
+    //echo $hodnota;
            
     if ($zobrazeni == "počet") {
         include './parts/numberBox.php';

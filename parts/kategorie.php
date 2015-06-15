@@ -10,6 +10,7 @@
     <br>
 
     <?php
+    print_r($_SESSION['kategorie']);
     for ($i = 0; $i < count($_SESSION['kategorie']); $i++) {
         $level = $i;
         include './parts/kategorieRad.php';
