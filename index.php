@@ -28,6 +28,8 @@
         <?php
         if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
+            
+            include './menuSablon.php';
             include './queries/mojeSablony.php';
             include './queries/profileEditQ.php';
 
