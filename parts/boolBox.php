@@ -1,7 +1,7 @@
-<!-- boolBox.php odkazováno z queries/nabidky.php   -->
+﻿<!-- boolBox.php odkazováno z queries/nabidky.php   -->
 
 <div class="checkbox">
-    <label>
+    <label class="checkbox">
         <input type="checkbox" name=<?php echo $IdDefinice; ?>
                
                <?php 

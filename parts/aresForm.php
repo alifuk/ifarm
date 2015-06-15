@@ -1,4 +1,4 @@
-<script>
+﻿<script>
     $(document).ready(function() {
         $("#ajax_loader").hide();
         $('#ico').change( function() {
@@ -41,17 +41,17 @@
     
 </script>
         
-<div class="jumbotron">
+<div class="body">
     <div class="container" style="max-width:500px;">
         <h1>ARES </h1>
         <hr>
-        <form action="./queries/login.php" method="POST" class="form-horizontal register" id="login">
+        <form action="./queries/login.php" method="POST" class="form-horizontal register" id="login" class="sky-form">
 
             <div class="form-group" >
-                <label for="ico" class="col-md-3 control-label">IČO:</label>
+                <label for="ico" class="label">IČO:</label>
 
                 <div class="col-sm-7">
-                    <input type="text" class="form-control" placeholder="Vložte email"  Id="ico"
+                    <input type="text" class="input" placeholder="Vložte email"  Id="ico"
                            data-toggle="tooltip" data-placement="right" name="email">
 
                 </div> 
@@ -59,34 +59,34 @@
 
             
             <div class="form-group">
-                <label for="dic" class="col-sm-3 control-label">DIČ:</label>
+                <label for="dic" class="label">DIČ:</label>
                 <div class="col-sm-7 ">
-                    <input type="text"  class="form-control" placeholder="DIČ" Id="dic">                           
+                    <input type="text"  class="input" placeholder="DIČ" Id="dic">                           
                 </div>
             </div> 
             
             <div class="form-group">
-                <label for="nazevFirmy" class="col-sm-3 control-label">Název firmy:</label>
+                <label for="nazevFirmy" class="label">Název firmy:</label>
                 <div class="col-sm-7 ">
                     <input type="text"  class="form-control" placeholder="Název firmy" Id="nazevFirmy">                           
                 </div>
             </div> 
             
             <div class="form-group">
-                <label for="adresaFirmy" class="col-sm-3 control-label">Adresa firmy:</label>
+                <label for="adresaFirmy" class="label">Adresa firmy:</label>
                 <div class="col-sm-7 ">
                     <input type="text"  class="form-control" placeholder="Adresa firmy" Id="adresaFirmy">                           
                 </div>
             </div> 
             
             <div class="form-group">
-                <label for="mesto" class="col-sm-3 control-label">Město:</label>
+                <label for="mesto" class="label">Město:</label>
                 <div class="col-sm-7 ">
                     <input type="text"  class="form-control" placeholder="Město" Id="mesto">                           
                 </div>
             </div> 
 
-            <!-- <submit class="btn btn-primary btn-lg btn-block center-block" onclick="document.getElementById('login').submit();"> Přihlásit</submit> -->
+            <submit class="button" onclick="document.getElementById('login').submit();"> Přihlásit</submit> 
         </form>
     </div>
 
