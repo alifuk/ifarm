@@ -32,6 +32,7 @@
         <link href="./css/colorbox.css" rel="stylesheet" type="text/css" />
         <link href="./css/perfect-scrollbar-0.4.10.min.css" rel="stylesheet" type="text/css" />
         <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
+        <link href="./css/sablonymenu.css" rel="stylesheet" type="text/css" />
 
         <script type="text/javascript" src="./scripts/jquery-1.9.1.min.js"></script>
         <script type="text/javascript" src="./scripts/jquery.cycle2.js"></script>
