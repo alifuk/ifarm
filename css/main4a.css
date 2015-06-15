@@ -28,6 +28,15 @@ nav ul li:hover div.category {
   -o-transition-delay: .2s;
   transition-delay: .2s;
 }
+nav ul li:hover div.category2 {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+  -moz-transition-delay: .2s;
+  -ms-transition-delay: .2s;
+  -o-transition-delay: .2s;
+  transition-delay: .2s;
+}
 nav ul li div.category {
   visibility: hidden;
   opacity: 0;
@@ -38,6 +47,30 @@ nav ul li div.category {
   transition: visibility 0s linear .1s,opacity .1s linear;
   position: absolute;
  top: 50px;
+ left: -524px;
+  width: 192.7%;
+  font-weight: 400;
+  background-color: #fff!important;
+  background-color: rgba(255,255,255,0.96)!important;
+  /* padding: 48px 0; */
+  overflow: hidden;
+  z-index: 10;
+  -moz-box-shadow: 0 5px 20px rgba(0,0,0,0.14);
+  -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.14);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.14);
+}
+
+nav ul li div.category2 {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s linear .1s,opacity .1s linear;
+  -moz-transition: visibility 0s linear .1s,opacity .1s linear;
+  -ms-transition: visibility 0s linear .1s,opacity .1s linear;
+  -o-transition: visibility 0s linear .1s,opacity .1s linear;
+  transition: visibility 0s linear .1s,opacity .1s linear;
+ top: 145px;
+    position: fixed;
+  z-index: 16000500;
  left: -524px;
   width: 192.7%;
   font-weight: 400;

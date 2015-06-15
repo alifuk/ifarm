@@ -22,7 +22,7 @@
 
                         <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#videa" style="color: white !important;">Nabídka</a>
 
-                            <div class="category"> 
+                            <div class="category2"> 
                                 <ul style="margin-left:50%;margin-right:auto"> 
 
 
