@@ -3,13 +3,10 @@
 class MenuSablon {
 
     public function vykresliMenu() {
-        /*echo "<div id='cssmenu'><ul>";
+        /* echo "<div id='cssmenu'><ul>";
+          echo $this->getSubmenu(0);
+          echo "</ul></div>"; */
 
-        echo $this->getSubmenu(0);
-
-
-        echo "</ul></div>";*/
-        
         include './parts/vygenerovaneMenu.php';
     }
 
@@ -55,10 +52,9 @@ class MenuSablon {
             echo "</span></a><ul>";
             echo $this->getSubmenu($kategorieId);
             echo "</ul></li>";
-            
         } else {
 
-            echo "<li><a href='#'><span>";
+            echo "<li><a href='./queries/setCategory.php?kategorie=" . $kategorieId . "&level=1'><span>";
             echo $nazevKategorie;
             echo "</span></a></li>";
         }
@@ -67,6 +63,9 @@ class MenuSablon {
 }
 
 $menuSablon = new menuSablon();
+echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
+
+include './parts/naseptavac.php';
 echo $menuSablon->vykresliMenu();
 ?>
 

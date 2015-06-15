@@ -17,7 +17,7 @@ $nalezeno = false;
 
 while ($stmt->fetch()) {
     $nalezeno = true;
-    echo "<div>".$nazev."</div>";
+    echo "<a href='./queries/setCategory.php?kategorie=" . $Idecko . "&level=1'><div class='nalezenaPolozka'>".$nazev."</div></a>";
     
 }
 $stmt->close();

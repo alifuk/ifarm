@@ -4,19 +4,18 @@
     $(document).ready(function () {
 
 
+        $(".naseptavacKategorie").hide();
         $("#hledaniKategorii").change(function () {
-            //alert("sdsssf");
             $.post("./queries/nalezeniKategorie.php",
                     {
                         nazev: $("#hledaniKategorii").val(),
                     },
-            function (data, status) {
-                //alert("sdf");
-               
-                $("#naseptavacKategorie").html(data);
-                
-                
-            });
+                    function (data, status) {
+                        $(".naseptavacKategorie").show();
+                        $(".naseptavacKategorie").html(data);
+
+
+                    });
 
 
         });
@@ -29,11 +28,11 @@
 </script>
 
 
-<form class="form-inline " role="search" style="position: relative; display: inline-block; margin: 0 auto; width: 300px;">
+<form class="form-inline " role="search" style="position: relative; display: inline-block; margin: 0 auto 9px; width: 300px;">
     <div class="form-group">
-        <input type="text" class="form-control" placeholder="Hledání kategori" id="hledaniKategorii">
+        <input type="text" class="form-control" placeholder="Hledání kategorií" id="hledaniKategorii" style="width: 199px;">
     </div>
-    <div style=" position: relative; top: 40px; background-color: #F00; width: 300px;" id="naseptavacKategorie">
+    <div style=" position: absolute; top: 0px; width: 250px; left:220px; z-index: 3;" class="naseptavacKategorie">
 
 
 

@@ -26,7 +26,7 @@
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px;">
             <div class="row">
-                <div class='col-md-3'></div>
+                <div class='col-md-2'></div>
                 <?php
                 if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
@@ -37,8 +37,7 @@
                     include './queries/mojeSablony.php';
                     include './queries/profileEditQ.php';
 
-                    include './parts/naseptavac.php';
-                    include './parts/kategorie.php';
+                    //include './parts/kategorie.php';
 
                     include './parts/sablona.php';
 
