@@ -1,7 +1,79 @@
+<?php
+
+class MenuSablon {
+
+    public function vykresliMenu() {
+        echo "<div id='cssmenu'><ul>";
+
+        echo $this->getSubmenu(0);
+
+
+        echo "</ul></div>";
+    }
+
+    private function hasSubmenu($nadKategorie) {
+        require './connect.php';
+
+        $stmt = $conn->prepare("SELECT kategorie.Id, nazev, count(polozky.Id) as nove, kategorie.tooltip FROM kategorie LEFT JOIN polozky ON polozky.kategorieId = kategorie.Id WHERE kategorie.nadkategorie = ? GROUP BY nazev");
+        $stmt->bind_param('i', $nadKategorie);
+
+        $stmt->execute();
+
+        $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
+        $existuje = false;
+        while ($stmt->fetch()) {
+            $existuje = true;
+        }
+        $stmt->close();
+        return $existuje;
+    }
+
+    private function getSubmenu($nadKategorie) {
+
+        require './connect.php';
+
+        $stmt = $conn->prepare("SELECT kategorie.Id, nazev, count(polozky.Id) as nove, kategorie.tooltip FROM kategorie LEFT JOIN polozky ON polozky.kategorieId = kategorie.Id WHERE kategorie.nadkategorie = ? GROUP BY nazev");
+        $stmt->bind_param('i', $nadKategorie);
+
+        $stmt->execute();
+
+        $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
+        while ($stmt->fetch()) {
+            $this->vykresliPolozku($nazevKategorie, $kategorieId);
+            //include './parts/mojeKategorieE.php';
+        }
+        $stmt->close();
+    }
+
+    private function vykresliPolozku($nazevKategorie, $kategorieId) {
+
+        if ($this->hasSubmenu($kategorieId)) {
+            echo "<li class='has-sub'><a href='#'><span>";
+            echo $nazevKategorie;
+            echo "</span></a>";
+            echo $this->getSubmenu($kategorieId);
+            echo "</li>";
+            
+        } else {
+
+            echo "<li><a href='#'><span>";
+            echo $nazevKategorie;
+            echo "</span></a></li>";
+        }
+    }
+
+}
+
+$menuSablon = new menuSablon();
+echo $menuSablon->vykresliMenu();
+?>
+
+
+<!--
 <div id='cssmenu'>
     <ul>
-        <li><a href='#'><span>Home</span></a></li>
-        <li class='active has-sub'><a href='#'><span>Products</span></a>
+        <li><a href='#'><span>Nabízet</span></a></li>
+        <li class='active has-sub'><a href='#'><span>Šablony poptávky</span></a>
             <ul>
 
 
@@ -28,7 +100,10 @@
 
             </ul>
         </li>
-        <li><a href='#'><span>About</span></a></li>
-        <li class='last'><a href='#'><span>Contact</span></a></li>
+        <li><a href='#'><span>Dotace</span></a></li>
+        <li class='last'><a href='#'><span>Můj profil</span></a></li>
     </ul>
 </div>
+
+
+-->
