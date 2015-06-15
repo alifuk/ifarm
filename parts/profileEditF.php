@@ -1,4 +1,4 @@
-<div class="jumbotron">
+﻿<div class="jumbotron">
     <div class="container" style="max-width:600px;">
         <h1>Kontaktní údaje </h1>
         <hr>
@@ -45,7 +45,7 @@
             </div> 
 
 
-            <submit class="btn btn-primary btn-lg btn-block center-block" onclick="document.getElementById('editProfileForm').submit();"> Uložit údaje</submit>
+            <submit class="btn btn-primary btn-block center-block" onclick="document.getElementById('editProfileForm').submit();"> Uložit údaje</submit>
         </form>
     </div>
 

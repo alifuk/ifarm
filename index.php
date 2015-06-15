@@ -24,7 +24,7 @@
 <?php include './menu2.php'; ?>
 
 
-
+<div style="padding-left:20px;padding-right:20px;padding-bottom:20px;">
         <?php
         if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
@@ -43,7 +43,7 @@
         }
         ?>   
 
-
+</div>
 
 
 

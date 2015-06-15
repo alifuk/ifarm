@@ -42,7 +42,7 @@ a:hover {
 .body {
 	max-width: 50%;
 	margin: 0 auto;
-	padding: 40px;
+	padding: 0px;
 	box-sizing: content-box;
 	-moz-box-sizing: content-box;
 }

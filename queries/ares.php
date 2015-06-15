@@ -1,4 +1,4 @@
-<?php  
+﻿<div style="padding-left: 40px;"><?php  
 
 header("Content-Type: application/json; charset=UTF-8"); 
 $url = 'http://wwwinfo.mfcr.cz/cgi-bin/ares/darv_bas.cgi?ico='; 
@@ -72,4 +72,4 @@ if (isset($xml)) {
 
 echo json_encode($a); 
 
-?>
+?></div>
