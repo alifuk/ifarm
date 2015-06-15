@@ -1,18 +1,18 @@
-<!-- nabidky.php odkazováno z forms/sablona.php   -->
+<!-- odkazováno z forms/sablona.php   -->
 
 
 <?php
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT def.Id, def.sekce, def.zobrazeni, def.nazev, def.volby, def.jednotky FROM `kategorie` INNER JOIN definicekategorie as def ON LCASE(kategorie.nazev) = LCASE(def.kategorie) WHERE kategorie.Id = ?   ");
-$stmt->bind_param('i', $kategorieId);
-$kategorieId = $_SESSION['kategorie'][count($_SESSION['kategorie']) - 1];
+$stmt = $conn->prepare("SELECT def.Id, def.sekce, def.zobrazeni, def.nazev, def.volby, def.jednotky, hodnota FROM definicekategorie as def LEFT JOIN polozkycondefinice ON def.Id = polozkycondefinice.definiceId WHERE polozkyId = ?");
+$stmt->bind_param('i', $polozkaId);
+$polozkaId = $_GET['polozkaId'];
 $stmt->execute();
 
 
 
 
-$stmt->bind_result($IdDefinice, $sekce, $zobrazeni, $nazev, $volby, $jednotky);
+$stmt->bind_result($IdDefinice, $sekce, $zobrazeni, $nazev, $volby, $jednotky, $hodnota);
 $existuje = false;
 $predchozisekce = "";
 
@@ -23,7 +23,8 @@ while ($stmt->fetch()) {
         $predchozisekce = $sekce;
     }
 
-    
+    echo $hodnota;
+           
     if ($zobrazeni == "počet") {
         include './parts/numberBox.php';
     } elseif ($zobrazeni == "multivolba") {

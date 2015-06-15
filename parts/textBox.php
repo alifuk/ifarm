@@ -1,8 +1,17 @@
-<!-- odkazováno z queries/nabidky.php   -->
+<!-- textBox.php odkazováno z queries/nabidky.php   -->
 <div class="form-group" >
     <label for='<?php echo $nazev . ""; ?>' ><?php echo $nazev; ?>:</label>
     <div class="input-group col-xs-8">
-        <input type="text" class="form-control input-small" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $IdDefinice; ?>' >
+        <input type="text" class="form-control input-small" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $IdDefinice; ?>' 
+               
+               <?php 
+               
+               if(isset($hodnota)){
+                   echo 'value="'.$hodnota . '" ';
+               }
+               ?>
+               
+               >
 
 
         <?php

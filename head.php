@@ -1,4 +1,4 @@
-
+<!-- head.php -->
         <title>iFarm.cz - Portál pro zemědělce v Česku</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="WT.cg_n" content="Traktorenkampagne" />
