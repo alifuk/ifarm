@@ -1,4 +1,6 @@
-
+<?php
+include '../php-image-resize-master/src/ImageResize.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -32,6 +34,62 @@
         $stmt->close();
 
         $polozkaId = $conn->insert_id;
+
+
+
+
+
+
+
+        $error = array();
+        $extension = array("jpeg", "jpg", "png", "gif", "doc", "docx", "xls", "xlsx", "mp3", "mp4");
+        print_r($_FILES);
+        foreach ($_FILES["files"]["tmp_name"] as $key => $tmp_name) {
+            $file_name = $_FILES["files"]["name"][$key];
+            $file_tmp = $_FILES["files"]["tmp_name"][$key];
+            $ext = pathinfo($file_name, PATHINFO_EXTENSION);
+            if (in_array($ext, $extension)) {
+
+
+                $stmt = $conn->prepare("INSERT INTO soubory (soubor, polozkaId) VALUES(?,?)");
+                $stmt->bind_param('ss', $file_name, $polozkaId);
+
+                $stmt->execute();
+                $stmt->close();
+                $fileId = $conn->insert_id;
+
+
+                if ($ext == "png") {
+                    $image = new ImageResize($_FILES["files"]["tmp_name"][$key]);
+                    $image->resizeToHeight(200);
+                    $image->save($_FILES["files"]["tmp_name"][$key]);
+                }
+
+
+
+                move_uploaded_file($file_tmp = $_FILES["files"]["tmp_name"][$key], "../uploads/" . $fileId . "." . $ext);
+            } else {
+                array_push($error, "$file_name, ");
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         foreach ($_POST as $key => $value) {
 
