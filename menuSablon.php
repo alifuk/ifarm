@@ -1,72 +1,12 @@
 <?php
 
-class MenuSablon {
+include './class/Kategorie.php';
 
-    public function vykresliMenu() {
-        /* echo "<div id='cssmenu'><ul>";
-          echo $this->getSubmenu(0);
-          echo "</ul></div>"; */
-
-        include './parts/vygenerovaneMenu.php';
-    }
-
-    private function hasSubmenu($nadKategorie) {
-        require './connect.php';
-
-        $stmt = $conn->prepare("SELECT kategorie.Id, nazev, count(polozky.Id) as nove, kategorie.tooltip FROM kategorie LEFT JOIN polozky ON polozky.kategorieId = kategorie.Id WHERE kategorie.nadkategorie = ? GROUP BY nazev");
-        $stmt->bind_param('i', $nadKategorie);
-
-        $stmt->execute();
-
-        $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
-        $existuje = false;
-        while ($stmt->fetch()) {
-            $existuje = true;
-        }
-        $stmt->close();
-        return $existuje;
-    }
-
-    private function getSubmenu($nadKategorie) {
-
-        require './connect.php';
-
-        $stmt = $conn->prepare("SELECT kategorie.Id, nazev, count(polozky.Id) as nove, kategorie.tooltip FROM kategorie LEFT JOIN polozky ON polozky.kategorieId = kategorie.Id WHERE kategorie.nadkategorie = ? GROUP BY nazev");
-        $stmt->bind_param('i', $nadKategorie);
-
-        $stmt->execute();
-
-        $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
-        while ($stmt->fetch()) {
-            $this->vykresliPolozku($nazevKategorie, $kategorieId);
-            //include './parts/mojeKategorieE.php';
-        }
-        $stmt->close();
-    }
-
-    private function vykresliPolozku($nazevKategorie, $kategorieId) {
-
-        if ($this->hasSubmenu($kategorieId)) {
-            echo "<li class='has-sub'><a href='#'><span>";
-            echo $nazevKategorie;
-            echo "</span></a><ul>";
-            echo $this->getSubmenu($kategorieId);
-            echo "</ul></li>";
-        } else {
-
-            echo "<li><a href='./queries/setCategory.php?kategorie=" . $kategorieId . "&level=1'><span>";
-            echo $nazevKategorie;
-            echo "</span></a></li>";
-        }
-    }
-
-}
-
-$menuSablon = new menuSablon();
+$menuSablon = new Kategorie();
 echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
 
 include './parts/naseptavac.php';
-echo $menuSablon->vykresliMenu();
+echo $menuSablon->vygenerovaneMenu();
 ?>
 
 

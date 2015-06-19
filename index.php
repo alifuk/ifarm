@@ -36,7 +36,7 @@
                     echo "<div class='col-md-4'>"; 
                     include './queries/mojeSablony.php';
                     include './queries/profileEditQ.php';
-
+                    include './parts/checkboxtree.php';
                     //include './parts/kategorie.php';
 
                     include './parts/sablona.php';
