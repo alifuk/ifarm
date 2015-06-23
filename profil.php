@@ -23,32 +23,39 @@
 
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
+
+            <img src="./img/profillogo.jpg" style="display: block; width: 200px; position: absolute; top: 0; left: 0; z-index: 5;"/>
+            <div style="height: 300px; overflow: hidden; position: relative;">
+
+                <img src="./img/profiluvodka.jpg" style="display: block; width: 100%; position: absolute; top: 0; left: 0; bottom: 0 ; right: 0; margin: auto; z-index: 4;"/>
+            </div>
+
             <div class="row">
-                
+
+                <div class='col-md-5'>
+                    <h1>
+                        <?php
+                        echo $_GET['spolecnost'];
+                        ?>
+                    </h1>
+                </div>
+                <div class='col-md-3'></div>
+
+
+                <div class='col-md-3'>
+
+                    <img src="./img/profilOvereno.jpg" style="width: 100px; float: right;">
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class='col-md-2'></div>
                 <?php
-                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-
-                    echo "<div class='col-md-4'>";                    
-                    include './menuSablon.php';
-                    echo "</div>";
-                    echo "<div class='col-md-4'>";
-                    include './parts/odkazNaProfil.php';
-                    
-                    include './queries/mojeSablony.php';
-                    include './queries/profileEditQ.php';
-                    include './parts/checkboxtree.php';
-                    //include './parts/kategorie.php';
-
-                    include './parts/sablona.php';
-                    
-                    
-
-                    include './parts/aresForm.php';
-                    
-                    echo "</div>";
-                } else {
-                    include './landingPage.php';
-                }
+                include './parts/profilKontakt.php';
+                include './parts/profilNabizime.php';
+                include './parts/profilPoptavame.php';
                 ?>   
 
             </div>
