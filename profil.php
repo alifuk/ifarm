@@ -10,12 +10,33 @@
         include 'head.php';
         ?>  
 
+
+
+        <!--
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script>
+            var map;
+            function initialize() {
+                map = new google.maps.Map(document.getElementById('map-canvas'), {
+                    zoom: 8,
+                    center: {lat: -34.397, lng: 150.644}
+                });
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+        </script>
+
+        -->
+
+
+
+
     </head>
     <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="/*background:url('./img/farming-wallpaper5.jpg') no-repeat;*/ max-width:100%; -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;background-attachment: fixed;">
-
 
 
         <?php include './menu.php'; ?>

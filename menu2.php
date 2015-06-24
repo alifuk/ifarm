@@ -1,15 +1,15 @@
 <div class="radek shadow hlavicka" style="margin-bottom: 0px; position:relative !important;  margin-top: 47px; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:9999;
-      height: 50px;
-      background: rgb(22,61,127);
-      background: -moz-linear-gradient(top, rgba(22,61,127,1) 1%, rgba(16,71,169,1) 68%, rgba(16,71,169,1) 100%);
-      background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(22,61,127,1)), color-stop(68%,rgba(16,71,169,1)), color-stop(100%,rgba(16,71,169,1)));
-      background: -webkit-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
-      background: -o-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
-      background: -ms-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
-      background: linear-gradient(to bottom, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d7f', endColorstr='#1047a9',GradientType=0 );
-      }
-      ">
+     height: 50px;
+     background: rgb(22,61,127);
+     background: -moz-linear-gradient(top, rgba(22,61,127,1) 1%, rgba(16,71,169,1) 68%, rgba(16,71,169,1) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(22,61,127,1)), color-stop(68%,rgba(16,71,169,1)), color-stop(100%,rgba(16,71,169,1)));
+     background: -webkit-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+     background: -o-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+     background: -ms-linear-gradient(top, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+     background: linear-gradient(to bottom, rgba(22,61,127,1) 1%,rgba(16,71,169,1) 68%,rgba(16,71,169,1) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#163d7f', endColorstr='#1047a9',GradientType=0 );
+     }
+     ">
 
     <nav style="position: relative;
          left: -125px;">
@@ -47,7 +47,7 @@
             </li>
 
 
-            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#ukazka" style="color: white !important;">Poptávka</a>
+            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="index.php" style="color: white !important;">Poptávka</a>
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
                         <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 
@@ -57,7 +57,27 @@
                     </ul> </div></li>
 
 
-            <li class="bcgrenergie"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#jaktofunguje" style="color: white !important;">Vytvořit web</a>
+
+                    <?php
+            require_once './connect.php';
+
+            $stmt = $conn->prepare("SELECT jmeno FROM users WHERE Id = ?");
+            $stmt->bind_param('i', $user);
+
+            $user = $_SESSION['user'];
+
+            $stmt->execute();
+
+            $stmt->bind_result($jmeno);
+            $odkazMujProfil = "";
+            while ($stmt->fetch()) {  
+                $odkazMujProfil = "profil.php?spolecnost=".$jmeno;
+            }
+            $stmt->close();
+
+            ?>
+
+            <li class="bcgrenergie"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="<?php echo $odkazMujProfil; ?>" style="color: white !important;">Profilová stránka</a>
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
                         <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 

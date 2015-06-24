@@ -1,5 +1,8 @@
 ﻿<h1>Moje poptávky</h1>
 
+
+<div id="poptavky-table" class="iboxshadow">
+
 <?php
 //albiIndex.php
 
@@ -18,8 +21,7 @@ $stmt->bind_result($kategorieName, $polozkaId, $polozkaDatum);
 while ($stmt->fetch()) {
     $prihlasen = true;
     
-    echo "<a href='./queries/zobrazeniSablony.php?polozkaId=".$polozkaId."' target='_blank'>".$kategorieName. " " . $polozkaDatum."</a><br>";
-    
+    include './parts/mojeSablonyRadekTabulky.php';
     
     
 }
@@ -31,6 +33,7 @@ $stmt->close();
 
 
 
+</div>
 
 
 

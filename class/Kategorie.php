@@ -10,6 +10,7 @@ class Kategorie {
     }
     
     public function predgenerovaneTree(){
+        
         include './parts/vygenerovaneTreeKategorii.php';
         
     }

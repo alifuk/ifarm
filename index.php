@@ -31,7 +31,7 @@
                     echo "<div class='col-md-4'>";                    
                     include './menuSablon.php';
                     echo "</div>";
-                    echo "<div class='col-md-4'>";
+                    echo "<div class='col-md-8'>";
                     include './parts/odkazNaProfil.php';
                     
                     include './queries/mojeSablony.php';
