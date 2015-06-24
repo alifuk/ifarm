@@ -32,7 +32,7 @@
                     include './menuSablon.php';
                     echo "</div>";
                     echo "<div class='col-md-8'>";
-                    include './parts/odkazNaProfil.php';
+                    //include './parts/odkazNaProfil.php';
                     
                     include './queries/mojeSablony.php';
                     include './queries/profileEditQ.php';
