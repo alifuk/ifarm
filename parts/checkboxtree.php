@@ -12,7 +12,8 @@
 
     echo '';
     $strom = new Kategorie();
-    $strom->getSubmenu(0);
+    //$strom->getSubmenu(0);
+    $strom->predgenerovaneTree();
     ?>
 </ul>
 

@@ -10,9 +10,12 @@ $user = $_SESSION['user'];
 
 $stmt->execute();
 
-$stmt->bind_result($jmeno);
+$stmt->bind_result($jmeno, $adresa1, $telefon);
 while ($stmt->fetch()) {
-    echo "<a href='profil.php?spolecnost=" . $jmeno . "'>Odkaz na profil</a>";
+    echo $jmeno . "<br>";
+    echo $adresa1. "<br>";
+    echo $telefon. "<br>";
+    echo "<img src='./img/profilMapa.png' style='width: 100%; '>";
 }
 $stmt->close();
 ?>

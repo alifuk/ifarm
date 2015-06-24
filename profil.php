@@ -51,12 +51,32 @@
             </div>
 
             <div class="row">
-                <div class='col-md-2'></div>
-                <?php
-                include './parts/profilKontakt.php';
-                include './parts/profilNabizime.php';
-                include './parts/profilPoptavame.php';
-                ?>   
+                <div class='col-md-6'>
+                    <h2>
+
+                        <?php
+                        include './parts/profilKontakt.php';
+                        ?> 
+
+                    </h2>
+                </div>
+
+                <div class='col-md-3'>
+
+                    <?php
+                    include './parts/profilNabizime.php';
+                    ?> 
+                </div>
+
+
+                <div class='col-md-3'>
+
+                    <?php
+                    include './parts/profilPoptavame.php';
+                    ?> 
+
+                </div>
+
 
             </div>
         </div>

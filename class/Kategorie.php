@@ -8,6 +8,11 @@ class Kategorie {
 
         include './parts/vygenerovaneMenu.php';
     }
+    
+    public function predgenerovaneTree(){
+        include './parts/vygenerovaneTreeKategorii.php';
+        
+    }
 
     private function hasSubmenu($nadKategorie) {
         require './connect.php';
@@ -37,8 +42,8 @@ class Kategorie {
 
         $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
         while ($stmt->fetch()) {
-            //$this->vykresliPolozku($nazevKategorie, $kategorieId);
-            $this->vykresliCheckboxy($nazevKategorie, $kategorieId);
+            //$this->vykresliPolozku($nazevKategorie, $kategorieId);    //vykreslí menu kategorií
+            $this->vykresliCheckboxy($nazevKategorie, $kategorieId);    //vykreslí checkboxy
             
             
         }

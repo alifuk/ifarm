@@ -5,9 +5,20 @@
 session_start();
 
 $pole = explode(" ", str_replace("p", "", $_POST['retezec']));
+
+
+
+include_once '../connect.php';
+
+$stmt = $conn->prepare("DELETE FROM usersconkategorie WHERE userId = ? ");
+$stmt->bind_param('i', $userId);
+$userId = $_SESSION['user'];
+$stmt->execute();
+
+$stmt->close();
+
 foreach ($pole as $kategorieId) {
 
-    include_once '../connect.php';
 
 
     $stmt = $conn->prepare("SELECT Id FROM usersconkategorie WHERE userId = ? AND kategorieId = ?");
