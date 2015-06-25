@@ -6,11 +6,14 @@
 
         $(".naseptavacKategorie").hide();
         $("#hledaniKategorii").change(function () {
+            
+                        alert("fddd");
             $.post("./queries/nalezeniKategorie.php",
                     {
                         nazev: $("#hledaniKategorii").val(),
                     },
                     function (data, status) {
+                        alert("fd");
                         $(".naseptavacKategorie").show();
                         $(".naseptavacKategorie").html(data);
 

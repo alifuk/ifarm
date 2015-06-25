@@ -6,8 +6,8 @@
         <meta property="og:image" content="../images/facebook-story4.jpg" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width"/>
+        
         <!-- start SkyForm -->
-        <link rel="stylesheet" href="css/demo.css"/>
         <link rel="stylesheet" href="css/font-awesome.css"/>
         <link rel="stylesheet" href="css/sky-forms.css"/>
         <link rel="stylesheet" href="css/sky-forms-blue.css"/>
@@ -34,9 +34,9 @@
         <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
         <link href="./css/sablonymenu.css" rel="stylesheet" type="text/css" />
 
-        <script type="text/javascript" src="./scripts/jquery-1.9.1.min.js"></script>
-        <script type="text/javascript" src="./scripts/jquery.cycle2.js"></script>
-        <script type="text/javascript" src="./scripts/jquery.cycle2.swipe.min.js"></script>
+        <script type="text/javascript" src="./scripts/jquery-2.1.4.min.js"></script>
+        <!-- <script type="text/javascript" src="./scripts/jquery.cycle2.js"></script>
+        <script type="text/javascript" src="./scripts/jquery.cycle2.swipe.min.js"></script>  -->
         <script type="text/javascript" src="./scripts/skrollr.min.js"></script>
         <script type="text/javascript" src="./scripts/perfect-scrollbar-0.4.10.min.js"></script>
         <script type="text/javascript" src="./scripts/perfect-scrollbar-0.4.10.with-mousewheel.min.js"></script>
@@ -44,18 +44,17 @@
 
 
         <script type="text/javascript">
+            /*
             $(document).ready(function () {
 
                 //=================================== SMOOTH SCROLLING EXTERNAL ANCHOR //	
-                (function ($) {
-                    $(document).on("ready", function () {
+                
                         var urlHash = window.location.href.split("#")[1];
                         $('html,body').animate({
                             scrollTop: $('.' + urlHash + ', #' + urlHash + ',[name=' + urlHash + ']').first().offset().top - 66
                         }, 1);
-                    });
-
-                })(jQuery);
+                        
+                        
 
 
                 // =================================== SMOOTH SCROLLING LOCAL ANCHOR //	
@@ -134,9 +133,11 @@
                     }
                 }
 
-                $('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed: 5});
+                //$('.weltkarte-scrollarea').perfectScrollbar({wheelSpeed: 5});
 
             });
+            
+            */
         </script>
 
 
