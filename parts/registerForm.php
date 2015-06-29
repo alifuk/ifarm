@@ -1,4 +1,27 @@
+<div id="postup-1" style="width: 166px;">
+    <fieldset class="iboxshadow">
+        <!-- <legend>Registrace</legend>  -->
+        <input type="email" placeholder="Email" style="padding-top: 5px;
+               padding-bottom: 5px;
+               padding-left: 10px;
+               margin-bottom: 15px;
+               border-width: 1px;
+               border-radius: 4px;">
+        <input type="text" placeholder="IČO" style="padding-top: 5px;
+               padding-bottom: 5px;
+               padding-left: 10px;
+               margin-bottom: 15px;
+               border-width: 1px;
+               border-radius: 4px;">
+        <input type="password" placeholder="Heslo" style="padding-top: 5px;
+               padding-bottom: 5px;
+               padding-left: 10px;
+               margin-bottom: 10px;
+               border-width: 1px;
+               border-radius: 4px;"> <label for="remember" style="color: thistle;"> <input id="remember" type="checkbox">zapamatovat</label> <button class="ibonus isubmit" type="submit">Registrovat</button></fieldset>
+</div>
 
+<!--
         
 <div class="jumbotron">
     <div class="container" style="max-width:500px;">
@@ -59,5 +82,5 @@
 
 </div>
 
-
+-->
 

@@ -3,7 +3,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="WT.cg_n" content="Traktorenkampagne" />
         <meta name="WT.cg_s" content="CZ_INT: Home" />
-        <meta property="og:image" content="../images/facebook-story4.jpg" />
+        <meta property="og:image" content="./img/farming-wallpaper.jpg" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width"/>
         

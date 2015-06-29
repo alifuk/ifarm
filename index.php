@@ -24,31 +24,9 @@
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
             <div class="row">
-                
+
                 <?php
-                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-
-                    echo "<div class='col-md-4'>";                    
-                    include './menuSablon.php';
-                    echo "</div>";
-                    echo "<div class='col-md-8'>";
-                    //include './parts/odkazNaProfil.php';
-                    
-                    include './queries/mojeSablony.php';
-                    include './queries/profileEditQ.php';
-                    include './parts/checkboxtree.php';
-                    //include './parts/kategorie.php';
-
-                    include './parts/sablona.php';
-                    
-                    
-
-                    include './parts/aresForm.php';
-                    
-                    echo "</div>";
-                } else {
-                    include './landingPage.php';
-                }
+                include './landingPage.php';
                 ?>   
 
             </div>

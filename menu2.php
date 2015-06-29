@@ -14,13 +14,13 @@
     <nav style="position: relative;
          left: -125px;">
         <ul>
-            <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#videa" style="color: white !important;">Nabídka</a>
-
+            <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nabidka.php" style="color: white !important;">Nabídka</a>
+                <!--
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
 
 
-                        <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#videa" style="color: white !important;">Nabídka</a>
+                        <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nabidka.php" style="color: white !important;">Nabídka</a>
 
                             <div class="category2"> 
                                 <ul style="margin-left:50%;margin-right:auto"> 
@@ -43,41 +43,67 @@
                         <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> 
                         <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> 
                     </ul> </div>
-
+                -->
             </li>
-
-
-            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="index.php" style="color: white !important;">Poptávka</a>
+            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="poptavka.php" style="color: white !important;">Poptávka</a>
+                <!--
+                
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
                         <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 
                         <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> 
                         <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> 
                         <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> 
-                    </ul> </div></li>
+                    </ul> </div>
+                -->
+            </li>
+
+            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nastaveni.php" style="color: white !important;">Nastavení</a>
+
+                <!--
+                <div class="category"> 
+                    <ul style="margin-left:50%;margin-right:auto"> 
+                        <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 
+                        <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> 
+                        <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> 
+                        <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> 
+                    </ul> </div>
+                
+                -->
+
+            </li>
 
 
 
-                    <?php
-            require_once './connect.php';
+            <?php
+            $strankaText = "Vytvořit web";
 
-            $stmt = $conn->prepare("SELECT jmeno FROM users WHERE Id = ?");
-            $stmt->bind_param('i', $user);
+            $odkazMujProfil = "vytvoritWeb.php";
 
-            $user = $_SESSION['user'];
+            if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
-            $stmt->execute();
+                $strankaText = "Profilová stránka";
 
-            $stmt->bind_result($jmeno);
-            $odkazMujProfil = "";
-            while ($stmt->fetch()) {  
-                $odkazMujProfil = "profil.php?spolecnost=".$jmeno;
+                require_once './connect.php';
+
+                $stmt = $conn->prepare("SELECT jmeno FROM users WHERE Id = ?");
+                $stmt->bind_param('i', $user);
+
+                $user = $_SESSION['user'];
+
+                $stmt->execute();
+
+                $stmt->bind_result($jmeno);
+                $odkazMujProfil = "";
+                while ($stmt->fetch()) {
+                    $odkazMujProfil = "profil.php?spolecnost=" . $jmeno;
+                }
+                $stmt->close();
             }
-            $stmt->close();
-
             ?>
 
-            <li class="bcgrenergie"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="<?php echo $odkazMujProfil; ?>" style="color: white !important;">Profilová stránka</a>
+            <li class="bcgrenergie"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="<?php echo $odkazMujProfil; ?>" style="color: white !important;"><?php echo $strankaText; ?></a>
+                <!--
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
                         <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 
@@ -85,18 +111,23 @@
                         <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> 
                         <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> 
                     </ul> 
-                </div></li>
+                </div>
+                -->
+            </li>
 
             <li class="bcgrenergie"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#kolik" style="color: white !important;">Dotace</a>
+                <!--
                 <div class="category"> 
                     <ul style="margin-left:50%;margin-right:auto"> 
                         <li><a href="/c133407-superfood" class="superfood" style="color:black">Nabídka 1</a></li> 
                         <li><a href="/c133411-bezlepkove-vyrobky" class="bezlepkove-vyrobky" style="color:black">Nabídka 2</a></li> 
                         <li><a href="/c133549-bezlaktozove-vyrobky" class="bezlaktozy" style="color:black">Nabídka 3</a></li> 
                         <li><a href="/c133405-raw" class="raw" style="color:black">Nabídka 4</a></li> 
-                    </ul> </div></li>
+                    </ul> </div>
+                -->
+            </li>
             <li class="bcgrenergie zenergietrans"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#" style="color: black !important;">
-
+                    
                     <div class="searchform large-12 medium-12 small-12">
                         <meta itemprop="url" content="#">
                         <form class="search-whisperer-wrap-v1 search-whisperer-wrap" action="#" method="post" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">

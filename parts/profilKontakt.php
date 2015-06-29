@@ -5,10 +5,10 @@
 <?php
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon FROM users WHERE Id = ?");
+$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon FROM users WHERE jmeno = ?");
 $stmt->bind_param('i', $user);
 
-$user = $_SESSION['user'];
+$user = $_GET['spolecnost'];
 
 $stmt->execute();
 
