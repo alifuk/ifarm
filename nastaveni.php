@@ -7,16 +7,16 @@ if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
     die();
 }
 ?>  
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<?php
-include './queries/setDefaultCategory.php';
-?>
+<!DOCTYPE html>
+<html>
+    <?php
+    include './queries/setDefaultCategory.php';
+    ?>
     <head>
 
-<?php
-include 'head.php';
-?>  
+        <?php
+        include 'head.php';
+        ?>  
 
     </head>
     <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="/*background:url('./img/farming-wallpaper5.jpg') no-repeat;*/ max-width:100%; -webkit-background-size: cover;
@@ -33,29 +33,16 @@ include 'head.php';
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
             <div class="row">
 
-<?php
-include './parts/aresForm.php';
-include './queries/profileEditQ.php';
-echo '<h1>Zvolte, co chcete poptávat</h1>';
-include './parts/checkboxtree.php';
+                <?php
+                include './parts/aresForm.php';
+                include './queries/profileEditQ.php';
+                echo '<h1>Zvolte, co chcete poptávat</h1>';
+                include './parts/checkboxtree.php';
 
 
-echo '<h1>Zvolte, co chcete nabízet</h1>';
-include './parts/checkboxtree.php';
-
-
-
-
-
-
-
-
-
-
-
-
-
-?>   
+                echo '<h1>Zvolte, co chcete nabízet</h1>';
+                include './parts/checkboxtree.php';
+                ?>   
 
             </div>
         </div>
