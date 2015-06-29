@@ -1,20 +1,28 @@
             
-<!-- start header -->
 
+<?php
+$odkaz = "index"; // odkaz, na který se bude směřovat po kliknutí na horní logo
+if( isset($_SESSION['user']) && $_SESSION['user'] != "" ){ 
+    $odkaz= "prehled";    
+}
+
+?>
+<!-- start header -->
 <div class="radek shadow hlavicka">
-    <h1><a href="#top" style="  float: left;
+    <h1><a href="<?php echo $odkaz; ?>.php" style="  float: left;
            width: 100%;
            height: 100%;">Energie pod kontrolou</a></h1>
     <nav>
         <ul>
-            <li><a href="#videa">Projekt ifarm</a></li><li><a href="#ukazka">Ukázka z praxe</a></li>
-            <li><a href="#jaktofunguje">Jak to funguje?</a></li>
+            <li><a href="index.php#videa">Projekt ifarm</a></li>
+            <li><a href="index.php#ukazka">Ukázka z praxe</a></li>
+            <li><a href="index.php#jaktofunguje">Jak to funguje?</a></li>
 
-            <li><a href="#kolik">Kolik to stojí?</a></li>
-            <li><a href="#vyzkouset">Vyzkoušet</a></li>
-            <li><a href="#reference">Reference</a></li>
-            <li><a href="#podminky">Obchodní podmínky</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>	
+            <li><a href="index.php#kolik">Kolik to stojí?</a></li>
+            <li><a href="index.php#vyzkouset">Vyzkoušet</a></li>
+            <li><a href="index.php#reference">Reference</a></li>
+            <li><a href="index.php#podminky">Obchodní podmínky</a></li>
+            <li><a href="index.php#kontakt">Kontakt</a></li>	
             <li><div id="footleft">
 
                     <?php

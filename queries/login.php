@@ -35,7 +35,7 @@ $stmt->close();
 if ($prihlasen) {
     echo "prihlaseni OK";
     
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+    header('Location: ../prehled.php');
 } else {
     echo "neúspěšné přihlášení";
 }

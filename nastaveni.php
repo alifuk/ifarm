@@ -3,7 +3,7 @@ session_start();
 if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
     
 } else {
-    header("Location: vytvoritWeb.php");
+    header("Location: index.php");
     die();
 }
 ?>  
