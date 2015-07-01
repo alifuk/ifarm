@@ -2,7 +2,11 @@
 <html>
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
+    if (isset($_SESSION['user'])) {
+        
+    } else {
+        header('Location: ./index.php');
+    }
     ?>
     <head>
 
@@ -29,28 +33,55 @@
             <div class="row">
 
                 <?php
-                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-
-                    echo "<div class='col-md-4'>";
-                    include './menuSablon.php';
-                    echo "</div>";
-                    echo "<div class='col-md-8'>";
-                    //include './parts/odkazNaProfil.php';
-
-                    include './queries/mojeSablony.php';
-                    //include './parts/kategorie.php';
-
-                    include './parts/sablona.php';
+                echo "<h1>Přehled</h1>";
+                echo "<div class='col-md-4'>";
+                echo "<h2>Aktuality</h2>";
 
 
 
-                    echo "</div>";
-                } else {
-                    echo "<h1>Vyberte šablonu</h1>";
-                    include './menuSablon.php';
 
-                    include './parts/sablonaRegister.php';
+                include "./class/simple_html_dom.php";
+
+                $html = file_get_html('http://www.zemedelec.cz/');
+
+                $count = 0;
+                foreach ($html->find('.post') as $post) {
+                    if ($count < 5) {
+                        foreach ($post->find('img') as $obrazek) {
+                            echo "<img src='" . $obrazek->src . "' style='width: 100px; float: left; margin-right: 20px;'>";
+                        }
+                        foreach ($post->find('.post__title') as $title) {
+                            echo "<h3>" . $title->plaintext . '</h3>';
+                        }
+                        echo "<div style='clear:both; height: 30px;'></div>";
+                    }
+                    $count++;
                 }
+
+                echo "</div>";
+
+
+
+                echo "<div class='col-md-4'>";
+
+
+
+                require_once './connect.php';
+
+
+
+
+                echo '<a href="http://www.slunecno.cz/mista/' . $_SESSION['adresa1'] . '"><img src="http://www.slunecno.cz/predpoved-na-web.php?obr=4&amp;m=1301&amp;v=2" alt="Počasí Praha - Bhovice - Slunečno.cz" style="border: 0px;" /></a>';
+
+
+
+                echo "</div>";
+                echo "<div class='col-md-4'>";
+
+                include './queries/mojeSablony.php';
+
+
+                echo "</div>";
                 ?>   
 
             </div>

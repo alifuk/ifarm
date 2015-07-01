@@ -6,7 +6,7 @@
 
 
 
-<ul id="tree1">
+<ul id="tree2">
     <?php
     include_once './class/Kategorie.php';
 
@@ -17,11 +17,11 @@
     ?>
 </ul>
 
-
+<!--
 <input id='sendTree' type="submit" value="Odeslat">
 
 
-<!--
+
 <ul id="tree1">
     <li><input type="checkbox"><label>Node 1</label>
         <ul>
@@ -72,7 +72,7 @@
     $(document).ready(function () {
 
 
-        $('#tree1').checkboxTree({
+        $('#tree2').checkboxTree({
             initializeChecked: 'expanded',
             initializeUnchecked: 'collapsed',
             onCheck: {
@@ -83,7 +83,7 @@
         });
 
 <?php
-$strom->generujJs();
+$strom->generujJsPoptavka();
 ?>
 
         /*$('#tree1').checkboxTree('check', $('#p9'));
@@ -93,7 +93,7 @@ $strom->generujJs();
 
         $("#sendTree").click(function () {
             var retezec = "";
-            $("#tree1 input").each(function () {
+            $("#tree2 input").each(function () {
 
                 if ($(this).attr("checked") ) {
                     retezec = retezec + " " + $(this).attr("id");

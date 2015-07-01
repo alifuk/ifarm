@@ -3,7 +3,6 @@
 include './class/Kategorie.php';
 
 $menuSablon = new Kategorie();
-echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
 
 include './parts/naseptavac.php';
 echo $menuSablon->vygenerovaneMenu();

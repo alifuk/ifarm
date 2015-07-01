@@ -2,10 +2,9 @@
 
 <?php
 $odkaz = "index"; // odkaz, na který se bude směřovat po kliknutí na horní logo
-if( isset($_SESSION['user']) && $_SESSION['user'] != "" ){ 
-    $odkaz= "prehled";    
+if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+    $odkaz = "prehled";
 }
-
 ?>
 <!-- start header -->
 <div class="radek shadow hlavicka">
@@ -14,6 +13,8 @@ if( isset($_SESSION['user']) && $_SESSION['user'] != "" ){
            height: 100%;">Energie pod kontrolou</a></h1>
     <nav>
         <ul>
+            <li><a href="index.php#videa" style="border: none;"></a></li>
+            <li><a href="index.php#videa" style="border: none;"></a></li>
             <li><a href="index.php#videa">Projekt ifarm</a></li>
             <li><a href="index.php#ukazka">Ukázka z praxe</a></li>
             <li><a href="index.php#jaktofunguje">Jak to funguje?</a></li>
@@ -23,19 +24,18 @@ if( isset($_SESSION['user']) && $_SESSION['user'] != "" ){
             <li><a href="index.php#reference">Reference</a></li>
             <li><a href="index.php#podminky">Obchodní podmínky</a></li>
             <li><a href="index.php#kontakt">Kontakt</a></li>	
-            <li><div id="footleft">
 
-                    <?php
-                    if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-                        include './parts/odhlasitButton.php';
-                    } else {
-                        include './parts/prihlasitButton.php';
-                    }
-                    ?>
 
-                </div> 
+            <?php
+            if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+                include './parts/odhlasitButton.php';
+            } else {
+                include './parts/prihlasitButton.php';
+            }
+            ?>
 
-            </li>	
+
         </ul>			
     </nav>
 </div>
+<div style="both: clear;"></div>

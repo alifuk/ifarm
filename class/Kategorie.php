@@ -91,7 +91,25 @@ class Kategorie {
     }
 
     
-    public function generujJs(){
+    public function generujJsNabidka(){
+        
+        require './connect.php';
+
+        $stmt = $conn->prepare("SELECT kategorieId FROM `usersconkategorienabidky` WHERE userId = ?");
+        $stmt->bind_param('i', $userId);
+        $userId = $_SESSION['user'];
+        $stmt->execute();
+
+        $stmt->bind_result($kategorieId);
+        while ($stmt->fetch()) {
+            //$this->vykresliPolozku($nazevKategorie, $kategorieId);            
+            echo "$('#tree1').checkboxTree('check', $('#tree1 #p".$kategorieId."'));";
+            //echo "$('#tree1').checkboxTree('expand', $('#l".$kategorieId."'));";
+        }
+        $stmt->close();
+    }
+    
+    public function generujJsPoptavka(){
         
         require './connect.php';
 
@@ -102,22 +120,12 @@ class Kategorie {
 
         $stmt->bind_result($kategorieId);
         while ($stmt->fetch()) {
-            //$this->vykresliPolozku($nazevKategorie, $kategorieId);
-            
-            echo "$('#tree1').checkboxTree('check', $('#p".$kategorieId."'));";
+            //$this->vykresliPolozku($nazevKategorie, $kategorieId);            
+            echo "$('#tree2').checkboxTree('check', $('#tree2 #p".$kategorieId."'));";
             //echo "$('#tree1').checkboxTree('expand', $('#l".$kategorieId."'));";
-            
-            
         }
         $stmt->close();
-        
-        
-        
-        
-        
     }
-    
-    
     
     
 

@@ -68,21 +68,21 @@
             <div class="form-group">
                 <label for="nazevFirmy" class="label">Název firmy:</label>
                 <div class="col-sm-7 ">
-                    <input type="text"  class="form-control" placeholder="Název firmy" Id="nazevFirmy">                           
+                    <input type="text"  class="input" placeholder="Název firmy" Id="nazevFirmy">                           
                 </div>
             </div> 
             
             <div class="form-group">
                 <label for="adresaFirmy" class="label">Adresa firmy:</label>
                 <div class="col-sm-7 ">
-                    <input type="text"  class="form-control" placeholder="Adresa firmy" Id="adresaFirmy">                           
+                    <input type="text"  class="input" placeholder="Adresa firmy" Id="adresaFirmy">                           
                 </div>
             </div> 
             
             <div class="form-group">
                 <label for="mesto" class="label">Město:</label>
                 <div class="col-sm-7 ">
-                    <input type="text"  class="form-control" placeholder="Město" Id="mesto">                           
+                    <input type="text"  class="input" placeholder="Město" Id="mesto">                           
                 </div>
             </div> 
 

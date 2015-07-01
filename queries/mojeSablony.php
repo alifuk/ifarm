@@ -13,14 +13,13 @@ $stmt = $conn->prepare('SELECT kategorie.nazev, polozky.Id, polozky.datum FROM p
 $stmt->bind_param('s', $user );
 $user = $_SESSION['user'];
 
-
 $stmt->execute();
 
 $stmt->bind_result($kategorieName, $polozkaId, $polozkaDatum);
 
 while ($stmt->fetch()) {
     $prihlasen = true;
-    
+    echo $kategorieName;
     include './parts/mojeSablonyRadekTabulky.php';
     
     

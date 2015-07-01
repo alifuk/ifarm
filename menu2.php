@@ -1,4 +1,4 @@
-<div class="radek shadow hlavicka" style="margin-bottom: 0px; position:relative !important;  margin-top: 47px; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:9999;
+<div class="radek shadow hlavicka" style="margin-bottom: 0px; position:relative !important;  margin-top: 47px; /*border-top:1px solid #d7d6da;border-bottom:1px solid #d7d6da;*/z-index:12;
      height: 50px;
      background: rgb(22,61,127);
      background: -moz-linear-gradient(top, rgba(22,61,127,1) 1%, rgba(16,71,169,1) 68%, rgba(16,71,169,1) 100%);
@@ -14,11 +14,14 @@
     <nav style="position: relative;
          left: -125px;">
         <ul>
+            <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="prehled.php" style="color: white !important;">Přehled</a>
+
+            </li>
             <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nabidka.php" style="color: white !important;">Nabídka</a>
-               
+
             </li>
             <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="poptavka.php" style="color: white !important;">Poptávka</a>
-                
+
             </li>
 
             <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nastaveni.php" style="color: white !important;">Nastavení</a>
@@ -39,17 +42,17 @@
 
                 require_once './connect.php';
 
-                $stmt = $conn->prepare("SELECT jmeno FROM users WHERE Id = ?");
+                $stmt = $conn->prepare("SELECT Id FROM users WHERE Id = ?");
                 $stmt->bind_param('i', $user);
 
                 $user = $_SESSION['user'];
 
                 $stmt->execute();
 
-                $stmt->bind_result($jmeno);
+                $stmt->bind_result($Id);
                 $odkazMujProfil = "";
                 while ($stmt->fetch()) {
-                    $odkazMujProfil = "profil.php?spolecnost=" . $jmeno;
+                    $odkazMujProfil = "profil.php?spolecnost=" . $Id;
                 }
                 $stmt->close();
             }
@@ -69,9 +72,9 @@
             </li>
 
             <li class="bcgrenergie"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#kolik" style="color: white !important;">Dotace</a>
-                
+
             </li>
-            
+
             <!--
             
             <li class="bcgrenergie zenergietrans"   style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="#" style="color: black !important;">

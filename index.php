@@ -11,7 +11,7 @@
         ?>  
 
     </head>
-    <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="/*background:url('./img/farming-wallpaper5.jpg') no-repeat;*/ max-width:100%; -webkit-background-size: cover;
+    <body class="language-CZ" onload="callFT('CZ_01_Landingpage');" style="background:url('./img/farming-wallpaper5.jpg') no-repeat; max-width:100%; -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;background-attachment: fixed;">
@@ -19,15 +19,19 @@
 
 
         <?php include './menu.php'; ?>
-        <?php include './menu2.php'; ?>
+        <?php
+        if (isset($_SESSION['user'])) {
+            include './menu2.php';
+        }
+        ?>
 
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
             <div class="row">
 
-                <?php
-                include './landingPage.php';
-                ?>   
+<?php
+include './landingPage.php';
+?>   
 
             </div>
         </div>

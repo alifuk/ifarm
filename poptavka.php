@@ -32,7 +32,8 @@
                 if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
                     echo "<div class='col-md-4'>";
-                    include './menuSablon.php';
+                    echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
+                    include './parts/menuSablon.php';
                     echo "</div>";
                     echo "<div class='col-md-8'>";
                     //include './parts/odkazNaProfil.php';

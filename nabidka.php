@@ -23,8 +23,8 @@
 
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
-            <?php            
-            include './parts/vyplnitNotifikace.php';            
+            <?php
+            include './parts/vyplnitNotifikace.php';
             ?>
 
 
@@ -32,30 +32,32 @@
 
             <div class="row">
 
-<?php
-if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+                <?php
+                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
 
-    echo "<div class='col-md-6'>";
-    include './menuSablon.php';
-    echo "</div>";
-    echo "<div class='col-md-6'>";
-    //include './parts/odkazNaProfil.php';
+                    echo "<div class='col-md-6'>";
 
-    include './queries/mojeSablony.php';
-    //include './parts/kategorie.php';
+                    echo "<h2 style='  padding-bottom: 0px;'>Zadat nabídku:</h2>";
+                    include './parts/menuSablon.php';
+                    echo "</div>";
+                    echo "<div class='col-md-6'>";
+                    //include './parts/odkazNaProfil.php';
 
-    include './parts/sablona.php';
+                    include './queries/mojeSablony.php';
+                    //include './parts/kategorie.php';
+
+                    include './parts/sablona.php';
 
 
 
-    echo "</div>";
-} else {
-    echo "<h1>Vyberte šablonu</h1>";
-    include './menuSablon.php';
+                    echo "</div>";
+                } else {
+                    echo "<h1>Vyberte šablonu</h1>";
+                    include './parts/menuSablon.php';
 
-    include './parts/sablonaRegister.php';
-}
-?>   
+                    include './parts/sablonaRegister.php';
+                }
+                ?>   
 
             </div>
         </div>

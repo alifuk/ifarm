@@ -46,32 +46,45 @@
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
 
             <img src="./img/profillogo.jpg" style="display: block; width: 200px; position: absolute; top: 0; left: 0; z-index: 5;"/>
+            
+            <?php
+            if(isset($_SESSION['user']) && $_SESSION['user'] == $_GET['spolecnost'] ){
+                include './parts/pridatUvodniFotku.php';
+            }
+            
+            
+            ?>
+            
+            
+            
             <div style="height: 300px; overflow: hidden; position: relative;">
 
                 <img src="./img/profiluvodka.jpg" style="display: block; width: 100%; position: absolute; top: 0; left: 0; bottom: 0 ; right: 0; margin: auto; z-index: 4;"/>
             </div>
 
             <div class="row">
-
+                <!--
                 <div class='col-md-5'>
                     <h1>
                         <?php
-                        echo $_GET['spolecnost'];
+                        //echo $_GET['spolecnost'];
                         ?>
                     </h1>
                 </div>
+               
                 <div class='col-md-3'></div>
 
 
                 <div class='col-md-3'>
 
-                    <img src="./img/profilOvereno.jpg" style="width: 100px; float: right;">
+                    
 
                 </div>
-
+                -->
             </div>
 
             <div class="row">
+                <img src="./img/profilOvereno.jpg" style="width: 100px; float: right;position: absolute; left: -100px">
                 <div class='col-md-6'>
                     <h2>
 

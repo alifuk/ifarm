@@ -5,16 +5,16 @@
 <?php
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon FROM users WHERE jmeno = ?");
-$stmt->bind_param('i', $user);
+$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon, lat, lng FROM users WHERE Id = ? LIMIT 1");
+$stmt->bind_param('i', $Id);
 
-$user = $_GET['spolecnost'];
+$Id = $_GET['spolecnost'];
 
 $stmt->execute();
 
-$stmt->bind_result($jmeno, $adresa1, $telefon);
+$stmt->bind_result($jmeno, $adresa1, $telefon, $lat, $lng);
 while ($stmt->fetch()) {
-    echo $jmeno . "<br>";
+    echo "<b>".$jmeno . "</b><br>";
     echo $adresa1 . "<br>";
     echo $telefon . "<br>";
 
@@ -23,15 +23,15 @@ while ($stmt->fetch()) {
 // make request
 
 
-
-    $url = "https://maps.googleapis.com/maps/api/geocode/xml?address=" . urlencode($adresa1) . "&key=AIzaSyDmPjww9bGInAdOuHn7PzD5WtVT2fx-eP8";
-
-
-    $xml = simplexml_load_string(file_get_contents($url));
-    $lat = $xml->result->geometry->location->lat;
-    $lng = $xml->result->geometry->location->lng;
+    /*
+      $url = "https://maps.googleapis.com/maps/api/geocode/xml?address=" . urlencode($adresa1) . "&key=AIzaSyDmPjww9bGInAdOuHn7PzD5WtVT2fx-eP8";
 
 
+      $xml = simplexml_load_string(file_get_contents($url));
+      $lat = $xml->result->geometry->location->lat;
+      $lng = $xml->result->geometry->location->lng;
+
+     */
     //echo "<img src='./img/profilMapa.png' style='width: 100%; '>"; 
     echo '<div id="map-canvas" style="width: 100%; height: 400px;"></div>';
 }

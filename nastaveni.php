@@ -1,15 +1,7 @@
-﻿﻿<?php
-session_start();
-if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
-    
-} else {
-    header("Location: index.php");
-    die();
-}
-?>  
 <!DOCTYPE html>
 <html>
     <?php
+    session_start();
     include './queries/setDefaultCategory.php';
     ?>
     <head>
@@ -30,21 +22,44 @@ if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
         <?php include './menu2.php'; ?>
 
 
-        <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
-            <div class="row">
+
+        <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;" >
+            <?php
+            include './parts/vyplnitNotifikace.php';
+            ?>
+
+
+            <?php
+            //include './parts/aresForm.php';
+            include './queries/profileEditQ.php';
+            ?>   
+
+
+
+
+            <h3>Zaškrtněte kategorie, ve kterých chcete</h3>
+            <div style="width:50%; position: relative; float: left;">
 
                 <?php
-                include './parts/aresForm.php';
-                include './queries/profileEditQ.php';
-                echo '<h1>Zvolte, co chcete poptávat</h1>';
-                include './parts/checkboxtree.php';
+                echo '<h2>poptávat:</h2>';
+                include './parts/checkboxtreepoptavka.php';
+                ?>
 
 
-                echo '<h1>Zvolte, co chcete nabízet</h1>';
-                include './parts/checkboxtree.php';
+            </div>
+            <div style="width:50%; position: relative; float: left;">
+                <?php
+                echo '<h2>nabízet:</h2>';
+                include './parts/checkboxtreenabidka.php';
                 ?>   
 
             </div>
+
+            <div style="clear: both;"></div>
+
+            <submit class="btn btn-primary btn-block center-block" onclick="document.getElementById('editProfileForm').submit();"> Uložit údaje</submit>
+
+
         </div>
 
 
