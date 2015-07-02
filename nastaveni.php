@@ -2,7 +2,12 @@
 <html>
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
+    if (isset($_SESSION['user'])) {
+        
+    } else {
+        header('Location: ./index.php');
+        die();
+    }
     ?>
     <head>
 
@@ -57,7 +62,7 @@
 
             <div style="clear: both;"></div>
 
-            <submit class="btn btn-primary btn-block center-block" onclick="document.getElementById('editProfileForm').submit();"> Uložit údaje</submit>
+            <submit class="btn btn-primary btn-block center-block" onclick="submitnout()"> Uložit údaje</submit>
 
 
         </div>
@@ -66,6 +71,25 @@
 
 
         <script>
+            
+            function submitnout (){
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            };   
+            
+            
+            
+            
+            
+            
             $('html').click(function () {
                 $('#subscribe-pop').hide();
             })

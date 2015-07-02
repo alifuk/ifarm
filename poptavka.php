@@ -2,7 +2,12 @@
 <html>
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
+    if (isset($_SESSION['user'])) {
+        
+    } else {
+        header('Location: ./index.php');        
+        die();
+    }
     ?>
     <head>
 
@@ -29,29 +34,22 @@
             <div class="row">
 
                 <?php
-                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+                echo "<div class='col-md-3'>";
+                echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
+                include './parts/menuSablon.php';
+                echo "</div>";
+                echo "<div class='col-md-9'>";
 
-                    echo "<div class='col-md-4'>";
-                    echo "<h2 style='  padding-bottom: 0px;'>Zadat poptávku:</h2>";
-                    include './parts/menuSablon.php';
-                    echo "</div>";
-                    echo "<div class='col-md-8'>";
-                    //include './parts/odkazNaProfil.php';
+                echo "<h2>Moje poptávky</h2>";
+                include './queries/mojePoptavky.php';
 
-                    include './queries/mojeSablony.php';
-                    //include './parts/kategorie.php';
-
-                    include './parts/sablona.php';
-
-
-
-                    echo "</div>";
-                } else {
-                    echo "<h1>Vyberte šablonu</h1>";
-                    include './menuSablon.php';
-
-                    include './parts/sablonaRegister.php';
+                if (isset($_SESSION['kategorie']) && isset($_GET['vlozit'])) {
+                    include './parts/sablonaPoptavka.php';
                 }
+
+
+
+                echo "</div>";
                 ?>   
 
             </div>

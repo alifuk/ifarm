@@ -22,6 +22,8 @@
         <?php
         if (isset($_SESSION['user'])) {
             include './menu2.php';
+        } else{
+            echo "<div style='height: 55px;'></div>";
         }
         ?>
 

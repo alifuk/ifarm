@@ -1,18 +1,18 @@
 <?php
-class Kategorie {    
-    
+
+class Kategorie {
+
     public function vygenerovaneMenu() {
-        /* echo "<div id='cssmenu'><ul>";
-          echo $this->getSubmenu(0);
-          echo "</ul></div>"; */
+        /*echo "<div id='cssmenu'><ul>";
+        echo $this->getSubmenu(0);
+        echo "</ul></div>";*/
 
         include './parts/vygenerovaneMenu.php';
     }
-    
-    public function predgenerovaneTree(){
-        
+
+    public function predgenerovaneTree() {
+
         include './parts/vygenerovaneTreeKategorii.php';
-        
     }
 
     private function hasSubmenu($nadKategorie) {
@@ -43,10 +43,8 @@ class Kategorie {
 
         $stmt->bind_result($kategorieId, $nazevKategorie, $nove, $tooltip);
         while ($stmt->fetch()) {
-            //$this->vykresliPolozku($nazevKategorie, $kategorieId);    //vykreslí menu kategorií
-            $this->vykresliCheckboxy($nazevKategorie, $kategorieId);    //vykreslí checkboxy
-            
-            
+            $this->vykresliPolozku($nazevKategorie, $kategorieId);    //vykreslí menu kategorií
+            //$this->vykresliCheckboxy($nazevKategorie, $kategorieId);    //vykreslí checkboxy
         }
         $stmt->close();
     }
@@ -61,25 +59,25 @@ class Kategorie {
             echo "</ul></li>";
         } else {
 
-            echo "<li><a href='./queries/setCategory.php?kategorie=" . $kategorieId . "&level=1'><span>";
+            echo "<li><a href='./queries/setCategory.php?kategorie=" . $kategorieId . "&vlozit=ano'><span>";
             echo $nazevKategorie;
             echo "</span></a></li>";
         }
     }
-    
+
     private function vykresliCheckboxy($nazevKategorie, $kategorieId) {
 
         if ($this->hasSubmenu($kategorieId)) {
-            echo '<li id="l'.$kategorieId.'"><input type="checkbox" id="p'.$kategorieId.'" ><label>';
+            echo '<li id="l' . $kategorieId . '"><input type="checkbox" id="p' . $kategorieId . '" ><label>';
             echo $nazevKategorie;
             echo "</label><ul>";
             echo $this->getSubmenu($kategorieId);
             echo "</ul>";
         } else {
 
-            echo '<li id="l'.$kategorieId.'"><input type="checkbox" id="p'.$kategorieId.'"><label>' . $nazevKategorie . "</label>";
-            /*echo $nazevKategorie;
-            echo "</span></a></li>";*/
+            echo '<li id="l' . $kategorieId . '"><input type="checkbox" id="p' . $kategorieId . '"><label>' . $nazevKategorie . "</label>";
+            /* echo $nazevKategorie;
+              echo "</span></a></li>"; */
         }
     }
 
@@ -90,9 +88,8 @@ class Kategorie {
         $this->getTree(0);
     }
 
-    
-    public function generujJsNabidka(){
-        
+    public function generujJsNabidka() {
+
         require './connect.php';
 
         $stmt = $conn->prepare("SELECT kategorieId FROM `usersconkategorienabidky` WHERE userId = ?");
@@ -103,14 +100,14 @@ class Kategorie {
         $stmt->bind_result($kategorieId);
         while ($stmt->fetch()) {
             //$this->vykresliPolozku($nazevKategorie, $kategorieId);            
-            echo "$('#tree1').checkboxTree('check', $('#tree1 #p".$kategorieId."'));";
+            echo "$('#tree1').checkboxTree('check', $('#tree1 #p" . $kategorieId . "'));";
             //echo "$('#tree1').checkboxTree('expand', $('#l".$kategorieId."'));";
         }
         $stmt->close();
     }
-    
-    public function generujJsPoptavka(){
-        
+
+    public function generujJsPoptavka() {
+
         require './connect.php';
 
         $stmt = $conn->prepare("SELECT kategorieId FROM `usersconkategorie` WHERE userId = ?");
@@ -121,13 +118,11 @@ class Kategorie {
         $stmt->bind_result($kategorieId);
         while ($stmt->fetch()) {
             //$this->vykresliPolozku($nazevKategorie, $kategorieId);            
-            echo "$('#tree2').checkboxTree('check', $('#tree2 #p".$kategorieId."'));";
+            echo "$('#tree2').checkboxTree('check', $('#tree2 #p" . $kategorieId . "'));";
             //echo "$('#tree1').checkboxTree('expand', $('#l".$kategorieId."'));";
         }
         $stmt->close();
     }
-    
-    
 
 }
 ?>

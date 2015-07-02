@@ -6,6 +6,7 @@
         
     } else {
         header('Location: ./index.php');
+        die();
     }
     ?>
     <head>
@@ -48,7 +49,7 @@
                 foreach ($html->find('.post') as $post) {
                     if ($count < 5) {
                         foreach ($post->find('img') as $obrazek) {
-                            echo "<img src='" . $obrazek->src . "' style='width: 100px; float: left; margin-right: 20px;'>";
+                            echo "<img src='" . $obrazek->src . "' style='width: 66px; float: left; margin-right: 20px;'>";
                         }
                         foreach ($post->find('.post__title') as $title) {
                             echo "<h3>" . $title->plaintext . '</h3>';
@@ -58,27 +59,17 @@
                     $count++;
                 }
 
-                echo "</div>";
-
-
-
-                echo "<div class='col-md-4'>";
-
-
-
-                require_once './connect.php';
-
-
-
-
                 echo '<a href="http://www.slunecno.cz/mista/' . $_SESSION['adresa1'] . '"><img src="http://www.slunecno.cz/predpoved-na-web.php?obr=4&amp;m=1301&amp;v=2" alt="Počasí Praha - Bhovice - Slunečno.cz" style="border: 0px;" /></a>';
 
 
 
                 echo "</div>";
-                echo "<div class='col-md-4'>";
 
-                include './queries/mojeSablony.php';
+
+                echo "<div class='col-md-8'>";
+
+                echo "<h2>Moje poptávky</h2>";
+                include './queries/mojePoptavky.php';
 
 
                 echo "</div>";

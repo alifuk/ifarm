@@ -1,8 +1,9 @@
 ﻿.radek:hover + .featuresColumn4 {
     background: #ccc;
 }
-
+/*
 .col-md-8 {margin-top: 40px !important;}
+*/
 
 .btn{  /* display: inline-block; */
     /* padding: 6px 12px; */
@@ -254,22 +255,16 @@ div.col { float: left; width: 49%;}
 .radek.hlavicka nav ul li a {color: black;
                              text-decoration: none;
 }
-
+/*
 body > div.radek.hlavicka > nav > ul > li:nth-child(2) a {color:black;}
 body > div.radek.hlavicka > nav > ul > li:nth-child(2) {
-    background-color: white; /*#e5ef00;*/
+    background-color: white; /*#e5ef00;*/ /*
     opacity: 0.8;
     -ms-transition: opacity 0.2s;
     -moz-transition: opacity 0.2s;
     -webkit-transition: opacity 0.2s;
     color: white !important;
-}
-body > div.radek.hlavicka > nav > ul > li:nth-child(1) {background-color: white /*#b77100*/;
-                                                        opacity: 0.8;
-                                                        -ms-transition: opacity 0.2s;
-                                                        -moz-transition: opacity 0.2s;
-                                                        -webkit-transition: opacity 0.2s;color:white !important;}
-body > div.radek.hlavicka > nav > ul > li:nth-child(1):hover {opacity: 1 !important;}
+}*/
 body > div.radek.hlavicka > nav > ul > li:nth-child(9) {background-color:#00b800;  opacity: 1;
                                                         -ms-transition: opacity 0.2s;
                                                         -moz-transition: opacity 0.2s;
@@ -1800,11 +1795,11 @@ p.confirm2{
           background: ;
           border: 0px;}
 
-.iboxshadow{-webkit-box-shadow: 3px 3px 5px 0px rgba(204,204,204,1);
-            -moz-box-shadow: 3px 3px 5px 0px rgba(204,204,204,1);
-            box-shadow: 3px 3px 5px 0px rgba(204,204,204,1);
-            background: #fafafa;
-            border-radius: 5px;
+.iboxshadow{-webkit-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+            -moz-box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+            box-shadow: 0px 0px 5px 0px rgba(204,204,204,1);
+            //background: #fafafa;
+            border-radius: 2px;
             border: 0px;}
 
 //font

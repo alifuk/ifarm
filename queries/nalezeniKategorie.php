@@ -23,7 +23,7 @@ while ($stmt->fetch()) {
 $stmt->close();
 
 if(!$nalezeno){
-    echo "<div>nic nenalezeno</div>";
+    echo "<div style='margin:5px;'> Nic nenalezeno</div>";
 }
 
 

@@ -1,7 +1,7 @@
 <!-- numberBox.php odkazováno z queries/nabidky.php   -->
-<div class="form-group" >
+<div class="form-group" style="width: 130px; margin-right: 20px;">
     <label for='<?php echo $nazev . ""; ?>' ><?php echo $nazev; ?>:</label>
-    <div class="input-group col-xs-6">
+    <div class="input-group col-xs-12">
         <input type="text" class="form-control" placeholder='<?php //echo "zadejte ".$nazev;  ?>' id='<?php echo $nazev . "Field"; ?>' name='<?php echo $IdDefinice; ?>' 
                <?php 
                

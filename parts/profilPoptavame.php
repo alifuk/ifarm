@@ -4,7 +4,7 @@
 <?php
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT kategorie.nazev FROM usersconkategorie AS con INNER JOIN users ON  con.userId = users.Id INNER JOIN kategorie ON kategorie.Id = con.kategorieId WHERE users.jmeno = ? ");
+$stmt = $conn->prepare("SELECT kategorie.nazev FROM usersconkategorie AS con INNER JOIN users ON  con.userId = users.Id INNER JOIN kategorie ON kategorie.Id = con.kategorieId WHERE users.Id = ? ");
 $stmt->bind_param('s', $userName);
 
 $userName = $_GET['spolecnost'];

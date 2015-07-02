@@ -2,7 +2,12 @@
 <html>
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
+    if (isset($_SESSION['user'])) {
+        
+    } else {
+        header('Location: ./index.php');
+        die();
+    }
     ?>
     <head>
 
@@ -33,30 +38,21 @@
             <div class="row">
 
                 <?php
-                if (isset($_SESSION['user']) && $_SESSION['user'] != "") {
+                echo "<div class='col-md-4'>";
 
-                    echo "<div class='col-md-6'>";
-
-                    echo "<h2 style='  padding-bottom: 0px;'>Zadat nabídku:</h2>";
-                    include './parts/menuSablon.php';
-                    echo "</div>";
-                    echo "<div class='col-md-6'>";
-                    //include './parts/odkazNaProfil.php';
-
-                    include './queries/mojeSablony.php';
-                    //include './parts/kategorie.php';
-
-                    include './parts/sablona.php';
-
-
-
-                    echo "</div>";
-                } else {
-                    echo "<h1>Vyberte šablonu</h1>";
-                    include './parts/menuSablon.php';
-
-                    include './parts/sablonaRegister.php';
-                }
+                echo "<h2 style='  padding-bottom: 0px;'>Zadat nabídku:</h2>";
+                include './parts/menuSablon.php';
+                echo "</div>";
+                echo "<div class='col-md-8'>";
+                echo "<h2>Moje nabídky</h2>";
+                include './queries/mojeNabidky.php';
+                
+                
+                echo "<h2>Vložit nabídku</h2>";
+                include './parts/sablona.php';
+                echo "</div>";
+                
+                
                 ?>   
 
             </div>

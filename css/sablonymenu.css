@@ -202,7 +202,11 @@
 .naseptavacKategorie{
     background-color: #0082e7;
     padding: 2px;
-    color: #FFF;
+}
+
+.naseptavacKategorie a{    
+    color: #FFF ;
+    text-decoration: none;
 }
 
 .nalezenaPolozka{
