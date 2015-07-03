@@ -27,7 +27,7 @@ include '../php-image-resize-master/src/ImageResize.php';
         $nabidka = 0;
         $smazano = 0;
         $zobrazit = 1;
-        $kategorieId = $_SESSION['kategorie'][count($_SESSION['kategorie']) - 1];
+        $kategorieId = $_SESSION['kategorie'];
         $userId = $_SESSION['user'];
 
         $stmt->execute();

@@ -71,25 +71,72 @@
 
 
         <script>
-            
-            function submitnout (){
+
+            function submitnout() { //uloží zaškrtnutý kategorie
+
+
+
+
+                var retezec = "";
+                $("#tree1 input").each(function () {
+
+                    if ($(this).attr("checked")) {
+                        retezec = retezec + " " + $(this).attr("id");
+                    }
+
+                });
+
+
+                $.post("./queries/ulozitStromKategorii.php",
+                        {
+                            retezec: retezec,
+                            typ: 'nabidka'
+                        },
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+
+
+
+
+                retezec = "";
+                $("#tree2 input").each(function () {
+                    if ($(this).attr("checked")) {
+                        retezec = retezec + " " + $(this).attr("id");
+                    }
+                });
+
+                $.post("./queries/ulozitStromKategorii.php",
+                        {
+                            retezec: retezec,
+                            typ: 'poptavka'
+                        },
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-            };   
-            
-            
-            
-            
-            
-            
+
+                $.post("./queries/ulozitNastaveni.php",
+                        {
+                            jmeno: $("#jmeno").val(),
+                            telefon: $("#telefon").val(),
+                            dic: $("#dic").val(),
+                            adresa1: $("#adresa1").val(),
+                            adresa2: $("#adresa2").val()
+                        },
+                function (data, status) {
+                    alert("Data: " + data + "\nStatus: " + status);
+                });
+
+            }
+
+
+
+
+
+
+
             $('html').click(function () {
                 $('#subscribe-pop').hide();
             })

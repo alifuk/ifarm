@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
     ?>
     <head>
 

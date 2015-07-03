@@ -33,6 +33,7 @@ WHERE polozky.nabidka <> 0
 ) as nab ON nab.nabidka = polozky.Id 
 WHERE polozky.userId = ? AND polozky.nabidka = 0
 GROUP BY kategorie.nazev, polozky.Id, polozky.datum
+ORDER BY Id DESC
 LIMIT ?, ?');
             $stmt->bind_param('sss', $user, $pagi, $limitRows);
             $user = $_SESSION['user'];

@@ -17,10 +17,10 @@
             <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="prehled.php" style="color: white !important;">Přehled</a>
 
             </li>
-            <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nabidka.php" style="color: white !important;">Nabídka</a>
+            <li  class="bcgrenergie zenergietrans roundleft"  style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="nabidka.php" style="color: white !important;">Nabídnout</a>
 
             </li>
-            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="poptavka.php" style="color: white !important;">Poptávka</a>
+            <li  class="bcgrenergie zenergietrans"    style="border:0px solid #d7d6da;background: transparent !important;margin-top: 0%;"><a href="poptavka.php" style="color: white !important;">Poptat</a>
 
             </li>
 

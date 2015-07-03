@@ -2,7 +2,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
     <?php
     session_start();
-    include './queries/setDefaultCategory.php';
     ?>
     <head>
 
@@ -51,7 +50,7 @@
 
         <div style="padding-left:20px;padding-right:20px;padding-bottom:20px; position: relative;  width: 1000px;  margin: 0 auto;">
 
-            <img src="./img/profillogo.jpg" style="display: block; width: 200px; position: absolute; top: 0; left: 0; z-index: 5;"/>
+            <img src="./img/profillogo.jpg" style="display: block; width: 200px; position: absolute; top: 28px; left: 20px; z-index: 5;"/>
 
             <?php
             if (isset($_SESSION['user']) && $_SESSION['user'] == $_GET['spolecnost']) {

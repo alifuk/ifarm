@@ -222,7 +222,7 @@ margint{margin-top:700px;}
 .centertext {text-align:center;}
 div.bottom { height: 200px; width: 100%;  margin-top: 30px; margin-bottom: none;}
 div.col { float: left; width: 49%;}
-.radek.hlavicka {position: fixed; z-index: 20; top: 0; height: 47px; width: 100%; background: white }
+.radek.hlavicka {position: fixed; z-index: 2000; top: 0; height: 47px; width: 100%; background: white }
 .radek.hlavicka h1 {overflow: hidden;
                     text-indent: -99999px;
                     background: url(../cz/headerlogo.png) no-repeat;
@@ -1859,9 +1859,9 @@ iform{padding-top:5px !important;padding-bottom:5px !important;padding-left:10px
 
 .form-horizontal{
     background-color: #FFF;
-    box-shadow: 0px 0px 9px #EEE;
+    //box-shadow: 0px 0px 9px #EEE;
     margin: 0 auto; 
-    width: 500px;
+    width: 700px;
     padding: 20px 50px;
     position: relative;
     z-index: 6;
@@ -1873,7 +1873,19 @@ iform{padding-top:5px !important;padding-bottom:5px !important;padding-left:10px
     vertical-align: middle;
 }
 
+.bluebutton{
+    color: #1B9BFF;
+    text-align: center;
 
+}
+
+.bluebutton:hover{
+
+    background-color: #1B9BFF;
+    color: #FFF;
+
+
+}
 
 
 

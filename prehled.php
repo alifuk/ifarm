@@ -67,9 +67,13 @@
 
 
                 echo "<div class='col-md-8'>";
+                /*
+                echo "<h2>Moje nabídky</h2>";
+                include './queries/mojeNabidky.php';
+                */
 
-                echo "<h2>Moje poptávky</h2>";
-                include './queries/mojePoptavky.php';
+                echo "<h2>Seznam veřejných poptávek</h2>";
+                include './queries/verejnePoptavky.php';
 
 
                 echo "</div>";

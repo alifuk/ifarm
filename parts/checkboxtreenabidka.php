@@ -95,7 +95,7 @@ $strom->generujJsNabidka();
             var retezec = "";
             $("#tree1 input").each(function () {
 
-                if ($(this).attr("checked") ) {
+                if ($(this).attr("checked")) {
                     retezec = retezec + " " + $(this).attr("id");
                 }
 

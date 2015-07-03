@@ -43,7 +43,8 @@
                 echo "<h2>Moje poptávky</h2>";
                 include './queries/mojePoptavky.php';
 
-                if (isset($_SESSION['kategorie']) && isset($_GET['vlozit'])) {
+                if (isset($_SESSION['kategorie'])) {
+                    //echo $_SESSION['kategorie'];
                     include './parts/sablonaPoptavka.php';
                 }
 

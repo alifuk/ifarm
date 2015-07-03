@@ -111,10 +111,10 @@ if (isset($_POST['email']) && isset($_POST['heslo']) && isset($_POST['ico'])) {
 
 
 
-    $stmt = $conn->prepare('INSERT INTO users (email, heslo, jmeno, dic, adresa1, lat, lng) VALUES (?,?,?,?,?,?,?)');
-    $stmt->bind_param('sssssss', $email, $heslo, $firma, $dic, $ulice, $lat, $lng);
+    $stmt = $conn->prepare('INSERT INTO users (email, heslo, jmeno, ico, dic, adresa1, lat, lng) VALUES (?,?,?,?,?,?,?,?)');
+    $stmt->bind_param('ssssssss', $email, $heslo, $firma, $ico, $dic, $ulice, $lat, $lng);
 
-
+    
     $firma = "";
     if (isset($a['firma'])) {
         $firma = $a['firma'];

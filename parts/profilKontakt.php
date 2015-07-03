@@ -5,18 +5,25 @@
 <?php
 require_once './connect.php';
 
-$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon, lat, lng FROM users WHERE Id = ? LIMIT 1");
+$stmt = $conn->prepare("SELECT jmeno, adresa1, telefon, lat, lng, ico, dic FROM users WHERE Id = ? LIMIT 1");
 $stmt->bind_param('i', $Id);
 
 $Id = $_GET['spolecnost'];
 
 $stmt->execute();
 
-$stmt->bind_result($jmeno, $adresa1, $telefon, $lat, $lng);
+$stmt->bind_result($jmeno, $adresa1, $telefon, $lat, $lng, $ico, $dic);
 while ($stmt->fetch()) {
-    echo "<b>".$jmeno . "</b><br>";
+    echo "<b>" . $jmeno . "</b><br>";
     echo $adresa1 . "<br>";
-    echo $telefon . "<br>";
+    if ($telefon) {
+        echo $telefon . "<br>";
+    }
+    echo "IČO " . $ico . "<br>";
+
+    if ($dic != "") {
+        echo "DIČ " . $dic . "<br>";
+    }
 
 
 
@@ -33,7 +40,7 @@ while ($stmt->fetch()) {
 
      */
     //echo "<img src='./img/profilMapa.png' style='width: 100%; '>"; 
-    echo '<div id="map-canvas" style="width: 100%; height: 400px;"></div>';
+    echo '<div id="map-canvas" style="width: 80%; height: 200px; margin: 20px auto 0;"></div>';
 }
 $stmt->close();
 ?>

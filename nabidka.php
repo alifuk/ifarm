@@ -8,6 +8,15 @@
         header('Location: ./index.php');
         die();
     }
+    
+    if(isset($_GET['nabidnout']))
+    {
+        $_SESSION['nabidnout'] = $_GET['nabidnout'];
+    }
+    
+    
+    
+    
     ?>
     <head>
 
@@ -48,9 +57,19 @@
                 include './queries/mojeNabidky.php';
                 
                 
-                echo "<h2>Vložit nabídku</h2>";
+                if(isset($_SESSION['nabidnout'])){
+                    
+                    
+                    
+                    
+                }
+                
+                
+                /*echo "<h2>Vložit nabídku</h2>";
                 include './parts/sablona.php';
-                echo "</div>";
+                echo "</div>";*/
+                
+                
                 
                 
                 ?>   

@@ -8,6 +8,7 @@
                 <th>ID poptávky</th>
                 <th>Kategorie</th>
                 <th>Datum</th>
+                <th>Poptávající</th>
                 <th></th>
             </tr>
         </thead>
@@ -21,12 +22,13 @@
             $limitRows = 10;
 
             require './connect.php';
-            $stmt = $conn->prepare('SELECT polozky.Id, kategorie.nazev, polozky.datum 
+            $stmt = $conn->prepare('SELECT users.jmeno, polozky.userId, kategorie.nazev, polozky.Id, polozky.datum
 FROM usersconkategorie as con
 INNER JOIN polozky ON con.kategorieId = polozky.kategorieId
 INNER JOIN kategorie ON kategorie.Id = polozky.kategorieId
+INNER JOIN users ON users.Id = polozky.userId
 WHERE con.userId = ?
-ORDER BY Id DESC
+ORDER BY polozky.Id DESC
 LIMIT ?, ?');
             $stmt->bind_param('sss', $user, $pagi, $limitRows);
             $user = $_SESSION['user'];
@@ -39,11 +41,11 @@ LIMIT ?, ?');
 
             $stmt->execute();
 
-            $stmt->bind_result($polozkaId, $kategorieName, $polozkaDatum);
+            $stmt->bind_result($userJmeno, $userId, $kategorieName, $polozkaId, $polozkaDatum);
 
             while ($stmt->fetch()) {
                 $prihlasen = true;
-                include './parts/mojeSablonyRadekTabulkyPoptavky.php';
+                include './parts/verejneSablonyRadekTabulkyPoptavky.php';
             }
             
             $stmt->close();

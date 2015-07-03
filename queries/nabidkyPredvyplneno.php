@@ -6,7 +6,7 @@ require_once './connect.php';
 
 $stmt = $conn->prepare("SELECT def.Id, def.sekce, def.zobrazeni, def.nazev, def.volby, def.jednotky, hodnota FROM definicekategorie as def LEFT JOIN polozkycondefinice ON def.Id = polozkycondefinice.definiceId WHERE polozkyId = ?");
 $stmt->bind_param('i', $polozkaId);
-$polozkaId = $_GET['polozkaId'];
+$polozkaId = $_GET['nabidnout'];
 $stmt->execute();
 
 
